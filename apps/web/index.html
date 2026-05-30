@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#f6f0e4" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Japan Study" />
+    <link rel="manifest" href="./manifest.webmanifest?v=20260530a" />
+    <link rel="apple-touch-icon" href="./icons/icon-192.png" />
+    <title>Japanese Study Companion - Restaurant Slice</title>
+    <link rel="stylesheet" href="./styles.css?v=20260528e" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="screen world-screen" id="worldScreen">
+        <div class="world-status hidden" id="worldStatus" role="status" aria-live="polite"></div>
+        <section class="world-map-scroll" id="worldMapScroll" aria-label="World map">
+          <div class="world-map-track" id="worldMapTrack"></div>
+        </section>
+        <div class="world-popover-layer" id="worldPopoverLayer" aria-hidden="true"></div>
+        <div class="world-modal-layer hidden" id="worldModalLayer" aria-hidden="true">
+          <div class="world-modal-backdrop" id="worldModalBackdrop"></div>
+          <div class="lesson-picker-modal" id="lessonPickerModal" role="dialog" aria-modal="true" aria-labelledby="lessonPickerTitle">
+            <button class="lesson-picker-close" id="lessonPickerClose" type="button" aria-label="Close lesson picker">×</button>
+            <div class="lesson-picker-art">
+              <img id="lessonPickerImage" class="lesson-picker-image" src="./assets/restaurant-guide-v1.png" alt="Lesson instructor" />
+            </div>
+            <div class="lesson-picker-content">
+              <div class="lesson-picker-header">
+                <p id="lessonPickerKicker" class="lesson-picker-kicker">Tokyo / Restaurant</p>
+                <h3 id="lessonPickerTitle" class="lesson-picker-title">Food Words</h3>
+              </div>
+              <div id="lessonPickerList" class="lesson-picker-list" aria-label="Lesson list"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen lesson-shell hidden-screen" id="lessonShell">
+        <div class="lesson-left" id="lessonLeft">
+          <header class="lesson-header">
+            <button
+              class="lesson-chip lesson-chip-nav"
+              id="lessonBackButton"
+              type="button"
+              aria-label="Back to world map"
+            >
+              <span class="lesson-chip-back">Back</span>
+              <span class="chip-divider">/</span>
+              <span id="locationLabel">Restaurant</span>
+              <span class="chip-divider">/</span>
+              <span id="sublevelLabel">Food Words</span>
+            </button>
+            <button
+              class="progress-cluster"
+              id="romajiRevealButton"
+              type="button"
+              aria-label="Reveal romaji now"
+              title="Reveal romaji now"
+            >
+              <svg class="timer-ring" viewBox="0 0 64 64" aria-hidden="true">
+                <circle class="timer-ring-track" cx="32" cy="32" r="26"></circle>
+                <circle
+                  id="timerProgress"
+                  class="timer-ring-progress"
+                  cx="32"
+                  cy="32"
+                  r="26"
+                ></circle>
+              </svg>
+            </button>
+          </header>
+
+          <section class="progress-hud" aria-label="Lesson progress">
+            <div class="progress-row">
+              <div class="progress-track">
+                <div id="progressFill" class="progress-fill"></div>
+                <div id="progressSpark" class="progress-spark" aria-hidden="true"></div>
+              </div>
+              <p id="progressCount" class="progress-count">1 / 7</p>
+            </div>
+          </section>
+
+          <section class="writing-stage" id="writingStage">
+            <textarea
+              id="answerInput"
+              class="answer-input answer-input-invisible"
+              rows="6"
+              placeholder=""
+              autocomplete="off"
+              autocorrect="off"
+              autocapitalize="off"
+              spellcheck="false"
+            ></textarea>
+          </section>
+
+          <section class="answer-entry">
+            <div class="entry-actions">
+              <button
+                id="choicesToggleButton"
+                class="ghost-button icon-button"
+                type="button"
+                aria-expanded="true"
+                aria-label="Hide hints"
+                title="Hide hints"
+              >
+                <span class="icon-button-eye" aria-hidden="true">
+                  <svg class="icon-eye-open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="22" height="22" stroke-width="1.9" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                  </svg>
+                  <svg class="icon-eye-closed" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="22" height="22" stroke-width="1.9" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m3 3 18 18" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.584 10.587a2.25 2.25 0 0 0 3.183 3.181" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.88 5.09A10.94 10.94 0 0 1 12 4.875c4.569 0 8.475 2.954 9.826 7.125a10.476 10.476 0 0 1-2.918 4.522M6.61 6.609A10.944 10.944 0 0 0 2.174 12c1.351 4.171 5.257 7.125 9.826 7.125 1.772 0 3.446-.445 4.91-1.228" />
+                  </svg>
+                </span>
+              </button>
+              <button id="submitButton" class="submit-button hidden" type="button">
+                Submit
+              </button>
+            </div>
+            <p id="feedback" class="feedback"></p>
+          </section>
+
+          <section id="choicesPanel" class="choices-panel" aria-label="Reference answers">
+            <div id="choicesGrid" class="choices-grid"></div>
+          </section>
+        </div>
+
+        <aside class="character-panel">
+          <div class="character-frame" id="characterFrame">
+            <div class="character-art-shell">
+              <img
+                class="character-art-image"
+                src="./assets/restaurant-guide-v1.png"
+                alt="Restaurant guide character"
+              />
+              <div class="character-overlay">
+                <span class="character-tag" id="characterTag">Restaurant Guide</span>
+              </div>
+            </div>
+            <div class="character-dialogue" id="characterDialogue">
+              <p id="guidePromptMode" class="guide-prompt-mode">How do you say</p>
+              <p id="guideLinePrimary" class="guide-line-primary">Tea</p>
+              <p id="guideLineSecondary" class="guide-line-secondary">
+                
+              </p>
+              <div class="guide-support-row">
+                <button id="supportAssetButton" class="guide-support-button hidden" type="button">
+                  View Menu
+                </button>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <div class="support-modal-layer hidden" id="supportModalLayer" aria-hidden="true">
+        <div class="support-modal-backdrop" id="supportModalBackdrop"></div>
+        <div class="support-modal" id="supportModal" role="dialog" aria-modal="true" aria-labelledby="supportModalTitle">
+          <button class="support-modal-close" id="supportModalClose" type="button" aria-label="Close support image">×</button>
+          <div class="support-modal-header">
+            <p class="support-modal-kicker">Lesson Reference</p>
+            <h3 class="support-modal-title" id="supportModalTitle">Restaurant Menu</h3>
+          </div>
+          <div class="support-modal-body">
+            <img id="supportModalImage" class="support-modal-image" src="" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div id="celebrationLayer" class="celebration-layer" aria-hidden="true">
+        <div class="celebration-flash"></div>
+        <div id="celebrationConfetti" class="celebration-confetti"></div>
+        <div class="celebration-center">
+          <p id="celebrationWord" class="celebration-word">やった!</p>
+          <p id="celebrationSubword" class="celebration-subword">Nice!</p>
+        </div>
+        <div class="celebration-mascot-shell">
+          <img
+            id="celebrationMascot"
+            class="celebration-mascot"
+            src="./assets/mascots/chibi-celebrate-openarms.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </main>
+
+    <script src="./app.js?v=20260530a"></script>
+  </body>
+</html>

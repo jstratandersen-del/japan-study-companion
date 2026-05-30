@@ -1,0 +1,38 @@
+{
+  "locationId": "restaurant",
+  "slice": "v1",
+  "levels": [
+    {
+      "id": "R-L1",
+      "title": "Menu Basics",
+      "oneSentenceGoal": "Recognize simple menu language and identify common food and drink items.",
+      "hardPrerequisiteIds": ["F-03"],
+      "softPrerequisiteIds": ["F-02"],
+      "sublevelIds": ["R-L1-S1", "R-L1-S2", "R-L1-S3", "R-L1-S4"]
+    },
+    {
+      "id": "R-L2",
+      "title": "Ordering Basics",
+      "oneSentenceGoal": "Place a short polite order for one item or drink.",
+      "hardPrerequisiteIds": ["R-L1", "F-03"],
+      "softPrerequisiteIds": ["F-04"],
+      "sublevelIds": ["R-L2-S1", "R-L2-S2"]
+    },
+    {
+      "id": "R-L3",
+      "title": "Server Interaction",
+      "oneSentenceGoal": "Handle the first server prompt, small follow-up questions, and one or two basic requests.",
+      "hardPrerequisiteIds": ["R-L2", "F-06"],
+      "softPrerequisiteIds": ["F-04"],
+      "sublevelIds": ["R-L3-S1", "R-L3-S2", "R-L3-S3", "R-L3-S4"]
+    },
+    {
+      "id": "R-L4",
+      "title": "Paying and Finishing",
+      "oneSentenceGoal": "Ask for the check, recognize simple payment language, and close the interaction naturally.",
+      "hardPrerequisiteIds": ["R-L3", "F-04"],
+      "softPrerequisiteIds": ["F-06"],
+      "sublevelIds": ["R-L4-S1", "R-L4-S2", "R-L4-S3", "R-L4-S4"]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1680" viewBox="0 0 1200 1680" role="img" aria-labelledby="title desc">
+  <title id="title">Tokyo Restaurant Practice Menu</title>
+  <desc id="desc">A stylized Japanese practice menu with drinks, rice dishes, noodle dishes, and sushi items.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fffdf8"/>
+      <stop offset="100%" stop-color="#f7f0e2"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="1680" fill="#efe6d5"/>
+  <rect x="72" y="64" width="1056" height="1552" rx="40" fill="url(#paper)" stroke="#171615" stroke-width="8" filter="url(#shadow)"/>
+
+  <text x="600" y="170" text-anchor="middle" font-family="'Hiragino Mincho ProN','Yu Mincho',serif" font-size="68" font-weight="700" fill="#171615">おしながき</text>
+  <text x="600" y="222" text-anchor="middle" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="28" letter-spacing="5" fill="#6d6256">TOKYO PRACTICE MENU</text>
+
+  <line x1="152" y1="280" x2="1048" y2="280" stroke="#171615" stroke-width="5"/>
+
+  <g transform="translate(136 328)">
+    <text x="0" y="0" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="44" font-weight="800" fill="#171615">飲み物</text>
+    <text x="0" y="38" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="22" letter-spacing="2" fill="#766a5e">DRINKS</text>
+    <text x="0" y="108" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="40" fill="#171615">お茶</text>
+    <text x="920" y="108" text-anchor="end" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="40" font-weight="700" fill="#171615">300円</text>
+    <text x="0" y="176" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="40" fill="#171615">水</text>
+    <text x="920" y="176" text-anchor="end" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="40" font-weight="700" fill="#171615">200円</text>
+    <text x="0" y="244" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="40" fill="#171615">コーヒー</text>
+    <text x="920" y="244" text-anchor="end" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="40" font-weight="700" fill="#171615">450円</text>
+  </g>
+
+  <line x1="136" y1="646" x2="1064" y2="646" stroke="#d0c1ad" stroke-width="3"/>
+
+  <g transform="translate(136 720)">
+    <text x="0" y="0" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="44" font-weight="800" fill="#171615">ご飯もの</text>
+    <text x="0" y="38" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="22" letter-spacing="2" fill="#766a5e">RICE DISHES</text>
+    <text x="0" y="108" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="40" fill="#171615">ご飯</text>
+    <text x="920" y="108" text-anchor="end" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="40" font-weight="700" fill="#171615">250円</text>
+    <text x="0" y="176" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="40" fill="#171615">卵かけご飯</text>
+    <text x="920" y="176" text-anchor="end" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="40" font-weight="700" fill="#171615">420円</text>
+  </g>
+
+  <line x1="136" y1="974" x2="1064" y2="974" stroke="#d0c1ad" stroke-width="3"/>
+
+  <g transform="translate(136 1048)">
+    <text x="0" y="0" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="44" font-weight="800" fill="#171615">麺類</text>
+    <text x="0" y="38" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="22" letter-spacing="2" fill="#766a5e">NOODLES</text>
+    <text x="0" y="108" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="40" fill="#171615">ラーメン</text>
+    <text x="920" y="108" text-anchor="end" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="40" font-weight="700" fill="#171615">800円</text>
+    <text x="0" y="176" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="40" fill="#171615">うどん</text>
+    <text x="920" y="176" text-anchor="end" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="40" font-weight="700" fill="#171615">700円</text>
+  </g>
+
+  <line x1="136" y1="1302" x2="1064" y2="1302" stroke="#d0c1ad" stroke-width="3"/>
+
+  <g transform="translate(136 1376)">
+    <text x="0" y="0" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="44" font-weight="800" fill="#171615">すし</text>
+    <text x="0" y="38" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="22" letter-spacing="2" fill="#766a5e">SUSHI</text>
+    <text x="0" y="108" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="40" fill="#171615">かっぱ巻き</text>
+    <text x="920" y="108" text-anchor="end" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="40" font-weight="700" fill="#171615">350円</text>
+    <text x="0" y="176" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="40" fill="#171615">鉄火巻き</text>
+    <text x="920" y="176" text-anchor="end" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="40" font-weight="700" fill="#171615">480円</text>
+    <text x="0" y="244" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="40" fill="#171615">カリフォルニアロール</text>
+    <text x="920" y="244" text-anchor="end" font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="40" font-weight="700" fill="#171615">650円</text>
+  </g>
+</svg>

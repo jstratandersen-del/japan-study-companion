@@ -1,0 +1,57 @@
+{
+  "locationId": "arrival",
+  "slice": "v1-beginner",
+  "sublevels": [
+    {
+      "id": "tokyo-arrival-airport",
+      "levelId": "A-L1",
+      "title": "Airport Basics",
+      "stage": "words",
+      "playerOutcome": "Can recognize the most important airport signs, places, and simple help questions after landing.",
+      "estimatedMinutes": 8,
+      "lessonLevelCount": 4,
+      "lessonLevelPlan": [
+        "Airport Signs",
+        "Documents and Counters",
+        "Finding Key Places",
+        "Arrival Review"
+      ],
+      "hardPrerequisiteIds": [],
+      "componentIds": []
+    },
+    {
+      "id": "tokyo-arrival-transfer",
+      "levelId": "A-L1",
+      "title": "Transfer to City",
+      "stage": "phrases",
+      "playerOutcome": "Can handle essential train, ticket, and taxi language needed to get from the airport into Tokyo.",
+      "estimatedMinutes": 9,
+      "lessonLevelCount": 4,
+      "lessonLevelPlan": [
+        "Train and Station Basics",
+        "Tickets and IC Cards",
+        "Taxi Basics",
+        "Transfer Review"
+      ],
+      "hardPrerequisiteIds": ["tokyo-arrival-airport"],
+      "componentIds": []
+    },
+    {
+      "id": "tokyo-arrival-checkin",
+      "levelId": "A-L1",
+      "title": "Hotel Check-In",
+      "stage": "simple_conversation",
+      "playerOutcome": "Can complete a basic hotel check-in using a reservation name, passport, and a few common follow-up words.",
+      "estimatedMinutes": 10,
+      "lessonLevelCount": 4,
+      "lessonLevelPlan": [
+        "Reservation Words",
+        "Check-In Phrases",
+        "Room and Breakfast",
+        "Short Check-In Exchange"
+      ],
+      "hardPrerequisiteIds": ["tokyo-arrival-transfer"],
+      "componentIds": []
+    }
+  ]
+}

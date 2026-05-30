@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" fill="none">
+  <rect width="1200" height="900" rx="36" fill="#FBF8F2"/>
+  <rect x="24" y="24" width="1152" height="852" rx="28" fill="#FFFDF8" stroke="#171615" stroke-width="6"/>
+  <text x="64" y="108" fill="#171615" font-family="Hiragino Sans, Noto Sans JP, sans-serif" font-size="54" font-weight="900">Hiragana Reference</text>
+  <text x="66" y="148" fill="#6F655B" font-family="Hiragino Sans, Noto Sans JP, sans-serif" font-size="24" font-weight="700">Use this while practicing sounds, rows, and simple words.</text>
+
+  <g font-family="Hiragino Sans, Noto Sans JP, sans-serif">
+    <g transform="translate(64 208)">
+      <rect width="504" height="248" rx="24" fill="#F6EFE0" stroke="#171615" stroke-width="4"/>
+      <text x="28" y="44" fill="#171615" font-size="26" font-weight="900">Core Rows</text>
+      <text x="28" y="88" fill="#171615" font-size="44" font-weight="900">あ い う え お</text>
+      <text x="28" y="118" fill="#6F655B" font-size="18" font-weight="700">a   i   u   e   o</text>
+      <text x="28" y="164" fill="#171615" font-size="44" font-weight="900">か き く け こ</text>
+      <text x="28" y="194" fill="#6F655B" font-size="18" font-weight="700">ka  ki  ku  ke  ko</text>
+      <text x="28" y="240" fill="#171615" font-size="44" font-weight="900">さ し す せ そ</text>
+      <text x="28" y="270" fill="#6F655B" font-size="18" font-weight="700">sa  shi su  se  so</text>
+    </g>
+
+    <g transform="translate(632 208)">
+      <rect width="504" height="248" rx="24" fill="#F6EFE0" stroke="#171615" stroke-width="4"/>
+      <text x="28" y="44" fill="#171615" font-size="26" font-weight="900">More Rows</text>
+      <text x="28" y="88" fill="#171615" font-size="44" font-weight="900">た ち つ て と</text>
+      <text x="28" y="118" fill="#6F655B" font-size="18" font-weight="700">ta  chi tsu te  to</text>
+      <text x="28" y="164" fill="#171615" font-size="44" font-weight="900">な に ぬ ね の</text>
+      <text x="28" y="194" fill="#6F655B" font-size="18" font-weight="700">na  ni  nu  ne  no</text>
+      <text x="28" y="240" fill="#171615" font-size="44" font-weight="900">は ひ ふ へ ほ</text>
+      <text x="28" y="270" fill="#6F655B" font-size="18" font-weight="700">ha  hi  fu  he  ho</text>
+    </g>
+
+    <g transform="translate(64 498)">
+      <rect width="504" height="248" rx="24" fill="#F6EFE0" stroke="#171615" stroke-width="4"/>
+      <text x="28" y="44" fill="#171615" font-size="26" font-weight="900">M / Y / R / W</text>
+      <text x="28" y="88" fill="#171615" font-size="44" font-weight="900">ま み む め も</text>
+      <text x="28" y="118" fill="#6F655B" font-size="18" font-weight="700">ma  mi  mu  me  mo</text>
+      <text x="28" y="164" fill="#171615" font-size="44" font-weight="900">や   ゆ   よ</text>
+      <text x="28" y="194" fill="#6F655B" font-size="18" font-weight="700">ya  yu  yo</text>
+      <text x="28" y="240" fill="#171615" font-size="44" font-weight="900">ら り る れ ろ   わ を ん</text>
+      <text x="28" y="270" fill="#6F655B" font-size="18" font-weight="700">ra  ri  ru  re  ro   wa  o  n</text>
+    </g>
+
+    <g transform="translate(632 498)">
+      <rect width="504" height="248" rx="24" fill="#F6EFE0" stroke="#171615" stroke-width="4"/>
+      <text x="28" y="44" fill="#171615" font-size="26" font-weight="900">Voiced &amp; Combo Sounds</text>
+      <text x="28" y="88" fill="#171615" font-size="40" font-weight="900">が ぎ ぐ げ ご   ざ じ ず ぜ ぞ</text>
+      <text x="28" y="118" fill="#6F655B" font-size="18" font-weight="700">ga gi gu ge go   za ji zu ze zo</text>
+      <text x="28" y="164" fill="#171615" font-size="40" font-weight="900">だ で ど   ば び ぶ べ ぼ   ぱ ぴ ぷ ぺ ぽ</text>
+      <text x="28" y="194" fill="#6F655B" font-size="18" font-weight="700">da de do   ba bi bu be bo   pa pi pu pe po</text>
+      <text x="28" y="240" fill="#171615" font-size="40" font-weight="900">きゃ きゅ きょ   しゃ しゅ しょ   っ</text>
+      <text x="28" y="270" fill="#6F655B" font-size="18" font-weight="700">kya kyu kyo   sha shu sho   small tsu</text>
+    </g>
+  </g>
+</svg>

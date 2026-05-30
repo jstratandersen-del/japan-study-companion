@@ -1,0 +1,441 @@
+{
+  "locationId": "restaurant",
+  "slice": "v3-authored-branch",
+  "notes": "Authored early-branch seed question set for the restaurant location. This file now covers the beginner arc from food words to basic ordering.",
+  "questions": [
+    {
+      "id": "Q-R-L1-S1-001",
+      "sublevelId": "R-L1-S1",
+      "componentId": "R-L1-S1-C2",
+      "promptType": "multiple choice",
+      "prompt": { "text": "Tea" },
+      "expectedAnswers": ["お茶", "おちゃ"],
+      "referenceChoices": [
+        { "jp": "お茶", "romaji": "ocha" },
+        { "jp": "水", "romaji": "mizu" },
+        { "jp": "肉", "romaji": "niku" },
+        { "jp": "魚", "romaji": "sakana" }
+      ]
+    },
+    {
+      "id": "Q-R-L1-S1-002",
+      "sublevelId": "R-L1-S1",
+      "componentId": "R-L1-S1-C2",
+      "promptType": "multiple choice",
+      "prompt": { "text": "Water" },
+      "expectedAnswers": ["水", "みず"],
+      "referenceChoices": [
+        { "jp": "水", "romaji": "mizu" },
+        { "jp": "お茶", "romaji": "ocha" },
+        { "jp": "ご飯", "romaji": "gohan" },
+        { "jp": "魚", "romaji": "sakana" }
+      ]
+    },
+    {
+      "id": "Q-R-L1-S1-003",
+      "sublevelId": "R-L1-S1",
+      "componentId": "R-L1-S1-C2",
+      "promptType": "multiple choice",
+      "prompt": { "text": "Rice" },
+      "expectedAnswers": ["ご飯", "ごはん"],
+      "referenceChoices": [
+        { "jp": "ご飯", "romaji": "gohan" },
+        { "jp": "お茶", "romaji": "ocha" },
+        { "jp": "魚", "romaji": "sakana" },
+        { "jp": "肉", "romaji": "niku" }
+      ]
+    },
+    {
+      "id": "Q-R-L1-S1-004",
+      "sublevelId": "R-L1-S1",
+      "componentId": "R-L1-S1-C2",
+      "promptType": "multiple choice",
+      "prompt": { "text": "Meat" },
+      "expectedAnswers": ["肉", "にく"],
+      "referenceChoices": [
+        { "jp": "肉", "romaji": "niku" },
+        { "jp": "魚", "romaji": "sakana" },
+        { "jp": "ご飯", "romaji": "gohan" },
+        { "jp": "水", "romaji": "mizu" }
+      ]
+    },
+    {
+      "id": "Q-R-L1-S1-005",
+      "sublevelId": "R-L1-S1",
+      "componentId": "R-L1-S1-C2",
+      "promptType": "multiple choice",
+      "prompt": { "text": "Fish" },
+      "expectedAnswers": ["魚", "さかな"],
+      "referenceChoices": [
+        { "jp": "魚", "romaji": "sakana" },
+        { "jp": "肉", "romaji": "niku" },
+        { "jp": "お茶", "romaji": "ocha" },
+        { "jp": "水", "romaji": "mizu" }
+      ]
+    },
+    {
+      "id": "Q-R-L1-S2-001",
+      "sublevelId": "R-L1-S2",
+      "componentId": "R-L1-S2-C2",
+      "promptType": "multiple choice",
+      "prompt": { "text": "Which heading should `お茶` go under?" },
+      "expectedAnswers": ["飲み物"],
+      "referenceChoices": [
+        { "jp": "飲み物", "romaji": "nomimono" },
+        { "jp": "ご飯もの", "romaji": "gohanmono" },
+        { "jp": "肉", "romaji": "niku" },
+        { "jp": "魚", "romaji": "sakana" }
+      ]
+    },
+    {
+      "id": "Q-R-L1-S2-002",
+      "sublevelId": "R-L1-S2",
+      "componentId": "R-L1-S2-C2",
+      "promptType": "multiple choice",
+      "prompt": { "text": "Which heading should `水` go under?" },
+      "expectedAnswers": ["飲み物"],
+      "referenceChoices": [
+        { "jp": "飲み物", "romaji": "nomimono" },
+        { "jp": "ご飯もの", "romaji": "gohanmono" },
+        { "jp": "魚", "romaji": "sakana" },
+        { "jp": "肉", "romaji": "niku" }
+      ]
+    },
+    {
+      "id": "Q-R-L1-S2-003",
+      "sublevelId": "R-L1-S2",
+      "componentId": "R-L1-S2-C2",
+      "promptType": "multiple choice",
+      "prompt": { "text": "Which heading should `ご飯` go under?" },
+      "expectedAnswers": ["ご飯もの"],
+      "referenceChoices": [
+        { "jp": "ご飯もの", "romaji": "gohanmono" },
+        { "jp": "飲み物", "romaji": "nomimono" },
+        { "jp": "魚", "romaji": "sakana" },
+        { "jp": "肉", "romaji": "niku" }
+      ]
+    },
+    {
+      "id": "Q-R-L1-S3-001",
+      "sublevelId": "R-L1-S3",
+      "componentId": "R-L1-S3-C1",
+      "promptType": "multiple choice",
+      "prompt": { "text": "You see `お茶 300円`. Which item is 300 yen?" },
+      "expectedAnswers": ["お茶"],
+      "referenceChoices": [
+        { "jp": "お茶", "romaji": "ocha" },
+        { "jp": "水", "romaji": "mizu" },
+        { "jp": "魚", "romaji": "sakana" },
+        { "jp": "肉", "romaji": "niku" }
+      ]
+    },
+    {
+      "id": "Q-R-L1-S3-002",
+      "sublevelId": "R-L1-S3",
+      "componentId": "R-L1-S3-C2",
+      "promptType": "multiple choice",
+      "prompt": { "text": "Which price matches `ご飯`?" },
+      "expectedAnswers": ["500円"],
+      "referenceChoices": [
+        { "jp": "300円", "romaji": "sanbyaku en" },
+        { "jp": "500円", "romaji": "gohyaku en" },
+        { "jp": "700円", "romaji": "nanahyaku en" },
+        { "jp": "900円", "romaji": "kyuhyaku en" }
+      ]
+    },
+    {
+      "id": "Q-R-L1-S4-001",
+      "sublevelId": "R-L1-S4",
+      "componentId": "R-L1-S4-C2",
+      "promptType": "multiple choice",
+      "prompt": { "text": "How do you say `What is this?`" },
+      "expectedAnswers": ["これは何ですか", "これはなんですか"],
+      "referenceChoices": [
+        { "jp": "これは何ですか", "romaji": "kore wa nan desu ka" },
+        { "jp": "おすすめは何ですか", "romaji": "osusume wa nan desu ka" },
+        { "jp": "これをお願いします", "romaji": "kore o onegaishimasu" },
+        { "jp": "お茶をお願いします", "romaji": "ocha o onegaishimasu" }
+      ]
+    },
+    {
+      "id": "Q-R-L1-S4-002",
+      "sublevelId": "R-L1-S4",
+      "componentId": "R-L1-S4-C2",
+      "promptType": "multiple choice",
+      "prompt": { "text": "How do you say `What do you recommend?`" },
+      "expectedAnswers": ["おすすめは何ですか", "おすすめはなんですか"],
+      "referenceChoices": [
+        { "jp": "これは何ですか", "romaji": "kore wa nan desu ka" },
+        { "jp": "おすすめは何ですか", "romaji": "osusume wa nan desu ka" },
+        { "jp": "これをお願いします", "romaji": "kore o onegaishimasu" },
+        { "jp": "水をお願いします", "romaji": "mizu o onegaishimasu" }
+      ]
+    },
+    {
+      "id": "Q-R-L1-S4-003",
+      "sublevelId": "R-L1-S4",
+      "componentId": "R-L1-S4-C3",
+      "promptType": "scenario response",
+      "prompt": { "text": "You are pointing at an unfamiliar item and want to know what it is." },
+      "expectedAnswers": ["これは何ですか", "これはなんですか"],
+      "referenceChoices": [
+        { "jp": "これは何ですか", "romaji": "kore wa nan desu ka" },
+        { "jp": "おすすめは何ですか", "romaji": "osusume wa nan desu ka" },
+        { "jp": "これをお願いします", "romaji": "kore o onegaishimasu" },
+        { "jp": "お会計お願いします", "romaji": "okaikei onegaishimasu" }
+      ]
+    },
+    {
+      "id": "Q-R-L2-S1-001",
+      "sublevelId": "R-L2-S1",
+      "componentId": "R-L2-S1-C2",
+      "promptType": "multiple choice",
+      "prompt": { "text": "Complete the phrase: `これを ____`" },
+      "expectedAnswers": ["お願いします", "おねがいします"],
+      "referenceChoices": [
+        { "jp": "お願いします", "romaji": "onegaishimasu" },
+        { "jp": "何ですか", "romaji": "nan desu ka" },
+        { "jp": "飲みます", "romaji": "nomimasu" },
+        { "jp": "です", "romaji": "desu" }
+      ]
+    },
+    {
+      "id": "Q-R-L2-S1-002",
+      "sublevelId": "R-L2-S1",
+      "componentId": "R-L2-S1-C3",
+      "promptType": "multiple choice",
+      "prompt": { "text": "`This one, please.`" },
+      "expectedAnswers": ["これをお願いします", "これをください"],
+      "referenceChoices": [
+        { "jp": "これをお願いします", "romaji": "kore o onegaishimasu" },
+        { "jp": "おすすめは何ですか", "romaji": "osusume wa nan desu ka" },
+        { "jp": "これは何ですか", "romaji": "kore wa nan desu ka" },
+        { "jp": "水です", "romaji": "mizu desu" }
+      ]
+    },
+    {
+      "id": "Q-R-L2-S1-003",
+      "sublevelId": "R-L2-S1",
+      "componentId": "R-L2-S1-C4",
+      "promptType": "scenario response",
+      "prompt": { "text": "You are pointing at one menu item and want to order it politely." },
+      "expectedAnswers": ["これをお願いします", "これをください"],
+      "referenceChoices": [
+        { "jp": "これをお願いします", "romaji": "kore o onegaishimasu" },
+        { "jp": "これは何ですか", "romaji": "kore wa nan desu ka" },
+        { "jp": "おすすめは何ですか", "romaji": "osusume wa nan desu ka" },
+        { "jp": "お会計お願いします", "romaji": "okaikei onegaishimasu" }
+      ]
+    },
+    {
+      "id": "Q-R-L2-S2-001",
+      "sublevelId": "R-L2-S2",
+      "componentId": "R-L2-S2-C2",
+      "promptType": "multiple choice",
+      "prompt": { "text": "Tea, please." },
+      "expectedAnswers": ["お茶をお願いします", "おちゃをおねがいします"],
+      "referenceChoices": [
+        { "jp": "お茶をお願いします", "romaji": "ocha o onegaishimasu" },
+        { "jp": "水をお願いします", "romaji": "mizu o onegaishimasu" },
+        { "jp": "これをお願いします", "romaji": "kore o onegaishimasu" },
+        { "jp": "おすすめは何ですか", "romaji": "osusume wa nan desu ka" }
+      ]
+    },
+    {
+      "id": "Q-R-L2-S2-002",
+      "sublevelId": "R-L2-S2",
+      "componentId": "R-L2-S2-C2",
+      "promptType": "multiple choice",
+      "prompt": { "text": "Water, please." },
+      "expectedAnswers": ["水をお願いします", "みずをおねがいします"],
+      "referenceChoices": [
+        { "jp": "水をお願いします", "romaji": "mizu o onegaishimasu" },
+        { "jp": "お茶をお願いします", "romaji": "ocha o onegaishimasu" },
+        { "jp": "これをお願いします", "romaji": "kore o onegaishimasu" },
+        { "jp": "これは何ですか", "romaji": "kore wa nan desu ka" }
+      ]
+    },
+    {
+      "id": "Q-R-L3-S1-001",
+      "sublevelId": "R-L3-S1",
+      "componentId": "R-L3-S1-C2",
+      "promptType": "multiple choice",
+      "prompt": { "text": "Which one means `What would you like to order?`" },
+      "expectedAnswers": ["ご注文は？", "ごちゅうもんは？"],
+      "referenceChoices": [
+        { "jp": "ご注文は？", "romaji": "gochumon wa?" },
+        { "jp": "お決まりですか？", "romaji": "okimari desu ka?" },
+        { "jp": "お会計お願いします", "romaji": "okaikei onegaishimasu" },
+        { "jp": "おすすめは何ですか", "romaji": "osusume wa nan desu ka" }
+      ]
+    },
+    {
+      "id": "Q-R-L3-S1-002",
+      "sublevelId": "R-L3-S1",
+      "componentId": "R-L3-S1-C2",
+      "promptType": "multiple choice",
+      "prompt": { "text": "Which one means `Have you decided?`" },
+      "expectedAnswers": ["お決まりですか？", "おきまりですか？"],
+      "referenceChoices": [
+        { "jp": "お会計お願いします", "romaji": "okaikei onegaishimasu" },
+        { "jp": "お決まりですか？", "romaji": "okimari desu ka?" },
+        { "jp": "ご注文は？", "romaji": "gochumon wa?" },
+        { "jp": "水をお願いします", "romaji": "mizu o onegaishimasu" }
+      ]
+    },
+    {
+      "id": "Q-R-L3-S1-003",
+      "sublevelId": "R-L3-S1",
+      "componentId": "R-L3-S1-C3",
+      "promptType": "scenario response",
+      "prompt": { "text": "The server asks `ご注文は？`. Which is the best beginner reply?" },
+      "expectedAnswers": ["これをお願いします"],
+      "referenceChoices": [
+        { "jp": "これをお願いします", "romaji": "kore o onegaishimasu" },
+        { "jp": "おすすめは何ですか", "romaji": "osusume wa nan desu ka" },
+        { "jp": "お会計お願いします", "romaji": "okaikei onegaishimasu" },
+        { "jp": "ごちそうさまでした", "romaji": "gochisousama deshita" }
+      ]
+    },
+    {
+      "id": "Q-R-L3-S2-001",
+      "sublevelId": "R-L3-S2",
+      "componentId": "R-L3-S2-C2",
+      "promptType": "multiple choice",
+      "prompt": { "text": "The server asks a simple yes-or-no question and you want to say `No, thank you.`" },
+      "expectedAnswers": ["大丈夫です", "だいじょうぶです", "いいえ、大丈夫です", "いいえだいじょうぶです"],
+      "referenceChoices": [
+        { "jp": "はい", "romaji": "hai" },
+        { "jp": "大丈夫です", "romaji": "daijobu desu" },
+        { "jp": "水をお願いします", "romaji": "mizu o onegaishimasu" },
+        { "jp": "ご注文は？", "romaji": "gochumon wa?" }
+      ]
+    },
+    {
+      "id": "Q-R-L3-S2-002",
+      "sublevelId": "R-L3-S2",
+      "componentId": "R-L3-S2-C3",
+      "promptType": "multiple choice",
+      "prompt": { "text": "How do you say `No green onion, please.`" },
+      "expectedAnswers": ["ねぎなしでお願いします"],
+      "referenceChoices": [
+        { "jp": "ねぎなしでお願いします", "romaji": "negi nashi de onegaishimasu" },
+        { "jp": "ねぎをお願いします", "romaji": "negi o onegaishimasu" },
+        { "jp": "お会計お願いします", "romaji": "okaikei onegaishimasu" },
+        { "jp": "これは何ですか", "romaji": "kore wa nan desu ka" }
+      ]
+    },
+    {
+      "id": "Q-R-L3-S3-001",
+      "sublevelId": "R-L3-S3",
+      "componentId": "R-L3-S3-C2",
+      "promptType": "multiple choice",
+      "prompt": { "text": "Complete the phrase: `すみません、 水を ____`" },
+      "expectedAnswers": ["お願いします", "おねがいします"],
+      "referenceChoices": [
+        { "jp": "お願いします", "romaji": "onegaishimasu" },
+        { "jp": "何ですか", "romaji": "nan desu ka" },
+        { "jp": "ありますか", "romaji": "arimasu ka" },
+        { "jp": "です", "romaji": "desu" }
+      ]
+    },
+    {
+      "id": "Q-R-L3-S3-002",
+      "sublevelId": "R-L3-S3",
+      "componentId": "R-L3-S3-C3",
+      "promptType": "scenario response",
+      "prompt": { "text": "You want to get the server's attention before asking for water." },
+      "expectedAnswers": ["すみません、水をお願いします", "すみませんみずをおねがいします"],
+      "referenceChoices": [
+        { "jp": "すみません、水をお願いします", "romaji": "sumimasen, mizu o onegaishimasu" },
+        { "jp": "これをお願いします", "romaji": "kore o onegaishimasu" },
+        { "jp": "ご注文は？", "romaji": "gochumon wa?" },
+        { "jp": "ごちそうさまでした", "romaji": "gochisousama deshita" }
+      ]
+    },
+    {
+      "id": "Q-R-L3-S4-001",
+      "sublevelId": "R-L3-S4",
+      "componentId": "R-L3-S4-C2",
+      "promptType": "multiple choice",
+      "prompt": { "text": "The server says `お決まりですか？` What comes next in a simple exchange?" },
+      "expectedAnswers": ["お茶をお願いします", "おちゃをおねがいします", "これをお願いします"],
+      "referenceChoices": [
+        { "jp": "お茶をお願いします", "romaji": "ocha o onegaishimasu" },
+        { "jp": "お会計お願いします", "romaji": "okaikei onegaishimasu" },
+        { "jp": "ごちそうさまでした", "romaji": "gochisousama deshita" },
+        { "jp": "おすすめは何ですか", "romaji": "osusume wa nan desu ka" }
+      ]
+    },
+    {
+      "id": "Q-R-L4-S1-001",
+      "sublevelId": "R-L4-S1",
+      "componentId": "R-L4-S1-C2",
+      "promptType": "multiple choice",
+      "prompt": { "text": "How do you say `Check, please.`" },
+      "expectedAnswers": ["お会計お願いします", "おかいけいおねがいします"],
+      "referenceChoices": [
+        { "jp": "お会計お願いします", "romaji": "okaikei onegaishimasu" },
+        { "jp": "ご注文は？", "romaji": "gochumon wa?" },
+        { "jp": "これをお願いします", "romaji": "kore o onegaishimasu" },
+        { "jp": "ごちそうさまでした", "romaji": "gochisousama deshita" }
+      ]
+    },
+    {
+      "id": "Q-R-L4-S2-001",
+      "sublevelId": "R-L4-S2",
+      "componentId": "R-L4-S2-C2",
+      "promptType": "multiple choice",
+      "prompt": { "text": "Which one means `cash`?" },
+      "expectedAnswers": ["現金", "げんきん"],
+      "referenceChoices": [
+        { "jp": "カード", "romaji": "kado" },
+        { "jp": "現金", "romaji": "genkin" },
+        { "jp": "お会計", "romaji": "okaikei" },
+        { "jp": "一緒", "romaji": "issho" }
+      ]
+    },
+    {
+      "id": "Q-R-L4-S2-002",
+      "sublevelId": "R-L4-S2",
+      "componentId": "R-L4-S2-C3",
+      "promptType": "multiple choice",
+      "prompt": { "text": "The server asks `現金ですか、カードですか？` What are they asking?" },
+      "expectedAnswers": ["Cash or card?", "cash or card"],
+      "referenceChoices": [
+        { "jp": "Cash or card?", "romaji": "" },
+        { "jp": "Would you like water?", "romaji": "" },
+        { "jp": "Are you ready to order?", "romaji": "" },
+        { "jp": "What do you recommend?", "romaji": "" }
+      ]
+    },
+    {
+      "id": "Q-R-L4-S3-001",
+      "sublevelId": "R-L4-S3",
+      "componentId": "R-L4-S3-C2",
+      "promptType": "multiple choice",
+      "prompt": { "text": "Which one means `together` or `one bill` in this simple payment context?" },
+      "expectedAnswers": ["一緒", "いっしょ"],
+      "referenceChoices": [
+        { "jp": "別々", "romaji": "betsubetsu" },
+        { "jp": "一緒", "romaji": "issho" },
+        { "jp": "お会計", "romaji": "okaikei" },
+        { "jp": "現金", "romaji": "genkin" }
+      ]
+    },
+    {
+      "id": "Q-R-L4-S4-001",
+      "sublevelId": "R-L4-S4",
+      "componentId": "R-L4-S4-C2",
+      "promptType": "multiple choice",
+      "prompt": { "text": "How do you say `Thank you for the meal.`" },
+      "expectedAnswers": ["ごちそうさまでした"],
+      "referenceChoices": [
+        { "jp": "ごちそうさまでした", "romaji": "gochisousama deshita" },
+        { "jp": "お会計お願いします", "romaji": "okaikei onegaishimasu" },
+        { "jp": "これをお願いします", "romaji": "kore o onegaishimasu" },
+        { "jp": "ご注文は？", "romaji": "gochumon wa?" }
+      ]
+    }
+  ]
+}

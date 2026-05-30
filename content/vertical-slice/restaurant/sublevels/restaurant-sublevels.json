@@ -1,0 +1,365 @@
+{
+  "locationId": "restaurant",
+  "slice": "v2-beginner",
+  "sublevels": [
+    {
+      "id": "R-L1-S1",
+      "levelId": "R-L1",
+      "title": "Food Words",
+      "stage": "words",
+      "playerOutcome": "Can recognize and recall 5 core restaurant food and drink words with support.",
+      "estimatedMinutes": 6,
+      "lessonLevelCount": 6,
+      "lessonLevelPlan": [
+        "Drinks and Staples",
+        "Proteins and Sides",
+        "Casual Menu Items",
+        "Breakfast and Light Foods",
+        "Desserts and Cafe Items",
+        "Mixed Restaurant Review"
+      ],
+      "hardPrerequisiteIds": [],
+      "componentIds": ["R-L1-S1-C1", "R-L1-S1-C2", "R-L1-S1-C3", "R-L1-S1-C4", "R-L1-S1-C5"]
+    },
+    {
+      "id": "R-L1-S2",
+      "levelId": "R-L1",
+      "title": "Menu Categories",
+      "stage": "build",
+      "playerOutcome": "Can recognize a few common menu sections and connect simple items to them.",
+      "estimatedMinutes": 5,
+      "lessonLevelCount": 4,
+      "lessonLevelPlan": [
+        "Drinks and Main Headings",
+        "Savory Headings",
+        "Dessert and Side Headings",
+        "Mixed Category Review"
+      ],
+      "hardPrerequisiteIds": ["R-L1-S1"],
+      "componentIds": ["R-L1-S2-C1", "R-L1-S2-C2", "R-L1-S2-C3"]
+    },
+    {
+      "id": "R-L1-S3",
+      "levelId": "R-L1",
+      "title": "Reading a Real Menu",
+      "stage": "phrases",
+      "playerOutcome": "Can inspect a small menu and use it to answer basic item, heading, and price questions.",
+      "estimatedMinutes": 5,
+      "lessonLevelCount": 5,
+      "lessonLevelPlan": [
+        "Item and Price",
+        "Two-Item Menu",
+        "Three-Section Menu",
+        "Recommended Items",
+        "Mixed Menu Review"
+      ],
+      "hardPrerequisiteIds": ["R-L1-S2"],
+      "componentIds": ["R-L1-S3-C1", "R-L1-S3-C2", "R-L1-S3-C3", "R-L1-S3-C4"]
+    },
+    {
+      "id": "R-L1-S4",
+      "levelId": "R-L1",
+      "title": "Asking What Something Is",
+      "stage": "phrases",
+      "playerOutcome": "Can ask what an item is and ask for a recommendation in a short bounded exchange.",
+      "estimatedMinutes": 6,
+      "lessonLevelCount": 4,
+      "lessonLevelPlan": [
+        "What Is This?",
+        "What Do You Recommend?",
+        "Which One?",
+        "Short Guided Questions"
+      ],
+      "hardPrerequisiteIds": ["R-L1-S3"],
+      "componentIds": ["R-L1-S4-C1", "R-L1-S4-C2", "R-L1-S4-C3", "R-L1-S4-C4", "R-L1-S4-C5"]
+    },
+    {
+      "id": "R-L1-S5",
+      "levelId": "R-L1",
+      "title": "Sushi Basics",
+      "stage": "build",
+      "playerOutcome": "Can recognize common sushi components and a few popular roll types on a simple menu.",
+      "estimatedMinutes": 8,
+      "lessonLevelCount": 2,
+      "lessonLevelPlan": [
+        "Sushi Components",
+        "Popular Roll Types"
+      ],
+      "hardPrerequisiteIds": ["R-L1-S2"],
+      "componentIds": []
+    },
+    {
+      "id": "R-L2-S1",
+      "levelId": "R-L2",
+      "title": "Pointing and Ordering One Item",
+      "stage": "phrases",
+      "playerOutcome": "Can point to one item and ask for it politely using one stable phrase frame.",
+      "estimatedMinutes": 8,
+      "lessonLevelCount": 7,
+      "lessonLevelPlan": [
+        "This One, Please",
+        "That One, Please",
+        "This Dish, Please",
+        "That Dish, Please",
+        "One Item from the Menu",
+        "One More Item",
+        "Mixed Simple Ordering"
+      ],
+      "hardPrerequisiteIds": ["R-L1"],
+      "componentIds": ["R-L2-S1-C1", "R-L2-S1-C2", "R-L2-S1-C3", "R-L2-S1-C4", "R-L2-S1-C5"]
+    },
+    {
+      "id": "R-L2-S2",
+      "levelId": "R-L2",
+      "title": "Ordering a Drink",
+      "stage": "phrases",
+      "playerOutcome": "Can ask for a simple drink politely by reusing an earlier order frame.",
+      "estimatedMinutes": 7,
+      "lessonLevelCount": 6,
+      "lessonLevelPlan": [
+        "Tea and Water",
+        "Coffee and Juice",
+        "Beer and Sake Basics",
+        "Hot or Cold",
+        "One Drink for Now",
+        "Drink Order Review"
+      ],
+      "hardPrerequisiteIds": ["R-L2-S1"],
+      "componentIds": ["R-L2-S2-C1", "R-L2-S2-C2", "R-L2-S2-C3", "R-L2-S2-C4"]
+    },
+    {
+      "id": "R-L2-S3",
+      "levelId": "R-L2",
+      "title": "Ordering Meals and Set Meals",
+      "stage": "phrases",
+      "playerOutcome": "Can order familiar meal items by name and understand the idea of a set meal.",
+      "estimatedMinutes": 9,
+      "lessonLevelCount": 6,
+      "lessonLevelPlan": [
+        "Noodle Meals",
+        "Rice Meals",
+        "Soup and Salad",
+        "Protein Plates",
+        "Set Meals",
+        "Meal Order Review"
+      ],
+      "hardPrerequisiteIds": ["R-L2-S2"],
+      "componentIds": []
+    },
+    {
+      "id": "R-L2-S4",
+      "levelId": "R-L2",
+      "title": "Getting the Server's Attention",
+      "stage": "phrases",
+      "playerOutcome": "Can get the server's attention politely and start an order or follow-up request naturally.",
+      "estimatedMinutes": 6,
+      "lessonLevelCount": 5,
+      "lessonLevelPlan": [
+        "Excuse Me",
+        "Excuse Me, Please",
+        "Excuse Me Before Ordering",
+        "Excuse Me Before a Request",
+        "Attention Review"
+      ],
+      "hardPrerequisiteIds": ["R-L2-S2"],
+      "componentIds": []
+    },
+    {
+      "id": "R-L3-S1",
+      "levelId": "R-L3",
+      "title": "Understanding the First Server Question",
+      "stage": "simple_conversation",
+      "playerOutcome": "Can recognize when the server is asking whether the order is decided or what the order is.",
+      "estimatedMinutes": 7,
+      "lessonLevelCount": 5,
+      "lessonLevelPlan": [
+        "Are You Ready to Order?",
+        "What Would You Like?",
+        "Drink First or Together",
+        "Is That Everything?",
+        "Short Listening Review"
+      ],
+      "hardPrerequisiteIds": ["R-L2-S2"],
+      "componentIds": ["R-L3-S1-C1", "R-L3-S1-C2", "R-L3-S1-C3", "R-L3-S1-C4"]
+    },
+    {
+      "id": "R-L3-S2",
+      "levelId": "R-L3",
+      "title": "Simple Modifications",
+      "stage": "simple_conversation",
+      "playerOutcome": "Can say yes or no to a simple question and use one basic modification or decline pattern.",
+      "estimatedMinutes": 8,
+      "lessonLevelCount": 6,
+      "lessonLevelPlan": [
+        "Yes and No",
+        "Without This",
+        "With This",
+        "Spicy or Not Spicy",
+        "No Wasabi / No Onion",
+        "Modification Review"
+      ],
+      "hardPrerequisiteIds": ["R-L3-S1"],
+      "componentIds": ["R-L3-S2-C1", "R-L3-S2-C2", "R-L3-S2-C3", "R-L3-S2-C4"]
+    },
+    {
+      "id": "R-L3-S3",
+      "levelId": "R-L3",
+      "title": "Extra Requests",
+      "stage": "simple_conversation",
+      "playerOutcome": "Can call the server politely and ask for a simple extra item like water or the menu.",
+      "estimatedMinutes": 8,
+      "lessonLevelCount": 6,
+      "lessonLevelPlan": [
+        "Water, Please",
+        "Menu, Please",
+        "Another One, Please",
+        "Excuse Me",
+        "Napkins and Spoon",
+        "Extra Request Review"
+      ],
+      "hardPrerequisiteIds": ["R-L3-S2"],
+      "componentIds": ["R-L3-S3-C1", "R-L3-S3-C2", "R-L3-S3-C3", "R-L3-S3-C4"]
+    },
+    {
+      "id": "R-L3-S4",
+      "levelId": "R-L3",
+      "title": "Short Guided Exchange",
+      "stage": "simple_conversation",
+      "playerOutcome": "Can survive a very short order exchange from first question through one follow-up request.",
+      "estimatedMinutes": 8,
+      "lessonLevelCount": 5,
+      "lessonLevelPlan": [
+        "Order Start",
+        "One Follow-Up",
+        "Order + Drink",
+        "Mini Exchange",
+        "Exchange Review"
+      ],
+      "hardPrerequisiteIds": ["R-L3-S3"],
+      "componentIds": ["R-L3-S4-C1", "R-L3-S4-C2", "R-L3-S4-C3", "R-L3-S4-C4"]
+    },
+    {
+      "id": "R-L3-S5",
+      "levelId": "R-L3",
+      "title": "Condiments and Table Items",
+      "stage": "simple_conversation",
+      "playerOutcome": "Can recognize and request a few very common table items and condiments.",
+      "estimatedMinutes": 7,
+      "lessonLevelCount": 5,
+      "lessonLevelPlan": [
+        "Soy Sauce and Wasabi",
+        "Chopsticks and Spoon",
+        "Napkins",
+        "More Water",
+        "Condiment Review"
+      ],
+      "hardPrerequisiteIds": ["R-L3-S3"],
+      "componentIds": []
+    },
+    {
+      "id": "R-L3-S6",
+      "levelId": "R-L3",
+      "title": "Dessert and Cafe Flow",
+      "stage": "simple_conversation",
+      "playerOutcome": "Can handle a simple dessert or cafe-style order after the main meal.",
+      "estimatedMinutes": 8,
+      "lessonLevelCount": 5,
+      "lessonLevelPlan": [
+        "Dessert Words",
+        "Coffee and Tea Orders",
+        "Cake and Ice Cream",
+        "After-Meal Drink",
+        "Dessert Review"
+      ],
+      "hardPrerequisiteIds": ["R-L2-S2"],
+      "componentIds": []
+    },
+    {
+      "id": "R-L3-S7",
+      "levelId": "R-L3",
+      "title": "Food Descriptions and Preferences",
+      "stage": "simple_conversation",
+      "playerOutcome": "Can recognize a few common taste and temperature words, ask whether something is spicy, and understand simple food descriptions.",
+      "estimatedMinutes": 8,
+      "lessonLevelCount": 5,
+      "lessonLevelPlan": [
+        "Hot, Cold, Warm",
+        "Spicy and Sweet",
+        "Salty and Bitter",
+        "Delicious and Favorite",
+        "Description Review"
+      ],
+      "hardPrerequisiteIds": ["R-L3-S2"],
+      "componentIds": []
+    },
+    {
+      "id": "R-L4-S1",
+      "levelId": "R-L4",
+      "title": "Asking for the Check",
+      "stage": "phrases",
+      "playerOutcome": "Can ask for the check politely and recognize the same request from memory.",
+      "estimatedMinutes": 5,
+      "lessonLevelCount": 4,
+      "lessonLevelPlan": [
+        "Check, Please",
+        "Excuse Me, Check Please",
+        "Recognize the Check Phrase",
+        "Check Request Review"
+      ],
+      "hardPrerequisiteIds": ["R-L3-S4"],
+      "componentIds": ["R-L4-S1-C1", "R-L4-S1-C2", "R-L4-S1-C3"]
+    },
+    {
+      "id": "R-L4-S2",
+      "levelId": "R-L4",
+      "title": "Cash or Card",
+      "stage": "simple_conversation",
+      "playerOutcome": "Can recognize a few payment words and understand a simple cash-or-card question.",
+      "estimatedMinutes": 6,
+      "lessonLevelCount": 5,
+      "lessonLevelPlan": [
+        "Cash and Card Words",
+        "Cash or Card?",
+        "Card, Please",
+        "Payment Choice",
+        "Payment Review"
+      ],
+      "hardPrerequisiteIds": ["R-L4-S1"],
+      "componentIds": ["R-L4-S2-C1", "R-L4-S2-C2", "R-L4-S2-C3", "R-L4-S2-C4"]
+    },
+    {
+      "id": "R-L4-S3",
+      "levelId": "R-L4",
+      "title": "One Bill",
+      "stage": "simple_conversation",
+      "playerOutcome": "Can understand or answer a simple one-bill payment moment without learning advanced split-bill language.",
+      "estimatedMinutes": 5,
+      "lessonLevelCount": 4,
+      "lessonLevelPlan": [
+        "Together or Separate",
+        "One Bill Answer",
+        "Yes, Together",
+        "One Bill Review"
+      ],
+      "hardPrerequisiteIds": ["R-L4-S2"],
+      "componentIds": ["R-L4-S3-C1", "R-L4-S3-C2", "R-L4-S3-C3"]
+    },
+    {
+      "id": "R-L4-S4",
+      "levelId": "R-L4",
+      "title": "Thank You and Leaving",
+      "stage": "natural_conversation",
+      "playerOutcome": "Can end the interaction naturally with a simple thank-you and exit phrase.",
+      "estimatedMinutes": 5,
+      "lessonLevelCount": 4,
+      "lessonLevelPlan": [
+        "Thank You",
+        "Leaving Phrase",
+        "Thank You Very Much",
+        "Goodbye Review"
+      ],
+      "hardPrerequisiteIds": ["R-L4-S3"],
+      "componentIds": ["R-L4-S4-C1", "R-L4-S4-C2", "R-L4-S4-C3"]
+    }
+  ]
+}

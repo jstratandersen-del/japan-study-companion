@@ -1,0 +1,14 @@
+{
+  "locationId": "convenience-store",
+  "slice": "v1",
+  "levels": [
+    {
+      "id": "C-L1",
+      "title": "Conbini Basics",
+      "oneSentenceGoal": "Handle the most common convenience-store language for finding items, choosing food and drinks, and checking out.",
+      "hardPrerequisiteIds": ["F-02"],
+      "softPrerequisiteIds": ["F-01"],
+      "sublevelIds": ["tokyo-city-conbini"]
+    }
+  ]
+}

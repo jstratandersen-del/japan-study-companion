@@ -1,0 +1,31 @@
+{
+  "locationId": "convenience-store",
+  "slice": "v1-beginner",
+  "sublevels": [
+    {
+      "id": "tokyo-city-conbini",
+      "levelId": "C-L1",
+      "title": "Conbini Basics",
+      "stage": "words",
+      "playerOutcome": "Can navigate a convenience store, recognize common food and drink items, and get through a simple checkout.",
+      "estimatedMinutes": 26,
+      "lessonLevelCount": 12,
+      "lessonLevelPlan": [
+        "Store Words and Signs",
+        "Drinks and Snacks",
+        "Meals and Hot Foods",
+        "Finding Items",
+        "Checkout Basics",
+        "Bag, Heat, and Receipt",
+        "Shelf Categories and Signs",
+        "Desserts and Extra Drinks",
+        "Breakfast and Light Foods",
+        "Payment and Small Responses",
+        "Common Clerk Questions",
+        "Mixed Conbini Review"
+      ],
+      "hardPrerequisiteIds": [],
+      "componentIds": []
+    }
+  ]
+}

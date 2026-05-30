@@ -1,0 +1,1453 @@
+{
+  "locationId": "convenience-store",
+  "levelId": "C-L1",
+  "title": "Conbini Basics",
+  "oneSentenceGoal": "Handle the most common convenience-store language for finding items, choosing food and drinks, and checking out.",
+  "runtimeNotes": "Runtime-ready content bundle for the first convenience-store branch in Tokyo.",
+  "sublevels": [
+    {
+      "id": "tokyo-city-conbini",
+      "title": "Conbini Basics",
+      "stage": "words",
+      "playerOutcome": "Can navigate a convenience store, recognize common food and drink items, and get through a simple checkout.",
+      "estimatedMinutes": 14,
+      "lessonLevels": [
+        {
+          "id": "C-L1-S1-L1",
+          "title": "Store Words and Signs",
+          "components": [
+            {
+              "id": "C-L1-S1-L1-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Introduce the first convenience-store words and signs.",
+              "masteryRule": "all 5 items must be completed once",
+              "retryBehavior": "not applicable",
+              "items": [
+                { "jp": "コンビニ", "romaji": "konbini", "en": "convenience store" },
+                { "jp": "入口", "romaji": "iriguchi", "en": "entrance" },
+                { "jp": "出口", "romaji": "deguchi", "en": "exit" },
+                { "jp": "レジ", "romaji": "reji", "en": "register" },
+                { "jp": "飲み物", "romaji": "nomimono", "en": "drinks" }
+              ]
+            },
+            {
+              "id": "C-L1-S1-L1-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese convenience-store word that matches the English prompt.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-C-L1-S1-L1-R001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Convenience store",
+                  "acceptedAnswers": ["コンビニ"],
+                  "referenceChoices": [
+                    { "jp": "コンビニ", "romaji": "konbini" },
+                    { "jp": "入口", "romaji": "iriguchi" },
+                    { "jp": "出口", "romaji": "deguchi" },
+                    { "jp": "レジ", "romaji": "reji" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L1-R002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Entrance",
+                  "acceptedAnswers": ["入口"],
+                  "referenceChoices": [
+                    { "jp": "入口", "romaji": "iriguchi" },
+                    { "jp": "出口", "romaji": "deguchi" },
+                    { "jp": "レジ", "romaji": "reji" },
+                    { "jp": "飲み物", "romaji": "nomimono" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L1-R003",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Exit",
+                  "acceptedAnswers": ["出口"],
+                  "referenceChoices": [
+                    { "jp": "出口", "romaji": "deguchi" },
+                    { "jp": "入口", "romaji": "iriguchi" },
+                    { "jp": "レジ", "romaji": "reji" },
+                    { "jp": "飲み物", "romaji": "nomimono" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L1-R004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Register",
+                  "acceptedAnswers": ["レジ"],
+                  "referenceChoices": [
+                    { "jp": "レジ", "romaji": "reji" },
+                    { "jp": "入口", "romaji": "iriguchi" },
+                    { "jp": "出口", "romaji": "deguchi" },
+                    { "jp": "飲み物", "romaji": "nomimono" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L1-R005",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Drinks",
+                  "acceptedAnswers": ["飲み物"],
+                  "referenceChoices": [
+                    { "jp": "飲み物", "romaji": "nomimono" },
+                    { "jp": "レジ", "romaji": "reji" },
+                    { "jp": "入口", "romaji": "iriguchi" },
+                    { "jp": "出口", "romaji": "deguchi" }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "C-L1-S1-L1-C3",
+              "componentType": "matching",
+              "goal": "Read the Japanese store word and connect it back to meaning.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-C-L1-S1-L1-M001",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "コンビニ",
+                  "acceptedAnswers": ["convenience store"],
+                  "referenceChoices": [
+                    { "jp": "コンビニ", "en": "convenience store" },
+                    { "jp": "入口", "en": "entrance" },
+                    { "jp": "出口", "en": "exit" },
+                    { "jp": "レジ", "en": "register" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L1-M002",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "入口",
+                  "acceptedAnswers": ["entrance"],
+                  "referenceChoices": [
+                    { "jp": "入口", "en": "entrance" },
+                    { "jp": "出口", "en": "exit" },
+                    { "jp": "レジ", "en": "register" },
+                    { "jp": "飲み物", "en": "drinks" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L1-M003",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "出口",
+                  "acceptedAnswers": ["exit"],
+                  "referenceChoices": [
+                    { "jp": "出口", "en": "exit" },
+                    { "jp": "入口", "en": "entrance" },
+                    { "jp": "レジ", "en": "register" },
+                    { "jp": "飲み物", "en": "drinks" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L1-M004",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "レジ",
+                  "acceptedAnswers": ["register"],
+                  "referenceChoices": [
+                    { "jp": "レジ", "en": "register" },
+                    { "jp": "入口", "en": "entrance" },
+                    { "jp": "出口", "en": "exit" },
+                    { "jp": "飲み物", "en": "drinks" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L1-M005",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "飲み物",
+                  "acceptedAnswers": ["drinks"],
+                  "referenceChoices": [
+                    { "jp": "飲み物", "en": "drinks" },
+                    { "jp": "レジ", "en": "register" },
+                    { "jp": "入口", "en": "entrance" },
+                    { "jp": "出口", "en": "exit" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "C-L1-S1-L2",
+          "title": "Drinks and Snacks",
+          "components": [
+            {
+              "id": "C-L1-S1-L2-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Introduce common drinks and snack words found in a convenience store.",
+              "masteryRule": "all 5 items must be completed once",
+              "retryBehavior": "not applicable",
+              "items": [
+                { "jp": "お茶", "romaji": "ocha", "en": "tea" },
+                { "jp": "水", "romaji": "mizu", "en": "water" },
+                { "jp": "コーヒー", "romaji": "koohii", "en": "coffee" },
+                { "jp": "おにぎり", "romaji": "onigiri", "en": "rice ball" },
+                { "jp": "お菓子", "romaji": "okashi", "en": "snacks" }
+              ]
+            },
+            {
+              "id": "C-L1-S1-L2-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese word for the drink or snack.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-C-L1-S1-L2-R001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Tea",
+                  "acceptedAnswers": ["お茶"],
+                  "referenceChoices": [
+                    { "jp": "お茶", "romaji": "ocha" },
+                    { "jp": "水", "romaji": "mizu" },
+                    { "jp": "コーヒー", "romaji": "koohii" },
+                    { "jp": "おにぎり", "romaji": "onigiri" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L2-R002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Water",
+                  "acceptedAnswers": ["水"],
+                  "referenceChoices": [
+                    { "jp": "水", "romaji": "mizu" },
+                    { "jp": "お茶", "romaji": "ocha" },
+                    { "jp": "コーヒー", "romaji": "koohii" },
+                    { "jp": "お菓子", "romaji": "okashi" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L2-R003",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Coffee",
+                  "acceptedAnswers": ["コーヒー"],
+                  "referenceChoices": [
+                    { "jp": "コーヒー", "romaji": "koohii" },
+                    { "jp": "お茶", "romaji": "ocha" },
+                    { "jp": "水", "romaji": "mizu" },
+                    { "jp": "おにぎり", "romaji": "onigiri" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L2-R004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Rice ball",
+                  "acceptedAnswers": ["おにぎり"],
+                  "referenceChoices": [
+                    { "jp": "おにぎり", "romaji": "onigiri" },
+                    { "jp": "お菓子", "romaji": "okashi" },
+                    { "jp": "お茶", "romaji": "ocha" },
+                    { "jp": "水", "romaji": "mizu" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L2-R005",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Snacks",
+                  "acceptedAnswers": ["お菓子"],
+                  "referenceChoices": [
+                    { "jp": "お菓子", "romaji": "okashi" },
+                    { "jp": "おにぎり", "romaji": "onigiri" },
+                    { "jp": "コーヒー", "romaji": "koohii" },
+                    { "jp": "お茶", "romaji": "ocha" }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "C-L1-S1-L2-C3",
+              "componentType": "matching",
+              "goal": "Read the Japanese drink or snack word and connect it back to meaning.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-C-L1-S1-L2-M001",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "お茶",
+                  "acceptedAnswers": ["tea"],
+                  "referenceChoices": [
+                    { "jp": "お茶", "en": "tea" },
+                    { "jp": "水", "en": "water" },
+                    { "jp": "コーヒー", "en": "coffee" },
+                    { "jp": "おにぎり", "en": "rice ball" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L2-M002",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "水",
+                  "acceptedAnswers": ["water"],
+                  "referenceChoices": [
+                    { "jp": "水", "en": "water" },
+                    { "jp": "お茶", "en": "tea" },
+                    { "jp": "コーヒー", "en": "coffee" },
+                    { "jp": "お菓子", "en": "snacks" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L2-M003",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "コーヒー",
+                  "acceptedAnswers": ["coffee"],
+                  "referenceChoices": [
+                    { "jp": "コーヒー", "en": "coffee" },
+                    { "jp": "お茶", "en": "tea" },
+                    { "jp": "水", "en": "water" },
+                    { "jp": "おにぎり", "en": "rice ball" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L2-M004",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "おにぎり",
+                  "acceptedAnswers": ["rice ball"],
+                  "referenceChoices": [
+                    { "jp": "おにぎり", "en": "rice ball" },
+                    { "jp": "お菓子", "en": "snacks" },
+                    { "jp": "お茶", "en": "tea" },
+                    { "jp": "水", "en": "water" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L2-M005",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "お菓子",
+                  "acceptedAnswers": ["snacks"],
+                  "referenceChoices": [
+                    { "jp": "お菓子", "en": "snacks" },
+                    { "jp": "おにぎり", "en": "rice ball" },
+                    { "jp": "コーヒー", "en": "coffee" },
+                    { "jp": "お茶", "en": "tea" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "C-L1-S1-L3",
+          "title": "Meals and Hot Foods",
+          "components": [
+            {
+              "id": "C-L1-S1-L3-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Introduce common ready meals and hot-food words.",
+              "masteryRule": "all 5 items must be completed once",
+              "retryBehavior": "not applicable",
+              "items": [
+                { "jp": "弁当", "romaji": "bentou", "en": "bento" },
+                { "jp": "サンドイッチ", "romaji": "sandoitchi", "en": "sandwich" },
+                { "jp": "ラーメン", "romaji": "raamen", "en": "ramen" },
+                { "jp": "唐揚げ", "romaji": "karaage", "en": "fried chicken" },
+                { "jp": "温めますか", "romaji": "atatamemasu ka", "en": "would you like it heated?" }
+              ]
+            },
+            {
+              "id": "C-L1-S1-L3-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese meal or hot-food word that matches the English prompt.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-C-L1-S1-L3-R001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Bento",
+                  "acceptedAnswers": ["弁当"],
+                  "referenceChoices": [
+                    { "jp": "弁当", "romaji": "bentou" },
+                    { "jp": "サンドイッチ", "romaji": "sandoitchi" },
+                    { "jp": "ラーメン", "romaji": "raamen" },
+                    { "jp": "唐揚げ", "romaji": "karaage" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L3-R002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Sandwich",
+                  "acceptedAnswers": ["サンドイッチ"],
+                  "referenceChoices": [
+                    { "jp": "サンドイッチ", "romaji": "sandoitchi" },
+                    { "jp": "弁当", "romaji": "bentou" },
+                    { "jp": "ラーメン", "romaji": "raamen" },
+                    { "jp": "唐揚げ", "romaji": "karaage" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L3-R003",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Ramen",
+                  "acceptedAnswers": ["ラーメン"],
+                  "referenceChoices": [
+                    { "jp": "ラーメン", "romaji": "raamen" },
+                    { "jp": "弁当", "romaji": "bentou" },
+                    { "jp": "サンドイッチ", "romaji": "sandoitchi" },
+                    { "jp": "温めますか", "romaji": "atatamemasu ka" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L3-R004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Fried chicken",
+                  "acceptedAnswers": ["唐揚げ"],
+                  "referenceChoices": [
+                    { "jp": "唐揚げ", "romaji": "karaage" },
+                    { "jp": "弁当", "romaji": "bentou" },
+                    { "jp": "サンドイッチ", "romaji": "sandoitchi" },
+                    { "jp": "ラーメン", "romaji": "raamen" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L3-R005",
+                  "promptMode": "What are they asking",
+                  "promptPrimary": "温めますか",
+                  "acceptedAnswers": ["would you like it heated?"],
+                  "referenceChoices": [
+                    { "jp": "温めますか", "en": "would you like it heated?" },
+                    { "jp": "弁当", "en": "bento" },
+                    { "jp": "ラーメン", "en": "ramen" },
+                    { "jp": "唐揚げ", "en": "fried chicken" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "C-L1-S1-L4",
+          "title": "Finding Items",
+          "components": [
+            {
+              "id": "C-L1-S1-L4-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Introduce the first short convenience-store help phrases.",
+              "masteryRule": "all 5 items must be completed once",
+              "retryBehavior": "not applicable",
+              "items": [
+                { "jp": "すみません", "romaji": "sumimasen", "en": "excuse me" },
+                { "jp": "どこですか", "romaji": "doko desu ka", "en": "where is it?" },
+                { "jp": "ありますか", "romaji": "arimasu ka", "en": "do you have it?" },
+                { "jp": "おにぎりはどこですか", "romaji": "onigiri wa doko desu ka", "en": "where are the rice balls?" },
+                { "jp": "水はありますか", "romaji": "mizu wa arimasu ka", "en": "do you have water?" }
+              ]
+            },
+            {
+              "id": "C-L1-S1-L4-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese help phrase that matches the English prompt.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-C-L1-S1-L4-R001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Excuse me",
+                  "acceptedAnswers": ["すみません"],
+                  "referenceChoices": [
+                    { "jp": "すみません", "romaji": "sumimasen" },
+                    { "jp": "どこですか", "romaji": "doko desu ka" },
+                    { "jp": "ありますか", "romaji": "arimasu ka" },
+                    { "jp": "おにぎりはどこですか", "romaji": "onigiri wa doko desu ka" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L4-R002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Where is it?",
+                  "acceptedAnswers": ["どこですか"],
+                  "referenceChoices": [
+                    { "jp": "どこですか", "romaji": "doko desu ka" },
+                    { "jp": "ありますか", "romaji": "arimasu ka" },
+                    { "jp": "すみません", "romaji": "sumimasen" },
+                    { "jp": "水はありますか", "romaji": "mizu wa arimasu ka" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L4-R003",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Do you have it?",
+                  "acceptedAnswers": ["ありますか"],
+                  "referenceChoices": [
+                    { "jp": "ありますか", "romaji": "arimasu ka" },
+                    { "jp": "どこですか", "romaji": "doko desu ka" },
+                    { "jp": "すみません", "romaji": "sumimasen" },
+                    { "jp": "おにぎりはどこですか", "romaji": "onigiri wa doko desu ka" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L4-R004",
+                  "promptMode": "Say this politely",
+                  "promptPrimary": "Where are the rice balls?",
+                  "acceptedAnswers": ["おにぎりはどこですか"],
+                  "referenceChoices": [
+                    { "jp": "おにぎりはどこですか", "romaji": "onigiri wa doko desu ka" },
+                    { "jp": "水はありますか", "romaji": "mizu wa arimasu ka" },
+                    { "jp": "どこですか", "romaji": "doko desu ka" },
+                    { "jp": "ありますか", "romaji": "arimasu ka" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L4-R005",
+                  "promptMode": "Say this politely",
+                  "promptPrimary": "Do you have water?",
+                  "acceptedAnswers": ["水はありますか"],
+                  "referenceChoices": [
+                    { "jp": "水はありますか", "romaji": "mizu wa arimasu ka" },
+                    { "jp": "おにぎりはどこですか", "romaji": "onigiri wa doko desu ka" },
+                    { "jp": "ありますか", "romaji": "arimasu ka" },
+                    { "jp": "すみません", "romaji": "sumimasen" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "C-L1-S1-L5",
+          "title": "Checkout Basics",
+          "components": [
+            {
+              "id": "C-L1-S1-L5-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Introduce the first checkout phrases and words.",
+              "masteryRule": "all 5 items must be completed once",
+              "retryBehavior": "not applicable",
+              "items": [
+                { "jp": "お願いします", "romaji": "onegaishimasu", "en": "please / here you go" },
+                { "jp": "お願いします", "romaji": "onegaishimasu", "en": "please" },
+                { "jp": "袋", "romaji": "fukuro", "en": "bag" },
+                { "jp": "レシート", "romaji": "reshiito", "en": "receipt" },
+                { "jp": "現金", "romaji": "genkin", "en": "cash" }
+              ]
+            },
+            {
+              "id": "C-L1-S1-L5-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese checkout word that matches the English prompt.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-C-L1-S1-L5-R001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Bag",
+                  "acceptedAnswers": ["袋"],
+                  "referenceChoices": [
+                    { "jp": "袋", "romaji": "fukuro" },
+                    { "jp": "レシート", "romaji": "reshiito" },
+                    { "jp": "現金", "romaji": "genkin" },
+                    { "jp": "お願いします", "romaji": "onegaishimasu" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L5-R002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Receipt",
+                  "acceptedAnswers": ["レシート"],
+                  "referenceChoices": [
+                    { "jp": "レシート", "romaji": "reshiito" },
+                    { "jp": "袋", "romaji": "fukuro" },
+                    { "jp": "現金", "romaji": "genkin" },
+                    { "jp": "お願いします", "romaji": "onegaishimasu" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L5-R003",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Cash",
+                  "acceptedAnswers": ["現金"],
+                  "referenceChoices": [
+                    { "jp": "現金", "romaji": "genkin" },
+                    { "jp": "レシート", "romaji": "reshiito" },
+                    { "jp": "袋", "romaji": "fukuro" },
+                    { "jp": "お願いします", "romaji": "onegaishimasu" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L5-R004",
+                  "promptMode": "Say this politely",
+                  "promptPrimary": "Please.",
+                  "acceptedAnswers": ["お願いします"],
+                  "referenceChoices": [
+                    { "jp": "お願いします", "romaji": "onegaishimasu" },
+                    { "jp": "袋", "romaji": "fukuro" },
+                    { "jp": "レシート", "romaji": "reshiito" },
+                    { "jp": "現金", "romaji": "genkin" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L5-R005",
+                  "promptMode": "What are they asking",
+                  "promptPrimary": "現金ですか",
+                  "acceptedAnswers": ["is it cash?"],
+                  "referenceChoices": [
+                    { "jp": "現金ですか", "en": "is it cash?" },
+                    { "jp": "袋はありますか", "en": "do you need a bag?" },
+                    { "jp": "温めますか", "en": "would you like it heated?" },
+                    { "jp": "レシートです", "en": "here is the receipt" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "C-L1-S1-L6",
+          "title": "Bag, Heat, and Receipt",
+          "components": [
+            {
+              "id": "C-L1-S1-L6-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Introduce the most common small checkout requests and responses.",
+              "masteryRule": "all 5 items must be completed once",
+              "retryBehavior": "not applicable",
+              "items": [
+                { "jp": "袋はありますか", "romaji": "fukuro wa arimasu ka", "en": "do you need a bag?" },
+                { "jp": "大丈夫です", "romaji": "daijoubu desu", "en": "I'm okay / no thanks" },
+                { "jp": "お願いします", "romaji": "onegaishimasu", "en": "yes, please" },
+                { "jp": "レシートお願いします", "romaji": "reshiito onegaishimasu", "en": "receipt, please" },
+                { "jp": "温めてください", "romaji": "atatamete kudasai", "en": "please heat it" }
+              ]
+            },
+            {
+              "id": "C-L1-S1-L6-C2",
+              "componentType": "matching",
+              "goal": "Use the most common checkout requests and responses in short convenience-store situations.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-C-L1-S1-L6-M001",
+                  "promptMode": "What are they asking",
+                  "promptPrimary": "袋はありますか",
+                  "acceptedAnswers": ["do you need a bag?"],
+                  "referenceChoices": [
+                    { "jp": "袋はありますか", "en": "do you need a bag?" },
+                    { "jp": "温めますか", "en": "would you like it heated?" },
+                    { "jp": "レシートお願いします", "en": "receipt, please" },
+                    { "jp": "大丈夫です", "en": "I'm okay / no thanks" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L6-M002",
+                  "promptMode": "Choose the best next line",
+                  "promptPrimary": "The clerk asks if you need a bag and you do not need one.",
+                  "acceptedAnswers": ["I'm okay / no thanks"],
+                  "referenceChoices": [
+                    { "jp": "大丈夫です", "en": "I'm okay / no thanks" },
+                    { "jp": "お願いします", "en": "yes, please" },
+                    { "jp": "レシートお願いします", "en": "receipt, please" },
+                    { "jp": "温めてください", "en": "please heat it" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L6-M003",
+                  "promptMode": "Choose the best next line",
+                  "promptPrimary": "The clerk asks if you need a bag and you do want one.",
+                  "acceptedAnswers": ["yes, please"],
+                  "referenceChoices": [
+                    { "jp": "お願いします", "en": "yes, please" },
+                    { "jp": "大丈夫です", "en": "I'm okay / no thanks" },
+                    { "jp": "レシートお願いします", "en": "receipt, please" },
+                    { "jp": "温めてください", "en": "please heat it" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L6-M004",
+                  "promptMode": "Say this politely",
+                  "promptPrimary": "Receipt, please.",
+                  "acceptedAnswers": ["レシートお願いします"],
+                  "referenceChoices": [
+                    { "jp": "レシートお願いします", "romaji": "reshiito onegaishimasu" },
+                    { "jp": "温めてください", "romaji": "atatamete kudasai" },
+                    { "jp": "大丈夫です", "romaji": "daijoubu desu" },
+                    { "jp": "お願いします", "romaji": "onegaishimasu" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L6-M005",
+                  "promptMode": "Say this politely",
+                  "promptPrimary": "Please heat it.",
+                  "acceptedAnswers": ["温めてください"],
+                  "referenceChoices": [
+                    { "jp": "温めてください", "romaji": "atatamete kudasai" },
+                    { "jp": "レシートお願いします", "romaji": "reshiito onegaishimasu" },
+                    { "jp": "お願いします", "romaji": "onegaishimasu" },
+                    { "jp": "大丈夫です", "romaji": "daijoubu desu" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "C-L1-S1-L7",
+          "title": "Shelf Categories and Signs",
+          "components": [
+            {
+              "id": "C-L1-S1-L7-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Introduce more shelf labels and aisle categories found in convenience stores.",
+              "masteryRule": "all 5 items must be completed once",
+              "retryBehavior": "not applicable",
+              "items": [
+                { "jp": "冷凍食品", "romaji": "reitou shokuhin", "en": "frozen foods" },
+                { "jp": "スイーツ", "romaji": "suiitsu", "en": "sweets" },
+                { "jp": "パン", "romaji": "pan", "en": "bread" },
+                { "jp": "カップ麺", "romaji": "kappumen", "en": "cup noodles" },
+                { "jp": "日用品", "romaji": "nichiyouhin", "en": "daily goods" }
+              ]
+            },
+            {
+              "id": "C-L1-S1-L7-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese shelf category that matches the English prompt.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-C-L1-S1-L7-R001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Frozen foods",
+                  "acceptedAnswers": ["冷凍食品"],
+                  "referenceChoices": [
+                    { "jp": "冷凍食品", "romaji": "reitou shokuhin" },
+                    { "jp": "スイーツ", "romaji": "suiitsu" },
+                    { "jp": "パン", "romaji": "pan" },
+                    { "jp": "日用品", "romaji": "nichiyouhin" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L7-R002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Sweets",
+                  "acceptedAnswers": ["スイーツ"],
+                  "referenceChoices": [
+                    { "jp": "スイーツ", "romaji": "suiitsu" },
+                    { "jp": "パン", "romaji": "pan" },
+                    { "jp": "カップ麺", "romaji": "kappumen" },
+                    { "jp": "冷凍食品", "romaji": "reitou shokuhin" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L7-R003",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Bread",
+                  "acceptedAnswers": ["パン"],
+                  "referenceChoices": [
+                    { "jp": "パン", "romaji": "pan" },
+                    { "jp": "スイーツ", "romaji": "suiitsu" },
+                    { "jp": "カップ麺", "romaji": "kappumen" },
+                    { "jp": "日用品", "romaji": "nichiyouhin" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L7-R004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Cup noodles",
+                  "acceptedAnswers": ["カップ麺"],
+                  "referenceChoices": [
+                    { "jp": "カップ麺", "romaji": "kappumen" },
+                    { "jp": "冷凍食品", "romaji": "reitou shokuhin" },
+                    { "jp": "パン", "romaji": "pan" },
+                    { "jp": "スイーツ", "romaji": "suiitsu" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L7-R005",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Daily goods",
+                  "acceptedAnswers": ["日用品"],
+                  "referenceChoices": [
+                    { "jp": "日用品", "romaji": "nichiyouhin" },
+                    { "jp": "冷凍食品", "romaji": "reitou shokuhin" },
+                    { "jp": "スイーツ", "romaji": "suiitsu" },
+                    { "jp": "パン", "romaji": "pan" }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "C-L1-S1-L7-C3",
+              "componentType": "matching",
+              "goal": "Read the Japanese shelf category and connect it back to meaning.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-C-L1-S1-L7-M001",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "冷凍食品",
+                  "acceptedAnswers": ["frozen foods"],
+                  "referenceChoices": [
+                    { "jp": "冷凍食品", "en": "frozen foods" },
+                    { "jp": "スイーツ", "en": "sweets" },
+                    { "jp": "パン", "en": "bread" },
+                    { "jp": "日用品", "en": "daily goods" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L7-M002",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "スイーツ",
+                  "acceptedAnswers": ["sweets"],
+                  "referenceChoices": [
+                    { "jp": "スイーツ", "en": "sweets" },
+                    { "jp": "パン", "en": "bread" },
+                    { "jp": "カップ麺", "en": "cup noodles" },
+                    { "jp": "冷凍食品", "en": "frozen foods" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L7-M003",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "パン",
+                  "acceptedAnswers": ["bread"],
+                  "referenceChoices": [
+                    { "jp": "パン", "en": "bread" },
+                    { "jp": "スイーツ", "en": "sweets" },
+                    { "jp": "カップ麺", "en": "cup noodles" },
+                    { "jp": "日用品", "en": "daily goods" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L7-M004",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "カップ麺",
+                  "acceptedAnswers": ["cup noodles"],
+                  "referenceChoices": [
+                    { "jp": "カップ麺", "en": "cup noodles" },
+                    { "jp": "冷凍食品", "en": "frozen foods" },
+                    { "jp": "パン", "en": "bread" },
+                    { "jp": "スイーツ", "en": "sweets" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L7-M005",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "日用品",
+                  "acceptedAnswers": ["daily goods"],
+                  "referenceChoices": [
+                    { "jp": "日用品", "en": "daily goods" },
+                    { "jp": "冷凍食品", "en": "frozen foods" },
+                    { "jp": "スイーツ", "en": "sweets" },
+                    { "jp": "パン", "en": "bread" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "C-L1-S1-L8",
+          "title": "Desserts and Extra Drinks",
+          "components": [
+            {
+              "id": "C-L1-S1-L8-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Introduce common dessert and extra drink words from a convenience store.",
+              "masteryRule": "all 5 items must be completed once",
+              "retryBehavior": "not applicable",
+              "items": [
+                { "jp": "ジュース", "romaji": "juusu", "en": "juice" },
+                { "jp": "炭酸", "romaji": "tansan", "en": "soda" },
+                { "jp": "アイス", "romaji": "aisu", "en": "ice cream" },
+                { "jp": "プリン", "romaji": "purin", "en": "pudding" },
+                { "jp": "デザート", "romaji": "dezaato", "en": "dessert" }
+              ]
+            },
+            {
+              "id": "C-L1-S1-L8-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese dessert or drink word that matches the English prompt.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-C-L1-S1-L8-R001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Juice",
+                  "acceptedAnswers": ["ジュース"],
+                  "referenceChoices": [
+                    { "jp": "ジュース", "romaji": "juusu" },
+                    { "jp": "炭酸", "romaji": "tansan" },
+                    { "jp": "アイス", "romaji": "aisu" },
+                    { "jp": "プリン", "romaji": "purin" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L8-R002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Soda",
+                  "acceptedAnswers": ["炭酸"],
+                  "referenceChoices": [
+                    { "jp": "炭酸", "romaji": "tansan" },
+                    { "jp": "ジュース", "romaji": "juusu" },
+                    { "jp": "デザート", "romaji": "dezaato" },
+                    { "jp": "アイス", "romaji": "aisu" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L8-R003",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Ice cream",
+                  "acceptedAnswers": ["アイス"],
+                  "referenceChoices": [
+                    { "jp": "アイス", "romaji": "aisu" },
+                    { "jp": "プリン", "romaji": "purin" },
+                    { "jp": "デザート", "romaji": "dezaato" },
+                    { "jp": "ジュース", "romaji": "juusu" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L8-R004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Pudding",
+                  "acceptedAnswers": ["プリン"],
+                  "referenceChoices": [
+                    { "jp": "プリン", "romaji": "purin" },
+                    { "jp": "アイス", "romaji": "aisu" },
+                    { "jp": "ジュース", "romaji": "juusu" },
+                    { "jp": "デザート", "romaji": "dezaato" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L8-R005",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Dessert",
+                  "acceptedAnswers": ["デザート"],
+                  "referenceChoices": [
+                    { "jp": "デザート", "romaji": "dezaato" },
+                    { "jp": "プリン", "romaji": "purin" },
+                    { "jp": "アイス", "romaji": "aisu" },
+                    { "jp": "炭酸", "romaji": "tansan" }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "C-L1-S1-L8-C3",
+              "componentType": "matching",
+              "goal": "Read the Japanese dessert or extra drink word and connect it back to meaning.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-C-L1-S1-L8-M001",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "ジュース",
+                  "acceptedAnswers": ["juice"],
+                  "referenceChoices": [
+                    { "jp": "ジュース", "en": "juice" },
+                    { "jp": "炭酸", "en": "soda" },
+                    { "jp": "アイス", "en": "ice cream" },
+                    { "jp": "プリン", "en": "pudding" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L8-M002",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "炭酸",
+                  "acceptedAnswers": ["soda"],
+                  "referenceChoices": [
+                    { "jp": "炭酸", "en": "soda" },
+                    { "jp": "ジュース", "en": "juice" },
+                    { "jp": "アイス", "en": "ice cream" },
+                    { "jp": "デザート", "en": "dessert" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L8-M003",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "アイス",
+                  "acceptedAnswers": ["ice cream"],
+                  "referenceChoices": [
+                    { "jp": "アイス", "en": "ice cream" },
+                    { "jp": "プリン", "en": "pudding" },
+                    { "jp": "ジュース", "en": "juice" },
+                    { "jp": "デザート", "en": "dessert" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L8-M004",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "プリン",
+                  "acceptedAnswers": ["pudding"],
+                  "referenceChoices": [
+                    { "jp": "プリン", "en": "pudding" },
+                    { "jp": "アイス", "en": "ice cream" },
+                    { "jp": "ジュース", "en": "juice" },
+                    { "jp": "デザート", "en": "dessert" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L8-M005",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "デザート",
+                  "acceptedAnswers": ["dessert"],
+                  "referenceChoices": [
+                    { "jp": "デザート", "en": "dessert" },
+                    { "jp": "プリン", "en": "pudding" },
+                    { "jp": "アイス", "en": "ice cream" },
+                    { "jp": "炭酸", "en": "soda" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "C-L1-S1-L9",
+          "title": "Breakfast and Light Foods",
+          "components": [
+            {
+              "id": "C-L1-S1-L9-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Introduce a few more common light-food items from the store.",
+              "masteryRule": "all 5 items must be completed once",
+              "retryBehavior": "not applicable",
+              "items": [
+                { "jp": "ヨーグルト", "romaji": "yooguruto", "en": "yogurt" },
+                { "jp": "牛乳", "romaji": "gyuunyuu", "en": "milk" },
+                { "jp": "サラダ", "romaji": "sarada", "en": "salad" },
+                { "jp": "フルーツ", "romaji": "furuutsu", "en": "fruit" },
+                { "jp": "サラダチキン", "romaji": "sarada chikin", "en": "salad chicken" }
+              ]
+            },
+            {
+              "id": "C-L1-S1-L9-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese light-food item that matches the English prompt.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-C-L1-S1-L9-R001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Yogurt",
+                  "acceptedAnswers": ["ヨーグルト"],
+                  "referenceChoices": [
+                    { "jp": "ヨーグルト", "romaji": "yooguruto" },
+                    { "jp": "牛乳", "romaji": "gyuunyuu" },
+                    { "jp": "サラダ", "romaji": "sarada" },
+                    { "jp": "フルーツ", "romaji": "furuutsu" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L9-R002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Milk",
+                  "acceptedAnswers": ["牛乳"],
+                  "referenceChoices": [
+                    { "jp": "牛乳", "romaji": "gyuunyuu" },
+                    { "jp": "ヨーグルト", "romaji": "yooguruto" },
+                    { "jp": "サラダ", "romaji": "sarada" },
+                    { "jp": "サラダチキン", "romaji": "sarada chikin" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L9-R003",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Salad",
+                  "acceptedAnswers": ["サラダ"],
+                  "referenceChoices": [
+                    { "jp": "サラダ", "romaji": "sarada" },
+                    { "jp": "フルーツ", "romaji": "furuutsu" },
+                    { "jp": "牛乳", "romaji": "gyuunyuu" },
+                    { "jp": "ヨーグルト", "romaji": "yooguruto" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L9-R004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Fruit",
+                  "acceptedAnswers": ["フルーツ"],
+                  "referenceChoices": [
+                    { "jp": "フルーツ", "romaji": "furuutsu" },
+                    { "jp": "サラダ", "romaji": "sarada" },
+                    { "jp": "ヨーグルト", "romaji": "yooguruto" },
+                    { "jp": "牛乳", "romaji": "gyuunyuu" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L9-R005",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Salad chicken",
+                  "acceptedAnswers": ["サラダチキン"],
+                  "referenceChoices": [
+                    { "jp": "サラダチキン", "romaji": "sarada chikin" },
+                    { "jp": "サラダ", "romaji": "sarada" },
+                    { "jp": "フルーツ", "romaji": "furuutsu" },
+                    { "jp": "牛乳", "romaji": "gyuunyuu" }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "C-L1-S1-L9-C3",
+              "componentType": "matching",
+              "goal": "Read the Japanese light-food item and connect it back to meaning.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-C-L1-S1-L9-M001",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "ヨーグルト",
+                  "acceptedAnswers": ["yogurt"],
+                  "referenceChoices": [
+                    { "jp": "ヨーグルト", "en": "yogurt" },
+                    { "jp": "牛乳", "en": "milk" },
+                    { "jp": "サラダ", "en": "salad" },
+                    { "jp": "フルーツ", "en": "fruit" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L9-M002",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "牛乳",
+                  "acceptedAnswers": ["milk"],
+                  "referenceChoices": [
+                    { "jp": "牛乳", "en": "milk" },
+                    { "jp": "ヨーグルト", "en": "yogurt" },
+                    { "jp": "サラダ", "en": "salad" },
+                    { "jp": "サラダチキン", "en": "salad chicken" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L9-M003",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "サラダ",
+                  "acceptedAnswers": ["salad"],
+                  "referenceChoices": [
+                    { "jp": "サラダ", "en": "salad" },
+                    { "jp": "フルーツ", "en": "fruit" },
+                    { "jp": "牛乳", "en": "milk" },
+                    { "jp": "ヨーグルト", "en": "yogurt" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L9-M004",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "フルーツ",
+                  "acceptedAnswers": ["fruit"],
+                  "referenceChoices": [
+                    { "jp": "フルーツ", "en": "fruit" },
+                    { "jp": "サラダ", "en": "salad" },
+                    { "jp": "ヨーグルト", "en": "yogurt" },
+                    { "jp": "牛乳", "en": "milk" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L9-M005",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "サラダチキン",
+                  "acceptedAnswers": ["salad chicken"],
+                  "referenceChoices": [
+                    { "jp": "サラダチキン", "en": "salad chicken" },
+                    { "jp": "サラダ", "en": "salad" },
+                    { "jp": "フルーツ", "en": "fruit" },
+                    { "jp": "牛乳", "en": "milk" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "C-L1-S1-L10",
+          "title": "Payment and Small Responses",
+          "components": [
+            {
+              "id": "C-L1-S1-L10-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Introduce the first payment words and tiny checkout responses.",
+              "masteryRule": "all 5 items must be completed once",
+              "retryBehavior": "not applicable",
+              "items": [
+                { "jp": "カード", "romaji": "kaado", "en": "card" },
+                { "jp": "クレジットカード", "romaji": "kurejitto kaado", "en": "credit card" },
+                { "jp": "ポイント", "romaji": "pointo", "en": "points" },
+                { "jp": "はい", "romaji": "hai", "en": "yes" },
+                { "jp": "いいえ", "romaji": "iie", "en": "no" }
+              ]
+            },
+            {
+              "id": "C-L1-S1-L10-C2",
+              "componentType": "matching",
+              "goal": "Use simple payment words and short responses in checkout situations.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-C-L1-S1-L10-M001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Card",
+                  "acceptedAnswers": ["カード"],
+                  "referenceChoices": [
+                    { "jp": "カード", "romaji": "kaado" },
+                    { "jp": "クレジットカード", "romaji": "kurejitto kaado" },
+                    { "jp": "ポイント", "romaji": "pointo" },
+                    { "jp": "現金", "romaji": "genkin" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L10-M002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Credit card",
+                  "acceptedAnswers": ["クレジットカード"],
+                  "referenceChoices": [
+                    { "jp": "クレジットカード", "romaji": "kurejitto kaado" },
+                    { "jp": "カード", "romaji": "kaado" },
+                    { "jp": "ポイント", "romaji": "pointo" },
+                    { "jp": "はい", "romaji": "hai" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L10-M003",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "ポイント",
+                  "acceptedAnswers": ["points"],
+                  "referenceChoices": [
+                    { "jp": "ポイント", "en": "points" },
+                    { "jp": "カード", "en": "card" },
+                    { "jp": "はい", "en": "yes" },
+                    { "jp": "いいえ", "en": "no" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L10-M004",
+                  "promptMode": "Choose the best next line",
+                  "promptPrimary": "The clerk asks a yes-or-no question and the answer is yes.",
+                  "acceptedAnswers": ["yes"],
+                  "referenceChoices": [
+                    { "jp": "はい", "en": "yes" },
+                    { "jp": "いいえ", "en": "no" },
+                    { "jp": "大丈夫です", "en": "I'm okay / no thanks" },
+                    { "jp": "お願いします", "en": "yes, please" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L10-M005",
+                  "promptMode": "Choose the best next line",
+                  "promptPrimary": "The clerk asks a yes-or-no question and the answer is no.",
+                  "acceptedAnswers": ["no"],
+                  "referenceChoices": [
+                    { "jp": "いいえ", "en": "no" },
+                    { "jp": "はい", "en": "yes" },
+                    { "jp": "お願いします", "en": "yes, please" },
+                    { "jp": "ポイント", "en": "points" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "C-L1-S1-L11",
+          "title": "Common Clerk Questions",
+          "components": [
+            {
+              "id": "C-L1-S1-L11-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Introduce the most common clerk questions you will hear at checkout.",
+              "masteryRule": "all 5 items must be completed once",
+              "retryBehavior": "not applicable",
+              "items": [
+                { "jp": "袋はありますか", "romaji": "fukuro wa arimasu ka", "en": "do you need a bag?" },
+                { "jp": "温めますか", "romaji": "atatamemasu ka", "en": "would you like it heated?" },
+                { "jp": "レシートはご利用ですか", "romaji": "reshiito wa goriyou desu ka", "en": "do you need the receipt?" },
+                { "jp": "お箸はお付けしますか", "romaji": "ohashi wa otsuke shimasu ka", "en": "would you like chopsticks?" },
+                { "jp": "ポイントカードはありますか", "romaji": "pointo kaado wa arimasu ka", "en": "do you have a point card?" }
+              ]
+            },
+            {
+              "id": "C-L1-S1-L11-C2",
+              "componentType": "matching",
+              "goal": "Understand the common questions the clerk asks and choose the right meaning.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-C-L1-S1-L11-M001",
+                  "promptMode": "What are they asking",
+                  "promptPrimary": "袋はありますか",
+                  "acceptedAnswers": ["do you need a bag?"],
+                  "referenceChoices": [
+                    { "jp": "袋はありますか", "en": "do you need a bag?" },
+                    { "jp": "温めますか", "en": "would you like it heated?" },
+                    { "jp": "レシートはご利用ですか", "en": "do you need the receipt?" },
+                    { "jp": "お箸はお付けしますか", "en": "would you like chopsticks?" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L11-M002",
+                  "promptMode": "What are they asking",
+                  "promptPrimary": "温めますか",
+                  "acceptedAnswers": ["would you like it heated?"],
+                  "referenceChoices": [
+                    { "jp": "温めますか", "en": "would you like it heated?" },
+                    { "jp": "袋はありますか", "en": "do you need a bag?" },
+                    { "jp": "レシートはご利用ですか", "en": "do you need the receipt?" },
+                    { "jp": "ポイントカードはありますか", "en": "do you have a point card?" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L11-M003",
+                  "promptMode": "What are they asking",
+                  "promptPrimary": "レシートはご利用ですか",
+                  "acceptedAnswers": ["do you need the receipt?"],
+                  "referenceChoices": [
+                    { "jp": "レシートはご利用ですか", "en": "do you need the receipt?" },
+                    { "jp": "袋はありますか", "en": "do you need a bag?" },
+                    { "jp": "温めますか", "en": "would you like it heated?" },
+                    { "jp": "ポイントカードはありますか", "en": "do you have a point card?" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L11-M004",
+                  "promptMode": "What are they asking",
+                  "promptPrimary": "お箸はお付けしますか",
+                  "acceptedAnswers": ["would you like chopsticks?"],
+                  "referenceChoices": [
+                    { "jp": "お箸はお付けしますか", "en": "would you like chopsticks?" },
+                    { "jp": "レシートはご利用ですか", "en": "do you need the receipt?" },
+                    { "jp": "温めますか", "en": "would you like it heated?" },
+                    { "jp": "袋はありますか", "en": "do you need a bag?" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L11-M005",
+                  "promptMode": "What are they asking",
+                  "promptPrimary": "ポイントカードはありますか",
+                  "acceptedAnswers": ["do you have a point card?"],
+                  "referenceChoices": [
+                    { "jp": "ポイントカードはありますか", "en": "do you have a point card?" },
+                    { "jp": "レシートはご利用ですか", "en": "do you need the receipt?" },
+                    { "jp": "お箸はお付けしますか", "en": "would you like chopsticks?" },
+                    { "jp": "袋はありますか", "en": "do you need a bag?" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "C-L1-S1-L12",
+          "title": "Mixed Conbini Review",
+          "components": [
+            {
+              "id": "C-L1-S1-L12-C1",
+              "componentType": "matching",
+              "goal": "Mix store navigation, item words, and checkout language into a fuller convenience-store review.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-C-L1-S1-L12-M001",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "冷凍食品",
+                  "acceptedAnswers": ["frozen foods"],
+                  "referenceChoices": [
+                    { "jp": "冷凍食品", "en": "frozen foods" },
+                    { "jp": "スイーツ", "en": "sweets" },
+                    { "jp": "日用品", "en": "daily goods" },
+                    { "jp": "レジ", "en": "register" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L12-M002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Do you have water?",
+                  "acceptedAnswers": ["水はありますか"],
+                  "referenceChoices": [
+                    { "jp": "水はありますか", "romaji": "mizu wa arimasu ka" },
+                    { "jp": "おにぎりはどこですか", "romaji": "onigiri wa doko desu ka" },
+                    { "jp": "袋はありますか", "romaji": "fukuro wa arimasu ka" },
+                    { "jp": "温めてください", "romaji": "atatamete kudasai" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L12-M003",
+                  "promptMode": "What are they asking",
+                  "promptPrimary": "お箸はお付けしますか",
+                  "acceptedAnswers": ["would you like chopsticks?"],
+                  "referenceChoices": [
+                    { "jp": "お箸はお付けしますか", "en": "would you like chopsticks?" },
+                    { "jp": "温めますか", "en": "would you like it heated?" },
+                    { "jp": "レシートはご利用ですか", "en": "do you need the receipt?" },
+                    { "jp": "ポイントカードはありますか", "en": "do you have a point card?" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L12-M004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Fruit",
+                  "acceptedAnswers": ["フルーツ"],
+                  "referenceChoices": [
+                    { "jp": "フルーツ", "romaji": "furuutsu" },
+                    { "jp": "サラダ", "romaji": "sarada" },
+                    { "jp": "ヨーグルト", "romaji": "yooguruto" },
+                    { "jp": "牛乳", "romaji": "gyuunyuu" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L12-M005",
+                  "promptMode": "Choose the best next line",
+                  "promptPrimary": "The clerk asks if you need a bag and you do not need one.",
+                  "acceptedAnswers": ["I'm okay / no thanks"],
+                  "referenceChoices": [
+                    { "jp": "大丈夫です", "en": "I'm okay / no thanks" },
+                    { "jp": "お願いします", "en": "yes, please" },
+                    { "jp": "レシートお願いします", "en": "receipt, please" },
+                    { "jp": "温めてください", "en": "please heat it" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L12-M006",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Cup noodles",
+                  "acceptedAnswers": ["カップ麺"],
+                  "referenceChoices": [
+                    { "jp": "カップ麺", "romaji": "kappumen" },
+                    { "jp": "パン", "romaji": "pan" },
+                    { "jp": "スイーツ", "romaji": "suiitsu" },
+                    { "jp": "冷凍食品", "romaji": "reitou shokuhin" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L12-M007",
+                  "promptMode": "What are they asking",
+                  "promptPrimary": "現金ですか",
+                  "acceptedAnswers": ["is it cash?"],
+                  "referenceChoices": [
+                    { "jp": "現金ですか", "en": "is it cash?" },
+                    { "jp": "袋はありますか", "en": "do you need a bag?" },
+                    { "jp": "レシートはご利用ですか", "en": "do you need the receipt?" },
+                    { "jp": "温めますか", "en": "would you like it heated?" }
+                  ]
+                },
+                {
+                  "id": "Q-C-L1-S1-L12-M008",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Receipt, please.",
+                  "acceptedAnswers": ["レシートお願いします"],
+                  "referenceChoices": [
+                    { "jp": "レシートお願いします", "romaji": "reshiito onegaishimasu" },
+                    { "jp": "温めてください", "romaji": "atatamete kudasai" },
+                    { "jp": "大丈夫です", "romaji": "daijoubu desu" },
+                    { "jp": "お願いします", "romaji": "onegaishimasu" }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

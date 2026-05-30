@@ -1,0 +1,2062 @@
+{
+  "locationId": "restaurant",
+  "levelId": "R-L4",
+  "title": "Paying and Finishing",
+  "oneSentenceGoal": "Ask for the check, recognize basic payment language, and end the meal naturally.",
+  "runtimeNotes": "Runtime-ready content bundle for the fourth restaurant level. This level closes the interaction without introducing advanced register or split-bill language.",
+  "sublevels": [
+    {
+      "id": "R-L4-S1",
+      "title": "Asking for the Check",
+      "stage": "phrases",
+      "playerOutcome": "Can ask for the check politely and recognize the same request from memory.",
+      "estimatedMinutes": 4,
+      "components": [
+        {
+          "id": "R-L4-S1-C1",
+          "componentType": "vocabulary_intro",
+          "goal": "Introduce the check request phrase in one bounded payment moment.",
+          "masteryRule": "all items must be completed once",
+          "retryBehavior": "not applicable",
+          "items": [
+            {
+              "jp": "お会計",
+              "romaji": "okaikei",
+              "en": "the bill / check"
+            },
+            {
+              "jp": "お会計お願いします",
+              "romaji": "okaikei onegaishimasu",
+              "en": "Check, please"
+            }
+          ]
+        },
+        {
+          "id": "R-L4-S1-C2",
+          "componentType": "guided_recall",
+          "goal": "Recall the phrase for asking for the check with support still visible.",
+          "masteryRule": "all items must be answered correctly",
+          "retryBehavior": "missed items go to the back of the current component queue",
+          "questions": [
+            {
+              "id": "Q-R-L4-S1-001",
+              "promptMode": "How do you say",
+              "promptPrimary": "Check, please.",
+              "acceptedAnswers": [
+                "お会計お願いします",
+                "おかいけいおねがいします"
+              ],
+              "referenceChoices": [
+                {
+                  "jp": "お会計お願いします",
+                  "romaji": "okaikei onegaishimasu"
+                },
+                {
+                  "jp": "これをお願いします",
+                  "romaji": "kore o onegaishimasu"
+                },
+                {
+                  "jp": "ご注文は？",
+                  "romaji": "gochumon wa?"
+                },
+                {
+                  "jp": "ごちそうさまでした",
+                  "romaji": "gochisousama deshita"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L4-S1-C3",
+          "componentType": "review",
+          "goal": "Review the check phrase in one or two short restaurant scenarios.",
+          "masteryRule": "all items must be answered correctly",
+          "retryBehavior": "missed items go to the back of the current component queue",
+          "questions": [
+            {
+              "id": "Q-R-L4-S1-002",
+              "promptMode": "Which reply fits",
+              "promptPrimary": "You have finished eating and want the bill.",
+              "acceptedAnswers": [
+                "お会計お願いします",
+                "おかいけいおねがいします"
+              ],
+              "referenceChoices": [
+                {
+                  "jp": "お会計お願いします",
+                  "romaji": "okaikei onegaishimasu"
+                },
+                {
+                  "jp": "お茶をお願いします",
+                  "romaji": "ocha o onegaishimasu"
+                },
+                {
+                  "jp": "これは何ですか",
+                  "romaji": "kore wa nan desu ka"
+                },
+                {
+                  "jp": "ご注文は？",
+                  "romaji": "gochumon wa?"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lessonLevels": [
+        {
+          "id": "R-L4-S1-L1",
+          "title": "Check, Please",
+          "components": [
+            {
+              "id": "R-L4-S1-L1-C1",
+              "componentType": "payment",
+              "goal": "Learn the shortest practical way to ask for the check.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L4-S1-L1-001",
+                  "promptMode": "Build the phrase for",
+                  "promptPrimary": "Check, please.",
+                  "acceptedAnswers": [
+                    "お会計お願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "お会計お願いします",
+                      "romaji": "okaikei onegaishimasu"
+                    },
+                    {
+                      "jp": "ありがとうございます",
+                      "romaji": "arigatou gozaimasu"
+                    },
+                    {
+                      "jp": "ごちそうさまでした",
+                      "romaji": "gochisousama deshita"
+                    },
+                    {
+                      "jp": "メニューお願いします",
+                      "romaji": "menyuu onegaishimasu"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L4-S1-L1-002",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "You finished eating and want the check.",
+                  "acceptedAnswers": [
+                    "お会計お願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "お会計お願いします",
+                      "romaji": "okaikei onegaishimasu"
+                    },
+                    {
+                      "jp": "お水お願いします",
+                      "romaji": "omizu onegaishimasu"
+                    },
+                    {
+                      "jp": "これをお願いします",
+                      "romaji": "kore o onegaishimasu"
+                    },
+                    {
+                      "jp": "すみません",
+                      "romaji": "sumimasen"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L4-S1-L2",
+          "title": "Excuse Me, Check Please",
+          "components": [
+            {
+              "id": "R-L4-S1-L2-C1",
+              "componentType": "payment",
+              "goal": "Get the server’s attention before asking for the check.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L4-S1-L2-001",
+                  "promptMode": "Choose the best flow",
+                  "promptPrimary": "Get attention first, then ask for the check.",
+                  "acceptedAnswers": [
+                    "すみません"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "すみません",
+                      "romaji": "sumimasen"
+                    },
+                    {
+                      "jp": "お会計お願いします",
+                      "romaji": "okaikei onegaishimasu"
+                    },
+                    {
+                      "jp": "ありがとうございます",
+                      "romaji": "arigatou gozaimasu"
+                    },
+                    {
+                      "jp": "ごちそうさまでした",
+                      "romaji": "gochisousama deshita"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L4-S1-L2-002",
+                  "promptMode": "Choose the best next line",
+                  "promptPrimary": "The server comes over. Now ask for the check.",
+                  "acceptedAnswers": [
+                    "お会計お願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "お会計お願いします",
+                      "romaji": "okaikei onegaishimasu"
+                    },
+                    {
+                      "jp": "メニューお願いします",
+                      "romaji": "menyuu onegaishimasu"
+                    },
+                    {
+                      "jp": "お茶をお願いします",
+                      "romaji": "ocha o onegaishimasu"
+                    },
+                    {
+                      "jp": "どれですか",
+                      "romaji": "dore desu ka"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L4-S1-L3",
+          "title": "Recognize the Check Phrase",
+          "components": [
+            {
+              "id": "R-L4-S1-L3-C1",
+              "componentType": "matching",
+              "goal": "Recognize the check phrase when you see or hear it.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L4-S1-L3-001",
+                  "promptMode": "What does this mean?",
+                  "promptPrimary": "お会計お願いします",
+                  "acceptedAnswers": [
+                    "Check, please."
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "お会計お願いします",
+                      "en": "Check, please."
+                    },
+                    {
+                      "jp": "メニューお願いします",
+                      "en": "Menu, please."
+                    },
+                    {
+                      "jp": "お水お願いします",
+                      "en": "Water, please."
+                    },
+                    {
+                      "jp": "ごちそうさまでした",
+                      "en": "Thank you for the meal."
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L4-S1-L3-002",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "You need the bill at the end of the meal.",
+                  "acceptedAnswers": [
+                    "お会計お願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "お会計お願いします",
+                      "romaji": "okaikei onegaishimasu"
+                    },
+                    {
+                      "jp": "ごちそうさまでした",
+                      "romaji": "gochisousama deshita"
+                    },
+                    {
+                      "jp": "すみません",
+                      "romaji": "sumimasen"
+                    },
+                    {
+                      "jp": "ありがとうございます",
+                      "romaji": "arigatou gozaimasu"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L4-S1-L4",
+          "title": "Check Request Review",
+          "components": [
+            {
+              "id": "R-L4-S1-L4-C1",
+              "componentType": "review",
+              "goal": "Review the check request as part of a natural end-of-meal flow.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L4-S1-L4-001",
+                  "promptMode": "Choose the best flow",
+                  "promptPrimary": "Get attention, then ask for the check.",
+                  "acceptedAnswers": [
+                    "すみません"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "すみません",
+                      "romaji": "sumimasen"
+                    },
+                    {
+                      "jp": "お会計お願いします",
+                      "romaji": "okaikei onegaishimasu"
+                    },
+                    {
+                      "jp": "ありがとうございます",
+                      "romaji": "arigatou gozaimasu"
+                    },
+                    {
+                      "jp": "ごちそうさまでした",
+                      "romaji": "gochisousama deshita"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L4-S1-L4-002",
+                  "promptMode": "What does this mean?",
+                  "promptPrimary": "お会計お願いします",
+                  "acceptedAnswers": [
+                    "Check, please."
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "お会計お願いします",
+                      "en": "Check, please."
+                    },
+                    {
+                      "jp": "お水お願いします",
+                      "en": "Water, please."
+                    },
+                    {
+                      "jp": "メニューお願いします",
+                      "en": "Menu, please."
+                    },
+                    {
+                      "jp": "もう一つお願いします",
+                      "en": "One more, please."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R-L4-S2",
+      "title": "Cash or Card",
+      "stage": "simple_conversation",
+      "playerOutcome": "Can recognize a few payment words and understand a simple cash-or-card question.",
+      "estimatedMinutes": 5,
+      "components": [
+        {
+          "id": "R-L4-S2-C1",
+          "componentType": "vocabulary_intro",
+          "goal": "Introduce payment words needed for a simple cash-or-card exchange.",
+          "masteryRule": "all items must be completed once",
+          "retryBehavior": "not applicable",
+          "items": [
+            {
+              "jp": "現金",
+              "romaji": "genkin",
+              "en": "cash"
+            },
+            {
+              "jp": "カード",
+              "romaji": "kado",
+              "en": "card"
+            },
+            {
+              "jp": "現金ですか、カードですか？",
+              "romaji": "genkin desu ka, kado desu ka?",
+              "en": "Cash or card?"
+            },
+            {
+              "jp": "カードでお願いします",
+              "romaji": "kado de onegaishimasu",
+              "en": "Card, please"
+            }
+          ]
+        },
+        {
+          "id": "R-L4-S2-C2",
+          "componentType": "matching",
+          "goal": "Match payment words to their simple meaning or function.",
+          "masteryRule": "all items must be answered correctly",
+          "retryBehavior": "missed items go to the back of the current component queue",
+          "questions": [
+            {
+              "id": "Q-R-L4-S2-001",
+              "promptMode": "Which one means",
+              "promptPrimary": "cash",
+              "acceptedAnswers": [
+                "現金",
+                "げんきん"
+              ],
+              "referenceChoices": [
+                {
+                  "jp": "カード",
+                  "romaji": "kado"
+                },
+                {
+                  "jp": "現金",
+                  "romaji": "genkin"
+                },
+                {
+                  "jp": "お会計",
+                  "romaji": "okaikei"
+                },
+                {
+                  "jp": "一緒",
+                  "romaji": "issho"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L4-S2-C3",
+          "componentType": "recognition",
+          "goal": "Recognize a simple cash-or-card question and one simple answer.",
+          "masteryRule": "all items must be answered correctly",
+          "retryBehavior": "missed items go to the back of the current component queue",
+          "questions": [
+            {
+              "id": "Q-R-L4-S2-002",
+              "promptMode": "What are they asking",
+              "promptPrimary": "現金ですか、カードですか？",
+              "acceptedAnswers": [
+                "Cash or card?",
+                "cash or card"
+              ],
+              "referenceChoices": [
+                {
+                  "jp": "Cash or card?",
+                  "romaji": ""
+                },
+                {
+                  "jp": "What would you like to order?",
+                  "romaji": ""
+                },
+                {
+                  "jp": "Would you like water?",
+                  "romaji": ""
+                },
+                {
+                  "jp": "What do you recommend?",
+                  "romaji": ""
+                }
+              ]
+            },
+            {
+              "id": "Q-R-L4-S2-003",
+              "promptMode": "Which reply fits",
+              "promptPrimary": "You want to pay with card.",
+              "acceptedAnswers": [
+                "カードでお願いします"
+              ],
+              "referenceChoices": [
+                {
+                  "jp": "カードでお願いします",
+                  "romaji": "kado de onegaishimasu"
+                },
+                {
+                  "jp": "現金ですか、カードですか？",
+                  "romaji": "genkin desu ka, kado desu ka?"
+                },
+                {
+                  "jp": "ごちそうさまでした",
+                  "romaji": "gochisousama deshita"
+                },
+                {
+                  "jp": "お茶をお願いします",
+                  "romaji": "ocha o onegaishimasu"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L4-S2-C4",
+          "componentType": "review",
+          "goal": "Review a tiny payment exchange without adding advanced register language.",
+          "masteryRule": "all items must be answered correctly",
+          "retryBehavior": "missed items go to the back of the current component queue",
+          "questions": [
+            {
+              "id": "Q-R-L4-S2-004",
+              "promptMode": "Which one means",
+              "promptPrimary": "Card, please.",
+              "acceptedAnswers": [
+                "カードでお願いします"
+              ],
+              "referenceChoices": [
+                {
+                  "jp": "カードでお願いします",
+                  "romaji": "kado de onegaishimasu"
+                },
+                {
+                  "jp": "現金",
+                  "romaji": "genkin"
+                },
+                {
+                  "jp": "ご注文は？",
+                  "romaji": "gochumon wa?"
+                },
+                {
+                  "jp": "お会計お願いします",
+                  "romaji": "okaikei onegaishimasu"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lessonLevels": [
+        {
+          "id": "R-L4-S2-L1",
+          "title": "Cash and Card Words",
+          "components": [
+            {
+              "id": "R-L4-S2-L1-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Introduce the core words for cash and card words.",
+              "masteryRule": "all 4 items must be completed once",
+              "retryBehavior": "not applicable",
+              "items": [
+                {
+                  "jp": "現金",
+                  "romaji": "genkin",
+                  "en": "cash"
+                },
+                {
+                  "jp": "カード",
+                  "romaji": "kaado",
+                  "en": "card"
+                },
+                {
+                  "jp": "クレジットカード",
+                  "romaji": "kurejitto kaado",
+                  "en": "credit card"
+                },
+                {
+                  "jp": "レシート",
+                  "romaji": "reshiito",
+                  "en": "receipt"
+                }
+              ]
+            },
+            {
+              "id": "R-L4-S2-L1-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese word for cash and card words.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L4-S2-L1-R001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Cash",
+                  "acceptedAnswers": [
+                    "現金"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "現金",
+                      "romaji": "genkin"
+                    },
+                    {
+                      "jp": "カード",
+                      "romaji": "kaado"
+                    },
+                    {
+                      "jp": "クレジットカード",
+                      "romaji": "kurejitto kaado"
+                    },
+                    {
+                      "jp": "レシート",
+                      "romaji": "reshiito"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L4-S2-L1-R002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Card",
+                  "acceptedAnswers": [
+                    "カード"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "カード",
+                      "romaji": "kaado"
+                    },
+                    {
+                      "jp": "現金",
+                      "romaji": "genkin"
+                    },
+                    {
+                      "jp": "クレジットカード",
+                      "romaji": "kurejitto kaado"
+                    },
+                    {
+                      "jp": "レシート",
+                      "romaji": "reshiito"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L4-S2-L1-R003",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Credit Card",
+                  "acceptedAnswers": [
+                    "クレジットカード"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "クレジットカード",
+                      "romaji": "kurejitto kaado"
+                    },
+                    {
+                      "jp": "現金",
+                      "romaji": "genkin"
+                    },
+                    {
+                      "jp": "カード",
+                      "romaji": "kaado"
+                    },
+                    {
+                      "jp": "レシート",
+                      "romaji": "reshiito"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L4-S2-L1-R004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Receipt",
+                  "acceptedAnswers": [
+                    "レシート"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "レシート",
+                      "romaji": "reshiito"
+                    },
+                    {
+                      "jp": "現金",
+                      "romaji": "genkin"
+                    },
+                    {
+                      "jp": "カード",
+                      "romaji": "kaado"
+                    },
+                    {
+                      "jp": "クレジットカード",
+                      "romaji": "kurejitto kaado"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "R-L4-S2-L1-C3",
+              "componentType": "matching",
+              "goal": "Read the Japanese and connect it back to meaning.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L4-S2-L1-M001",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "現金",
+                  "acceptedAnswers": [
+                    "cash"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "現金",
+                      "en": "cash"
+                    },
+                    {
+                      "jp": "カード",
+                      "en": "card"
+                    },
+                    {
+                      "jp": "クレジットカード",
+                      "en": "credit card"
+                    },
+                    {
+                      "jp": "レシート",
+                      "en": "receipt"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L4-S2-L1-M002",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "カード",
+                  "acceptedAnswers": [
+                    "card"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "カード",
+                      "en": "card"
+                    },
+                    {
+                      "jp": "現金",
+                      "en": "cash"
+                    },
+                    {
+                      "jp": "クレジットカード",
+                      "en": "credit card"
+                    },
+                    {
+                      "jp": "レシート",
+                      "en": "receipt"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L4-S2-L1-M003",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "クレジットカード",
+                  "acceptedAnswers": [
+                    "credit card"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "クレジットカード",
+                      "en": "credit card"
+                    },
+                    {
+                      "jp": "現金",
+                      "en": "cash"
+                    },
+                    {
+                      "jp": "カード",
+                      "en": "card"
+                    },
+                    {
+                      "jp": "レシート",
+                      "en": "receipt"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "R-L4-S2-L1-C4",
+              "componentType": "review",
+              "goal": "Finish with quick mixed review.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L4-S2-L1-V001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Credit Card",
+                  "acceptedAnswers": [
+                    "クレジットカード"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "クレジットカード",
+                      "romaji": "kurejitto kaado"
+                    },
+                    {
+                      "jp": "現金",
+                      "romaji": "genkin"
+                    },
+                    {
+                      "jp": "カード",
+                      "romaji": "kaado"
+                    },
+                    {
+                      "jp": "レシート",
+                      "romaji": "reshiito"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L4-S2-L1-V002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Receipt",
+                  "acceptedAnswers": [
+                    "レシート"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "レシート",
+                      "romaji": "reshiito"
+                    },
+                    {
+                      "jp": "現金",
+                      "romaji": "genkin"
+                    },
+                    {
+                      "jp": "カード",
+                      "romaji": "kaado"
+                    },
+                    {
+                      "jp": "クレジットカード",
+                      "romaji": "kurejitto kaado"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L4-S2-L1-V003",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Cash",
+                  "acceptedAnswers": [
+                    "現金"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "現金",
+                      "romaji": "genkin"
+                    },
+                    {
+                      "jp": "カード",
+                      "romaji": "kaado"
+                    },
+                    {
+                      "jp": "クレジットカード",
+                      "romaji": "kurejitto kaado"
+                    },
+                    {
+                      "jp": "レシート",
+                      "romaji": "reshiito"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L4-S2-L1-V004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Card",
+                  "acceptedAnswers": [
+                    "カード"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "カード",
+                      "romaji": "kaado"
+                    },
+                    {
+                      "jp": "現金",
+                      "romaji": "genkin"
+                    },
+                    {
+                      "jp": "クレジットカード",
+                      "romaji": "kurejitto kaado"
+                    },
+                    {
+                      "jp": "レシート",
+                      "romaji": "reshiito"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L4-S2-L2",
+          "title": "Cash or Card?",
+          "components": [
+            {
+              "id": "R-L4-S2-L2-C1",
+              "componentType": "payment",
+              "goal": "Understand the payment question from the server.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L4-S2-L2-001",
+                  "promptMode": "What does this mean?",
+                  "promptPrimary": "現金ですか、カードですか",
+                  "acceptedAnswers": [
+                    "Cash or card?"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "現金ですか、カードですか",
+                      "en": "Cash or card?"
+                    },
+                    {
+                      "jp": "ご注文はお決まりですか",
+                      "en": "Are you ready to order?"
+                    },
+                    {
+                      "jp": "お飲み物は？",
+                      "en": "What would you like to drink?"
+                    },
+                    {
+                      "jp": "以上でよろしいですか",
+                      "en": "Is that everything?"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L4-S2-L2-002",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "The server asks cash or card and you want to pay cash.",
+                  "acceptedAnswers": [
+                    "現金でお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "現金でお願いします",
+                      "romaji": "genkin de onegaishimasu"
+                    },
+                    {
+                      "jp": "カードでお願いします",
+                      "romaji": "kaado de onegaishimasu"
+                    },
+                    {
+                      "jp": "お会計お願いします",
+                      "romaji": "okaikei onegaishimasu"
+                    },
+                    {
+                      "jp": "ごちそうさまでした",
+                      "romaji": "gochisousama deshita"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L4-S2-L2-003",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "The server asks cash or card and you want to pay by card.",
+                  "acceptedAnswers": [
+                    "カードでお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "カードでお願いします",
+                      "romaji": "kaado de onegaishimasu"
+                    },
+                    {
+                      "jp": "現金でお願いします",
+                      "romaji": "genkin de onegaishimasu"
+                    },
+                    {
+                      "jp": "レシートお願いします",
+                      "romaji": "reshiito onegaishimasu"
+                    },
+                    {
+                      "jp": "ありがとうございます",
+                      "romaji": "arigatou gozaimasu"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L4-S2-L3",
+          "title": "Card, Please",
+          "components": [
+            {
+              "id": "R-L4-S2-L3-C1",
+              "componentType": "payment",
+              "goal": "Say clearly that you are paying with a card.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L4-S2-L3-001",
+                  "promptMode": "Build the phrase for",
+                  "promptPrimary": "Card, please.",
+                  "acceptedAnswers": [
+                    "カードでお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "カードでお願いします",
+                      "romaji": "kaado de onegaishimasu"
+                    },
+                    {
+                      "jp": "現金でお願いします",
+                      "romaji": "genkin de onegaishimasu"
+                    },
+                    {
+                      "jp": "カードですか",
+                      "romaji": "kaado desu ka"
+                    },
+                    {
+                      "jp": "クレジットカードお願いします",
+                      "romaji": "kurejitto kaado onegaishimasu"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L4-S2-L3-002",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "You want to pay with a credit card.",
+                  "acceptedAnswers": [
+                    "クレジットカードでお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "クレジットカードでお願いします",
+                      "romaji": "kurejitto kaado de onegaishimasu"
+                    },
+                    {
+                      "jp": "カードでお願いします",
+                      "romaji": "kaado de onegaishimasu"
+                    },
+                    {
+                      "jp": "現金でお願いします",
+                      "romaji": "genkin de onegaishimasu"
+                    },
+                    {
+                      "jp": "レシートお願いします",
+                      "romaji": "reshiito onegaishimasu"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L4-S2-L3-003",
+                  "promptMode": "What does this mean?",
+                  "promptPrimary": "現金でお願いします",
+                  "acceptedAnswers": [
+                    "Cash, please. / I will pay cash."
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "現金でお願いします",
+                      "en": "Cash, please. / I will pay cash."
+                    },
+                    {
+                      "jp": "カードでお願いします",
+                      "en": "Card, please. / I will pay by card."
+                    },
+                    {
+                      "jp": "レシートお願いします",
+                      "en": "Receipt, please."
+                    },
+                    {
+                      "jp": "お会計お願いします",
+                      "en": "Check, please."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L4-S2-L4",
+          "title": "Receipt and Payment Choice",
+          "components": [
+            {
+              "id": "R-L4-S2-L4-C1",
+              "componentType": "payment",
+              "goal": "Handle one more small payment request naturally.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L4-S2-L4-001",
+                  "promptMode": "Build the phrase for",
+                  "promptPrimary": "Receipt, please.",
+                  "acceptedAnswers": [
+                    "レシートお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "レシートお願いします",
+                      "romaji": "reshiito onegaishimasu"
+                    },
+                    {
+                      "jp": "カードでお願いします",
+                      "romaji": "kaado de onegaishimasu"
+                    },
+                    {
+                      "jp": "現金でお願いします",
+                      "romaji": "genkin de onegaishimasu"
+                    },
+                    {
+                      "jp": "お会計お願いします",
+                      "romaji": "okaikei onegaishimasu"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L4-S2-L4-002",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "You want to pay cash and get the receipt. First choose cash.",
+                  "acceptedAnswers": [
+                    "現金でお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "現金でお願いします",
+                      "romaji": "genkin de onegaishimasu"
+                    },
+                    {
+                      "jp": "レシートお願いします",
+                      "romaji": "reshiito onegaishimasu"
+                    },
+                    {
+                      "jp": "カードでお願いします",
+                      "romaji": "kaado de onegaishimasu"
+                    },
+                    {
+                      "jp": "ありがとうございます",
+                      "romaji": "arigatou gozaimasu"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L4-S2-L4-003",
+                  "promptMode": "What does this mean?",
+                  "promptPrimary": "レシート",
+                  "acceptedAnswers": [
+                    "receipt"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "レシート",
+                      "en": "receipt"
+                    },
+                    {
+                      "jp": "現金",
+                      "en": "cash"
+                    },
+                    {
+                      "jp": "カード",
+                      "en": "card"
+                    },
+                    {
+                      "jp": "お会計",
+                      "en": "check"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L4-S2-L5",
+          "title": "Payment Review",
+          "components": [
+            {
+              "id": "R-L4-S2-L5-C1",
+              "componentType": "review",
+              "goal": "Review cash, card, and receipt language together.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L4-S2-L5-001",
+                  "promptMode": "What does this mean?",
+                  "promptPrimary": "現金ですか、カードですか",
+                  "acceptedAnswers": [
+                    "Cash or card?"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "現金ですか、カードですか",
+                      "en": "Cash or card?"
+                    },
+                    {
+                      "jp": "お会計お願いします",
+                      "en": "Check, please."
+                    },
+                    {
+                      "jp": "ごちそうさまでした",
+                      "en": "Thank you for the meal."
+                    },
+                    {
+                      "jp": "レシートお願いします",
+                      "en": "Receipt, please."
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L4-S2-L5-002",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "You want to pay by card.",
+                  "acceptedAnswers": [
+                    "カードでお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "カードでお願いします",
+                      "romaji": "kaado de onegaishimasu"
+                    },
+                    {
+                      "jp": "現金でお願いします",
+                      "romaji": "genkin de onegaishimasu"
+                    },
+                    {
+                      "jp": "レシートお願いします",
+                      "romaji": "reshiito onegaishimasu"
+                    },
+                    {
+                      "jp": "お会計お願いします",
+                      "romaji": "okaikei onegaishimasu"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L4-S2-L5-003",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "You want the receipt.",
+                  "acceptedAnswers": [
+                    "レシートお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "レシートお願いします",
+                      "romaji": "reshiito onegaishimasu"
+                    },
+                    {
+                      "jp": "カードでお願いします",
+                      "romaji": "kaado de onegaishimasu"
+                    },
+                    {
+                      "jp": "現金でお願いします",
+                      "romaji": "genkin de onegaishimasu"
+                    },
+                    {
+                      "jp": "ごちそうさまでした",
+                      "romaji": "gochisousama deshita"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R-L4-S3",
+      "title": "One Bill",
+      "stage": "simple_conversation",
+      "playerOutcome": "Can understand or answer a simple one-bill payment moment without learning split-bill complexity.",
+      "estimatedMinutes": 4,
+      "components": [
+        {
+          "id": "R-L4-S3-C1",
+          "componentType": "vocabulary_intro",
+          "goal": "Introduce one-bill language while avoiding advanced split-bill content.",
+          "masteryRule": "all items must be completed once",
+          "retryBehavior": "not applicable",
+          "items": [
+            {
+              "jp": "一緒",
+              "romaji": "issho",
+              "en": "together / one bill"
+            },
+            {
+              "jp": "一緒でお願いします",
+              "romaji": "issho de onegaishimasu",
+              "en": "Together, please"
+            }
+          ]
+        },
+        {
+          "id": "R-L4-S3-C2",
+          "componentType": "recognition",
+          "goal": "Recognize whether the exchange is about one bill or payment timing.",
+          "masteryRule": "all items must be answered correctly",
+          "retryBehavior": "missed items go to the back of the current component queue",
+          "questions": [
+            {
+              "id": "Q-R-L4-S3-001",
+              "promptMode": "Which one means",
+              "promptPrimary": "together / one bill",
+              "acceptedAnswers": [
+                "一緒",
+                "いっしょ"
+              ],
+              "referenceChoices": [
+                {
+                  "jp": "別々",
+                  "romaji": "betsubetsu"
+                },
+                {
+                  "jp": "一緒",
+                  "romaji": "issho"
+                },
+                {
+                  "jp": "現金",
+                  "romaji": "genkin"
+                },
+                {
+                  "jp": "お会計",
+                  "romaji": "okaikei"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L4-S3-C3",
+          "componentType": "review",
+          "goal": "Review one-bill handling in a simple closing payment moment.",
+          "masteryRule": "all items must be answered correctly",
+          "retryBehavior": "missed items go to the back of the current component queue",
+          "questions": [
+            {
+              "id": "Q-R-L4-S3-002",
+              "promptMode": "Which reply fits",
+              "promptPrimary": "You want to keep the payment simple and together.",
+              "acceptedAnswers": [
+                "一緒でお願いします"
+              ],
+              "referenceChoices": [
+                {
+                  "jp": "一緒でお願いします",
+                  "romaji": "issho de onegaishimasu"
+                },
+                {
+                  "jp": "カードでお願いします",
+                  "romaji": "kado de onegaishimasu"
+                },
+                {
+                  "jp": "ごちそうさまでした",
+                  "romaji": "gochisousama deshita"
+                },
+                {
+                  "jp": "水をお願いします",
+                  "romaji": "mizu o onegaishimasu"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lessonLevels": [
+        {
+          "id": "R-L4-S3-L1",
+          "title": "Together or Separate",
+          "components": [
+            {
+              "id": "R-L4-S3-L1-C1",
+              "componentType": "payment",
+              "goal": "Understand the question about paying together or separately.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L4-S3-L1-001",
+                  "promptMode": "What does this mean?",
+                  "promptPrimary": "一緒ですか、別々ですか",
+                  "acceptedAnswers": [
+                    "Together or separate?"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "一緒ですか、別々ですか",
+                      "en": "Together or separate?"
+                    },
+                    {
+                      "jp": "現金ですか、カードですか",
+                      "en": "Cash or card?"
+                    },
+                    {
+                      "jp": "ご注文はお決まりですか",
+                      "en": "Are you ready to order?"
+                    },
+                    {
+                      "jp": "以上でよろしいですか",
+                      "en": "Is that everything?"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L4-S3-L1-002",
+                  "promptMode": "What does this mean?",
+                  "promptPrimary": "別々",
+                  "acceptedAnswers": [
+                    "separate"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "別々",
+                      "en": "separate"
+                    },
+                    {
+                      "jp": "一緒",
+                      "en": "together"
+                    },
+                    {
+                      "jp": "現金",
+                      "en": "cash"
+                    },
+                    {
+                      "jp": "カード",
+                      "en": "card"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L4-S3-L2",
+          "title": "One Bill Answer",
+          "components": [
+            {
+              "id": "R-L4-S3-L2-C1",
+              "componentType": "payment",
+              "goal": "Say that you want one bill together.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L4-S3-L2-001",
+                  "promptMode": "Build the phrase for",
+                  "promptPrimary": "Together, please.",
+                  "acceptedAnswers": [
+                    "一緒でお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "一緒でお願いします",
+                      "romaji": "issho de onegaishimasu"
+                    },
+                    {
+                      "jp": "別々でお願いします",
+                      "romaji": "betsubetsu de onegaishimasu"
+                    },
+                    {
+                      "jp": "カードでお願いします",
+                      "romaji": "kaado de onegaishimasu"
+                    },
+                    {
+                      "jp": "現金でお願いします",
+                      "romaji": "genkin de onegaishimasu"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L4-S3-L2-002",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "You are paying as one group.",
+                  "acceptedAnswers": [
+                    "一緒でお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "一緒でお願いします",
+                      "romaji": "issho de onegaishimasu"
+                    },
+                    {
+                      "jp": "別々でお願いします",
+                      "romaji": "betsubetsu de onegaishimasu"
+                    },
+                    {
+                      "jp": "レシートお願いします",
+                      "romaji": "reshiito onegaishimasu"
+                    },
+                    {
+                      "jp": "お会計お願いします",
+                      "romaji": "okaikei onegaishimasu"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L4-S3-L3",
+          "title": "Separate Checks",
+          "components": [
+            {
+              "id": "R-L4-S3-L3-C1",
+              "componentType": "payment",
+              "goal": "Recognize or request separate checks when needed.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L4-S3-L3-001",
+                  "promptMode": "Build the phrase for",
+                  "promptPrimary": "Separate, please.",
+                  "acceptedAnswers": [
+                    "別々でお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "別々でお願いします",
+                      "romaji": "betsubetsu de onegaishimasu"
+                    },
+                    {
+                      "jp": "一緒でお願いします",
+                      "romaji": "issho de onegaishimasu"
+                    },
+                    {
+                      "jp": "現金でお願いします",
+                      "romaji": "genkin de onegaishimasu"
+                    },
+                    {
+                      "jp": "カードでお願いします",
+                      "romaji": "kaado de onegaishimasu"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L4-S3-L3-002",
+                  "promptMode": "What does this mean?",
+                  "promptPrimary": "一緒でお願いします",
+                  "acceptedAnswers": [
+                    "Together, please."
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "一緒でお願いします",
+                      "en": "Together, please."
+                    },
+                    {
+                      "jp": "別々でお願いします",
+                      "en": "Separate, please."
+                    },
+                    {
+                      "jp": "現金でお願いします",
+                      "en": "Cash, please."
+                    },
+                    {
+                      "jp": "カードでお願いします",
+                      "en": "Card, please."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L4-S3-L4",
+          "title": "One Bill Review",
+          "components": [
+            {
+              "id": "R-L4-S3-L4-C1",
+              "componentType": "review",
+              "goal": "Review the payment split language for groups.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L4-S3-L4-001",
+                  "promptMode": "What does this mean?",
+                  "promptPrimary": "一緒ですか、別々ですか",
+                  "acceptedAnswers": [
+                    "Together or separate?"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "一緒ですか、別々ですか",
+                      "en": "Together or separate?"
+                    },
+                    {
+                      "jp": "現金ですか、カードですか",
+                      "en": "Cash or card?"
+                    },
+                    {
+                      "jp": "レシートお願いします",
+                      "en": "Receipt, please."
+                    },
+                    {
+                      "jp": "ごちそうさまでした",
+                      "en": "Thank you for the meal."
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L4-S3-L4-002",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "You want one bill together.",
+                  "acceptedAnswers": [
+                    "一緒でお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "一緒でお願いします",
+                      "romaji": "issho de onegaishimasu"
+                    },
+                    {
+                      "jp": "別々でお願いします",
+                      "romaji": "betsubetsu de onegaishimasu"
+                    },
+                    {
+                      "jp": "現金でお願いします",
+                      "romaji": "genkin de onegaishimasu"
+                    },
+                    {
+                      "jp": "カードでお願いします",
+                      "romaji": "kaado de onegaishimasu"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L4-S3-L4-003",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "You need separate checks.",
+                  "acceptedAnswers": [
+                    "別々でお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "別々でお願いします",
+                      "romaji": "betsubetsu de onegaishimasu"
+                    },
+                    {
+                      "jp": "一緒でお願いします",
+                      "romaji": "issho de onegaishimasu"
+                    },
+                    {
+                      "jp": "レシートお願いします",
+                      "romaji": "reshiito onegaishimasu"
+                    },
+                    {
+                      "jp": "お会計お願いします",
+                      "romaji": "okaikei onegaishimasu"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R-L4-S4",
+      "title": "Thank You and Leaving",
+      "stage": "natural_conversation",
+      "playerOutcome": "Can end the interaction naturally with a simple thank-you and exit phrase.",
+      "estimatedMinutes": 4,
+      "components": [
+        {
+          "id": "R-L4-S4-C1",
+          "componentType": "vocabulary_intro",
+          "goal": "Introduce the natural thank-you phrase used after finishing a meal.",
+          "masteryRule": "all items must be completed once",
+          "retryBehavior": "not applicable",
+          "items": [
+            {
+              "jp": "ごちそうさまでした",
+              "romaji": "gochisousama deshita",
+              "en": "Thank you for the meal"
+            },
+            {
+              "jp": "ありがとうございました",
+              "romaji": "arigato gozaimashita",
+              "en": "Thank you very much"
+            }
+          ]
+        },
+        {
+          "id": "R-L4-S4-C2",
+          "componentType": "guided_recall",
+          "goal": "Use the thank-you phrase in the correct end-of-meal moment.",
+          "masteryRule": "all items must be answered correctly",
+          "retryBehavior": "missed items go to the back of the current component queue",
+          "questions": [
+            {
+              "id": "Q-R-L4-S4-001",
+              "promptMode": "How do you say",
+              "promptPrimary": "Thank you for the meal.",
+              "acceptedAnswers": [
+                "ごちそうさまでした"
+              ],
+              "referenceChoices": [
+                {
+                  "jp": "ごちそうさまでした",
+                  "romaji": "gochisousama deshita"
+                },
+                {
+                  "jp": "お会計お願いします",
+                  "romaji": "okaikei onegaishimasu"
+                },
+                {
+                  "jp": "これをお願いします",
+                  "romaji": "kore o onegaishimasu"
+                },
+                {
+                  "jp": "ご注文は？",
+                  "romaji": "gochumon wa?"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L4-S4-C3",
+          "componentType": "review",
+          "goal": "Close the restaurant interaction with a short natural finish.",
+          "masteryRule": "all items must be answered correctly",
+          "retryBehavior": "missed items go to the back of the current component queue",
+          "questions": [
+            {
+              "id": "Q-R-L4-S4-002",
+              "promptMode": "Which line belongs at the end",
+              "promptPrimary": "You have finished paying and are about to leave.",
+              "acceptedAnswers": [
+                "ごちそうさまでした",
+                "ありがとうございました"
+              ],
+              "referenceChoices": [
+                {
+                  "jp": "ごちそうさまでした",
+                  "romaji": "gochisousama deshita"
+                },
+                {
+                  "jp": "ご注文は？",
+                  "romaji": "gochumon wa?"
+                },
+                {
+                  "jp": "水をお願いします",
+                  "romaji": "mizu o onegaishimasu"
+                },
+                {
+                  "jp": "これは何ですか",
+                  "romaji": "kore wa nan desu ka"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "lessonLevels": [
+        {
+          "id": "R-L4-S4-L1",
+          "title": "Thank You for the Meal",
+          "components": [
+            {
+              "id": "R-L4-S4-L1-C1",
+              "componentType": "closing",
+              "goal": "Learn the most natural phrase to say as you finish the meal.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L4-S4-L1-001",
+                  "promptMode": "Build the phrase for",
+                  "promptPrimary": "Thank you for the meal.",
+                  "acceptedAnswers": [
+                    "ごちそうさまでした"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ごちそうさまでした",
+                      "romaji": "gochisousama deshita"
+                    },
+                    {
+                      "jp": "ありがとうございます",
+                      "romaji": "arigatou gozaimasu"
+                    },
+                    {
+                      "jp": "すみません",
+                      "romaji": "sumimasen"
+                    },
+                    {
+                      "jp": "お会計お願いします",
+                      "romaji": "okaikei onegaishimasu"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L4-S4-L1-002",
+                  "promptMode": "What does this mean?",
+                  "promptPrimary": "ごちそうさまでした",
+                  "acceptedAnswers": [
+                    "Thank you for the meal."
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ごちそうさまでした",
+                      "en": "Thank you for the meal."
+                    },
+                    {
+                      "jp": "ありがとうございます",
+                      "en": "Thank you very much."
+                    },
+                    {
+                      "jp": "すみません",
+                      "en": "Excuse me."
+                    },
+                    {
+                      "jp": "いただきます",
+                      "en": "Let us eat."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L4-S4-L2",
+          "title": "Thank You Very Much",
+          "components": [
+            {
+              "id": "R-L4-S4-L2-C1",
+              "componentType": "closing",
+              "goal": "Use a simple thank-you naturally with staff.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L4-S4-L2-001",
+                  "promptMode": "Build the phrase for",
+                  "promptPrimary": "Thank you very much.",
+                  "acceptedAnswers": [
+                    "ありがとうございます"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ありがとうございます",
+                      "romaji": "arigatou gozaimasu"
+                    },
+                    {
+                      "jp": "ごちそうさまでした",
+                      "romaji": "gochisousama deshita"
+                    },
+                    {
+                      "jp": "すみません",
+                      "romaji": "sumimasen"
+                    },
+                    {
+                      "jp": "お願いします",
+                      "romaji": "onegaishimasu"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L4-S4-L2-002",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "The staff brings your card back and you want to thank them.",
+                  "acceptedAnswers": [
+                    "ありがとうございます"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ありがとうございます",
+                      "romaji": "arigatou gozaimasu"
+                    },
+                    {
+                      "jp": "ごちそうさまでした",
+                      "romaji": "gochisousama deshita"
+                    },
+                    {
+                      "jp": "お会計お願いします",
+                      "romaji": "okaikei onegaishimasu"
+                    },
+                    {
+                      "jp": "どれですか",
+                      "romaji": "dore desu ka"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L4-S4-L3",
+          "title": "Leaving Naturally",
+          "components": [
+            {
+              "id": "R-L4-S4-L3-C1",
+              "componentType": "closing",
+              "goal": "Practice the final polite words before leaving.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L4-S4-L3-001",
+                  "promptMode": "Choose the best next line",
+                  "promptPrimary": "You paid and are about to leave. Thank the staff for the meal.",
+                  "acceptedAnswers": [
+                    "ごちそうさまでした"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ごちそうさまでした",
+                      "romaji": "gochisousama deshita"
+                    },
+                    {
+                      "jp": "お会計お願いします",
+                      "romaji": "okaikei onegaishimasu"
+                    },
+                    {
+                      "jp": "どれですか",
+                      "romaji": "dore desu ka"
+                    },
+                    {
+                      "jp": "まだです",
+                      "romaji": "mada desu"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L4-S4-L3-002",
+                  "promptMode": "Choose the best next line",
+                  "promptPrimary": "The staff says thank you after payment. You respond politely.",
+                  "acceptedAnswers": [
+                    "ありがとうございます"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ありがとうございます",
+                      "romaji": "arigatou gozaimasu"
+                    },
+                    {
+                      "jp": "ごちそうさまでした",
+                      "romaji": "gochisousama deshita"
+                    },
+                    {
+                      "jp": "現金でお願いします",
+                      "romaji": "genkin de onegaishimasu"
+                    },
+                    {
+                      "jp": "カードでお願いします",
+                      "romaji": "kaado de onegaishimasu"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L4-S4-L4",
+          "title": "Goodbye Review",
+          "components": [
+            {
+              "id": "R-L4-S4-L4-C1",
+              "componentType": "review",
+              "goal": "Review the small phrases that make the end of the meal feel natural.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L4-S4-L4-001",
+                  "promptMode": "What does this mean?",
+                  "promptPrimary": "ごちそうさまでした",
+                  "acceptedAnswers": [
+                    "Thank you for the meal."
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ごちそうさまでした",
+                      "en": "Thank you for the meal."
+                    },
+                    {
+                      "jp": "ありがとうございます",
+                      "en": "Thank you very much."
+                    },
+                    {
+                      "jp": "すみません",
+                      "en": "Excuse me."
+                    },
+                    {
+                      "jp": "お願いします",
+                      "en": "Please."
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L4-S4-L4-002",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "You are leaving and want to thank the restaurant.",
+                  "acceptedAnswers": [
+                    "ごちそうさまでした"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ごちそうさまでした",
+                      "romaji": "gochisousama deshita"
+                    },
+                    {
+                      "jp": "ありがとうございます",
+                      "romaji": "arigatou gozaimasu"
+                    },
+                    {
+                      "jp": "お会計お願いします",
+                      "romaji": "okaikei onegaishimasu"
+                    },
+                    {
+                      "jp": "どれですか",
+                      "romaji": "dore desu ka"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L4-S4-L4-003",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "The staff hands you your receipt and you say thank you.",
+                  "acceptedAnswers": [
+                    "ありがとうございます"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ありがとうございます",
+                      "romaji": "arigatou gozaimasu"
+                    },
+                    {
+                      "jp": "ごちそうさまでした",
+                      "romaji": "gochisousama deshita"
+                    },
+                    {
+                      "jp": "現金でお願いします",
+                      "romaji": "genkin de onegaishimasu"
+                    },
+                    {
+                      "jp": "カードでお願いします",
+                      "romaji": "kaado de onegaishimasu"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

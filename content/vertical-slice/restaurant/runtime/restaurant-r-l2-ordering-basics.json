@@ -1,0 +1,5107 @@
+{
+  "locationId": "restaurant",
+  "levelId": "R-L2",
+  "title": "Ordering Basics",
+  "oneSentenceGoal": "Place a short polite order for one item or one drink.",
+  "runtimeNotes": "Runtime-ready content bundle for the second restaurant level. This level turns recognition into small usable order frames.",
+  "sublevels": [
+    {
+      "id": "R-L2-S1",
+      "title": "Pointing and Ordering One Item",
+      "stage": "phrases",
+      "playerOutcome": "Can point to one item and ask for it politely using one stable phrase frame.",
+      "estimatedMinutes": 6,
+      "lessonLevels": [
+        {
+          "id": "R-L2-S1-L1",
+          "title": "This One, Please",
+          "components": [
+            {
+              "id": "R-L2-S1-L1-C1",
+              "componentType": "assembly",
+              "goal": "Build and recognize the most basic pointing order phrase",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S1-L1-001",
+                  "promptMode": "Build the phrase for",
+                  "promptPrimary": "This one, please.",
+                  "acceptedAnswers": [
+                    "これをお願いします",
+                    "これをください"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "これをお願いします",
+                      "romaji": "kore o onegaishimasu"
+                    },
+                    {
+                      "jp": "それをお願いします",
+                      "romaji": "sore o onegaishimasu"
+                    },
+                    {
+                      "jp": "これは何ですか",
+                      "romaji": "kore wa nan desu ka"
+                    },
+                    {
+                      "jp": "お会計お願いします",
+                      "romaji": "okaikei onegaishimasu"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S1-L1-002",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "You are pointing at the dish right in front of you.",
+                  "acceptedAnswers": [
+                    "これをお願いします",
+                    "これをください"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "これをお願いします",
+                      "romaji": "kore o onegaishimasu"
+                    },
+                    {
+                      "jp": "それをお願いします",
+                      "romaji": "sore o onegaishimasu"
+                    },
+                    {
+                      "jp": "どれですか",
+                      "romaji": "dore desu ka"
+                    },
+                    {
+                      "jp": "すみません",
+                      "romaji": "sumimasen"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S1-L1-003",
+                  "promptMode": "What does this mean?",
+                  "promptPrimary": "これをお願いします",
+                  "acceptedAnswers": [
+                    "This one, please."
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "これをお願いします",
+                      "en": "This one, please."
+                    },
+                    {
+                      "jp": "それをお願いします",
+                      "en": "That one, please."
+                    },
+                    {
+                      "jp": "これは何ですか",
+                      "en": "What is this?"
+                    },
+                    {
+                      "jp": "おすすめは何ですか",
+                      "en": "What do you recommend?"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S1-L1-004",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "You want to sound a little more direct but still polite.",
+                  "acceptedAnswers": [
+                    "これをください"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "これをください",
+                      "romaji": "kore o kudasai"
+                    },
+                    {
+                      "jp": "これをお願いします",
+                      "romaji": "kore o onegaishimasu"
+                    },
+                    {
+                      "jp": "これです",
+                      "romaji": "kore desu"
+                    },
+                    {
+                      "jp": "どれですか",
+                      "romaji": "dore desu ka"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L2-S1-L2",
+          "title": "That One, Please",
+          "components": [
+            {
+              "id": "R-L2-S1-L2-C1",
+              "componentType": "assembly",
+              "goal": "Use the pointing phrase for something farther away or already indicated.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S1-L2-001",
+                  "promptMode": "Build the phrase for",
+                  "promptPrimary": "That one, please.",
+                  "acceptedAnswers": [
+                    "それをお願いします",
+                    "それをください"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "それをお願いします",
+                      "romaji": "sore o onegaishimasu"
+                    },
+                    {
+                      "jp": "これをお願いします",
+                      "romaji": "kore o onegaishimasu"
+                    },
+                    {
+                      "jp": "あれをお願いします",
+                      "romaji": "are o onegaishimasu"
+                    },
+                    {
+                      "jp": "これをください",
+                      "romaji": "kore o kudasai"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S1-L2-002",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "The server is holding up two dishes and you want the one farther from you.",
+                  "acceptedAnswers": [
+                    "それをお願いします",
+                    "それをください"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "それをお願いします",
+                      "romaji": "sore o onegaishimasu"
+                    },
+                    {
+                      "jp": "これをお願いします",
+                      "romaji": "kore o onegaishimasu"
+                    },
+                    {
+                      "jp": "どれですか",
+                      "romaji": "dore desu ka"
+                    },
+                    {
+                      "jp": "これは何ですか",
+                      "romaji": "kore wa nan desu ka"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S1-L2-003",
+                  "promptMode": "What does this mean?",
+                  "promptPrimary": "それをお願いします",
+                  "acceptedAnswers": [
+                    "That one, please."
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "それをお願いします",
+                      "en": "That one, please."
+                    },
+                    {
+                      "jp": "これをお願いします",
+                      "en": "This one, please."
+                    },
+                    {
+                      "jp": "それは何ですか",
+                      "en": "What is that?"
+                    },
+                    {
+                      "jp": "おすすめは何ですか",
+                      "en": "What do you recommend?"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S1-L2-004",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "You want to order the item the server just pointed to.",
+                  "acceptedAnswers": [
+                    "それをください"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "それをください",
+                      "romaji": "sore o kudasai"
+                    },
+                    {
+                      "jp": "これをください",
+                      "romaji": "kore o kudasai"
+                    },
+                    {
+                      "jp": "これです",
+                      "romaji": "kore desu"
+                    },
+                    {
+                      "jp": "それです",
+                      "romaji": "sore desu"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L2-S1-L3",
+          "title": "Name the Dish",
+          "components": [
+            {
+              "id": "R-L2-S1-L3-C1",
+              "componentType": "ordering",
+              "goal": "Order by saying the dish name directly.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S1-L3-001",
+                  "promptMode": "Build the phrase for",
+                  "promptPrimary": "Ramen, please.",
+                  "acceptedAnswers": [
+                    "ラーメンをお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ラーメンをお願いします",
+                      "romaji": "raamen o onegaishimasu"
+                    },
+                    {
+                      "jp": "うどんをお願いします",
+                      "romaji": "udon o onegaishimasu"
+                    },
+                    {
+                      "jp": "ラーメンですか",
+                      "romaji": "raamen desu ka"
+                    },
+                    {
+                      "jp": "ラーメンください",
+                      "romaji": "raamen kudasai"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S1-L3-002",
+                  "promptMode": "Build the phrase for",
+                  "promptPrimary": "Salad, please.",
+                  "acceptedAnswers": [
+                    "サラダをお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "サラダをお願いします",
+                      "romaji": "sarada o onegaishimasu"
+                    },
+                    {
+                      "jp": "サラダですか",
+                      "romaji": "sarada desu ka"
+                    },
+                    {
+                      "jp": "スープをお願いします",
+                      "romaji": "suupu o onegaishimasu"
+                    },
+                    {
+                      "jp": "サラダください",
+                      "romaji": "sarada kudasai"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S1-L3-003",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "You know exactly which dish you want and say its name.",
+                  "acceptedAnswers": [
+                    "すしをお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "すしをお願いします",
+                      "romaji": "sushi o onegaishimasu"
+                    },
+                    {
+                      "jp": "これをお願いします",
+                      "romaji": "kore o onegaishimasu"
+                    },
+                    {
+                      "jp": "おすすめは何ですか",
+                      "romaji": "osusume wa nan desu ka"
+                    },
+                    {
+                      "jp": "すしですか",
+                      "romaji": "sushi desu ka"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S1-L3-004",
+                  "promptMode": "What does this mean?",
+                  "promptPrimary": "ぎょうざをお願いします",
+                  "acceptedAnswers": [
+                    "Gyoza, please."
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ぎょうざをお願いします",
+                      "en": "Gyoza, please."
+                    },
+                    {
+                      "jp": "ぎょうざですか",
+                      "en": "Is it gyoza?"
+                    },
+                    {
+                      "jp": "ぎょうざは何ですか",
+                      "en": "What is gyoza?"
+                    },
+                    {
+                      "jp": "ぎょうざください",
+                      "en": "Give me gyoza."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L2-S1-L4",
+          "title": "One Meal by Name",
+          "components": [
+            {
+              "id": "R-L2-S1-L4-C1",
+              "componentType": "ordering",
+              "goal": "Practice one-dish orders with common meal names.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S1-L4-001",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "You want to order udon.",
+                  "acceptedAnswers": [
+                    "うどんをお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "うどんをお願いします",
+                      "romaji": "udon o onegaishimasu"
+                    },
+                    {
+                      "jp": "ご飯をお願いします",
+                      "romaji": "gohan o onegaishimasu"
+                    },
+                    {
+                      "jp": "コーヒーをお願いします",
+                      "romaji": "koohii o onegaishimasu"
+                    },
+                    {
+                      "jp": "サラダをお願いします",
+                      "romaji": "sarada o onegaishimasu"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S1-L4-002",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "You want to order curry rice.",
+                  "acceptedAnswers": [
+                    "カレーライスをお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "カレーライスをお願いします",
+                      "romaji": "karee raisu o onegaishimasu"
+                    },
+                    {
+                      "jp": "ラーメンをお願いします",
+                      "romaji": "raamen o onegaishimasu"
+                    },
+                    {
+                      "jp": "水をお願いします",
+                      "romaji": "mizu o onegaishimasu"
+                    },
+                    {
+                      "jp": "ケーキをお願いします",
+                      "romaji": "keeki o onegaishimasu"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S1-L4-003",
+                  "promptMode": "Build the phrase for",
+                  "promptPrimary": "Miso soup, please.",
+                  "acceptedAnswers": [
+                    "味噌汁をお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "味噌汁をお願いします",
+                      "romaji": "misoshiru o onegaishimasu"
+                    },
+                    {
+                      "jp": "スープをお願いします",
+                      "romaji": "suupu o onegaishimasu"
+                    },
+                    {
+                      "jp": "味噌汁ですか",
+                      "romaji": "misoshiru desu ka"
+                    },
+                    {
+                      "jp": "味噌汁ください",
+                      "romaji": "misoshiru kudasai"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S1-L4-004",
+                  "promptMode": "Build the phrase for",
+                  "promptPrimary": "Rice, please.",
+                  "acceptedAnswers": [
+                    "ご飯をお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ご飯をお願いします",
+                      "romaji": "gohan o onegaishimasu"
+                    },
+                    {
+                      "jp": "パンをお願いします",
+                      "romaji": "pan o onegaishimasu"
+                    },
+                    {
+                      "jp": "ご飯ですか",
+                      "romaji": "gohan desu ka"
+                    },
+                    {
+                      "jp": "ご飯ください",
+                      "romaji": "gohan kudasai"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L2-S1-L5",
+          "title": "One More Item",
+          "components": [
+            {
+              "id": "R-L2-S1-L5-C1",
+              "componentType": "ordering",
+              "goal": "Add another item after the first one.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S1-L5-001",
+                  "promptMode": "Build the phrase for",
+                  "promptPrimary": "One more tea, please.",
+                  "acceptedAnswers": [
+                    "お茶をもう一つお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "お茶をもう一つお願いします",
+                      "romaji": "ocha o mou hitotsu onegaishimasu"
+                    },
+                    {
+                      "jp": "お茶をお願いします",
+                      "romaji": "ocha o onegaishimasu"
+                    },
+                    {
+                      "jp": "もう一つですか",
+                      "romaji": "mou hitotsu desu ka"
+                    },
+                    {
+                      "jp": "お茶は何ですか",
+                      "romaji": "ocha wa nan desu ka"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S1-L5-002",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "You already ordered and now want one more salad.",
+                  "acceptedAnswers": [
+                    "サラダをもう一つお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "サラダをもう一つお願いします",
+                      "romaji": "sarada o mou hitotsu onegaishimasu"
+                    },
+                    {
+                      "jp": "サラダをお願いします",
+                      "romaji": "sarada o onegaishimasu"
+                    },
+                    {
+                      "jp": "どれですか",
+                      "romaji": "dore desu ka"
+                    },
+                    {
+                      "jp": "サラダですか",
+                      "romaji": "sarada desu ka"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S1-L5-003",
+                  "promptMode": "What does this mean?",
+                  "promptPrimary": "もう一つお願いします",
+                  "acceptedAnswers": [
+                    "One more, please."
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "もう一つお願いします",
+                      "en": "One more, please."
+                    },
+                    {
+                      "jp": "これをお願いします",
+                      "en": "This one, please."
+                    },
+                    {
+                      "jp": "以上です",
+                      "en": "That is all."
+                    },
+                    {
+                      "jp": "どれですか",
+                      "en": "Which one?"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L2-S1-L6",
+          "title": "Start the Order Naturally",
+          "components": [
+            {
+              "id": "R-L2-S1-L6-C1",
+              "componentType": "dialogue",
+              "goal": "Use excuse me before beginning the order.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S1-L6-001",
+                  "promptMode": "Choose the best next line",
+                  "promptPrimary": "You need the server to come over before you order.",
+                  "acceptedAnswers": [
+                    "すみません"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "すみません",
+                      "romaji": "sumimasen"
+                    },
+                    {
+                      "jp": "お会計お願いします",
+                      "romaji": "okaikei onegaishimasu"
+                    },
+                    {
+                      "jp": "どれですか",
+                      "romaji": "dore desu ka"
+                    },
+                    {
+                      "jp": "ごちそうさまでした",
+                      "romaji": "gochisousama deshita"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S1-L6-002",
+                  "promptMode": "Choose the best next line",
+                  "promptPrimary": "The server looks at you after you say excuse me. Now start your order.",
+                  "acceptedAnswers": [
+                    "これをお願いします",
+                    "これをください"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "これをお願いします",
+                      "romaji": "kore o onegaishimasu"
+                    },
+                    {
+                      "jp": "おすすめは何ですか",
+                      "romaji": "osusume wa nan desu ka"
+                    },
+                    {
+                      "jp": "どれですか",
+                      "romaji": "dore desu ka"
+                    },
+                    {
+                      "jp": "ありがとうございます",
+                      "romaji": "arigatou gozaimasu"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S1-L6-003",
+                  "promptMode": "Choose the best flow",
+                  "promptPrimary": "Get attention first, then order tea.",
+                  "acceptedAnswers": [
+                    "すみません"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "すみません",
+                      "romaji": "sumimasen"
+                    },
+                    {
+                      "jp": "お茶をお願いします",
+                      "romaji": "ocha o onegaishimasu"
+                    },
+                    {
+                      "jp": "お会計お願いします",
+                      "romaji": "okaikei onegaishimasu"
+                    },
+                    {
+                      "jp": "どれですか",
+                      "romaji": "dore desu ka"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L2-S1-L7",
+          "title": "Ordering Review",
+          "components": [
+            {
+              "id": "R-L2-S1-L7-C1",
+              "componentType": "review",
+              "goal": "Review the basic ways to order food politely.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S1-L7-001",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "You are pointing right at the item you want.",
+                  "acceptedAnswers": [
+                    "これをお願いします",
+                    "これをください"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "これをお願いします",
+                      "romaji": "kore o onegaishimasu"
+                    },
+                    {
+                      "jp": "それをお願いします",
+                      "romaji": "sore o onegaishimasu"
+                    },
+                    {
+                      "jp": "どれですか",
+                      "romaji": "dore desu ka"
+                    },
+                    {
+                      "jp": "おすすめは何ですか",
+                      "romaji": "osusume wa nan desu ka"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S1-L7-002",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "You know you want ramen and want to say it directly.",
+                  "acceptedAnswers": [
+                    "ラーメンをお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ラーメンをお願いします",
+                      "romaji": "raamen o onegaishimasu"
+                    },
+                    {
+                      "jp": "ラーメンですか",
+                      "romaji": "raamen desu ka"
+                    },
+                    {
+                      "jp": "ラーメンは何ですか",
+                      "romaji": "raamen wa nan desu ka"
+                    },
+                    {
+                      "jp": "ラーメンください",
+                      "romaji": "raamen kudasai"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S1-L7-003",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "You already ordered and now want one more tea.",
+                  "acceptedAnswers": [
+                    "お茶をもう一つお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "お茶をもう一つお願いします",
+                      "romaji": "ocha o mou hitotsu onegaishimasu"
+                    },
+                    {
+                      "jp": "お茶をお願いします",
+                      "romaji": "ocha o onegaishimasu"
+                    },
+                    {
+                      "jp": "これをお願いします",
+                      "romaji": "kore o onegaishimasu"
+                    },
+                    {
+                      "jp": "すみません",
+                      "romaji": "sumimasen"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S1-L7-004",
+                  "promptMode": "What does this mean?",
+                  "promptPrimary": "それをお願いします",
+                  "acceptedAnswers": [
+                    "That one, please."
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "それをお願いします",
+                      "en": "That one, please."
+                    },
+                    {
+                      "jp": "これをお願いします",
+                      "en": "This one, please."
+                    },
+                    {
+                      "jp": "どれですか",
+                      "en": "Which one is it?"
+                    },
+                    {
+                      "jp": "おすすめは何ですか",
+                      "en": "What do you recommend?"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "components": [
+        {
+          "id": "R-L2-S1-C1",
+          "componentType": "vocabulary_intro",
+          "goal": "Introduce the phrase frame `これをお願いします` in one bounded restaurant context.",
+          "masteryRule": "all items must be completed once",
+          "retryBehavior": "not applicable",
+          "items": [
+            {
+              "jp": "これ",
+              "romaji": "kore",
+              "en": "this"
+            },
+            {
+              "jp": "を",
+              "romaji": "o",
+              "en": "object marker"
+            },
+            {
+              "jp": "お願いします",
+              "romaji": "onegaishimasu",
+              "en": "please / I would like"
+            }
+          ]
+        },
+        {
+          "id": "R-L2-S1-C2",
+          "componentType": "assembly",
+          "goal": "Build the order frame from smaller chunks before full recall is required.",
+          "masteryRule": "all items must be answered correctly",
+          "retryBehavior": "missed items go to the back of the current component queue",
+          "questions": [
+            {
+              "id": "Q-R-L2-S1-001",
+              "promptMode": "Complete the phrase",
+              "promptPrimary": "これを ____",
+              "acceptedAnswers": [
+                "お願いします",
+                "おねがいします"
+              ],
+              "referenceChoices": [
+                {
+                  "jp": "お願いします",
+                  "romaji": "onegaishimasu"
+                },
+                {
+                  "jp": "何ですか",
+                  "romaji": "nan desu ka"
+                },
+                {
+                  "jp": "ありますか",
+                  "romaji": "arimasu ka"
+                },
+                {
+                  "jp": "です",
+                  "romaji": "desu"
+                }
+              ]
+            },
+            {
+              "id": "Q-R-L2-S1-002",
+              "promptMode": "Build the phrase for",
+              "promptPrimary": "This one, please.",
+              "acceptedAnswers": [
+                "これをお願いします",
+                "これをください"
+              ],
+              "referenceChoices": [
+                {
+                  "jp": "これをお願いします",
+                  "romaji": "kore o onegaishimasu"
+                },
+                {
+                  "jp": "これは何ですか",
+                  "romaji": "kore wa nan desu ka"
+                },
+                {
+                  "jp": "おすすめは何ですか",
+                  "romaji": "osusume wa nan desu ka"
+                },
+                {
+                  "jp": "お会計お願いします",
+                  "romaji": "okaikei onegaishimasu"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L2-S1-C3",
+          "componentType": "guided_recall",
+          "goal": "Use the full phrase while pointing to one item.",
+          "masteryRule": "all items must be answered correctly",
+          "retryBehavior": "missed items go to the back of the current component queue",
+          "questions": [
+            {
+              "id": "Q-R-L2-S1-003",
+              "promptMode": "Say this politely",
+              "promptPrimary": "This one, please.",
+              "acceptedAnswers": [
+                "これをお願いします",
+                "これをください"
+              ],
+              "referenceChoices": [
+                {
+                  "jp": "これをお願いします",
+                  "romaji": "kore o onegaishimasu"
+                },
+                {
+                  "jp": "おすすめは何ですか",
+                  "romaji": "osusume wa nan desu ka"
+                },
+                {
+                  "jp": "これは何ですか",
+                  "romaji": "kore wa nan desu ka"
+                },
+                {
+                  "jp": "水です",
+                  "romaji": "mizu desu"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L2-S1-C4",
+          "componentType": "scenario_check",
+          "goal": "Choose the correct phrase for a simple one-item ordering moment.",
+          "masteryRule": "all items must be answered correctly",
+          "retryBehavior": "missed items go to the back of the current component queue",
+          "questions": [
+            {
+              "id": "Q-R-L2-S1-004",
+              "promptMode": "Which reply fits",
+              "promptPrimary": "You are pointing to one dish and want to order it politely.",
+              "acceptedAnswers": [
+                "これをお願いします",
+                "これをください"
+              ],
+              "referenceChoices": [
+                {
+                  "jp": "これをお願いします",
+                  "romaji": "kore o onegaishimasu"
+                },
+                {
+                  "jp": "これは何ですか",
+                  "romaji": "kore wa nan desu ka"
+                },
+                {
+                  "jp": "お会計お願いします",
+                  "romaji": "okaikei onegaishimasu"
+                },
+                {
+                  "jp": "ごちそうさまでした",
+                  "romaji": "gochisousama deshita"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L2-S1-C5",
+          "componentType": "review",
+          "goal": "Finish by reusing the frame across a few familiar restaurant moments.",
+          "masteryRule": "all items must be answered correctly",
+          "retryBehavior": "missed items go to the back of the current component queue",
+          "questions": [
+            {
+              "id": "Q-R-L2-S1-005",
+              "promptMode": "Which one means",
+              "promptPrimary": "This one, please.",
+              "acceptedAnswers": [
+                "これをお願いします",
+                "これをください"
+              ],
+              "referenceChoices": [
+                {
+                  "jp": "これをお願いします",
+                  "romaji": "kore o onegaishimasu"
+                },
+                {
+                  "jp": "おすすめは何ですか",
+                  "romaji": "osusume wa nan desu ka"
+                },
+                {
+                  "jp": "これは何ですか",
+                  "romaji": "kore wa nan desu ka"
+                },
+                {
+                  "jp": "水をお願いします",
+                  "romaji": "mizu o onegaishimasu"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R-L2-S2",
+      "title": "Ordering a Drink",
+      "stage": "phrases",
+      "playerOutcome": "Can ask for a simple drink politely by reusing an earlier order frame.",
+      "estimatedMinutes": 5,
+      "lessonLevels": [
+        {
+          "id": "R-L2-S2-L1",
+          "title": "Tea and Water",
+          "components": [
+            {
+              "id": "R-L2-S2-L1-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Introduce the core words for tea and water.",
+              "masteryRule": "all 5 items must be completed once",
+              "retryBehavior": "not applicable",
+              "items": [
+                {
+                  "jp": "お茶",
+                  "romaji": "ocha",
+                  "en": "tea"
+                },
+                {
+                  "jp": "水",
+                  "romaji": "mizu",
+                  "en": "water"
+                },
+                {
+                  "jp": "氷水",
+                  "romaji": "koorimizu",
+                  "en": "ice water"
+                },
+                {
+                  "jp": "温かいお茶",
+                  "romaji": "atatakai ocha",
+                  "en": "hot tea"
+                },
+                {
+                  "jp": "冷たいお茶",
+                  "romaji": "tsumetai ocha",
+                  "en": "cold tea"
+                }
+              ]
+            },
+            {
+              "id": "R-L2-S2-L1-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese word for tea and water.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S2-L1-R001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Tea",
+                  "acceptedAnswers": [
+                    "お茶"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    },
+                    {
+                      "jp": "紅茶",
+                      "romaji": "koucha"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L1-R002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Water",
+                  "acceptedAnswers": [
+                    "水"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    },
+                    {
+                      "jp": "紅茶",
+                      "romaji": "koucha"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L1-R003",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Ice Water",
+                  "acceptedAnswers": [
+                    "氷水"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "氷水",
+                      "romaji": "koorimizu"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L1-R004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Hot Tea",
+                  "acceptedAnswers": [
+                    "温かいお茶"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "温かいお茶",
+                      "romaji": "atatakai ocha"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L1-R005",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Cold Tea",
+                  "acceptedAnswers": [
+                    "冷たいお茶"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "冷たいお茶",
+                      "romaji": "tsumetai ocha"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "R-L2-S2-L1-C3",
+              "componentType": "matching",
+              "goal": "Read the Japanese and connect it back to meaning.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S2-L1-M001",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "お茶",
+                  "acceptedAnswers": [
+                    "tea"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "お茶",
+                      "en": "tea"
+                    },
+                    {
+                      "jp": "水",
+                      "en": "water"
+                    },
+                    {
+                      "jp": "氷水",
+                      "en": "ice water"
+                    },
+                    {
+                      "jp": "温かいお茶",
+                      "en": "hot tea"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L1-M002",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "水",
+                  "acceptedAnswers": [
+                    "water"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "水",
+                      "en": "water"
+                    },
+                    {
+                      "jp": "お茶",
+                      "en": "tea"
+                    },
+                    {
+                      "jp": "氷水",
+                      "en": "ice water"
+                    },
+                    {
+                      "jp": "温かいお茶",
+                      "en": "hot tea"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L1-M003",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "氷水",
+                  "acceptedAnswers": [
+                    "ice water"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "氷水",
+                      "en": "ice water"
+                    },
+                    {
+                      "jp": "お茶",
+                      "en": "tea"
+                    },
+                    {
+                      "jp": "水",
+                      "en": "water"
+                    },
+                    {
+                      "jp": "温かいお茶",
+                      "en": "hot tea"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L1-M004",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "温かいお茶",
+                  "acceptedAnswers": [
+                    "hot tea"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "温かいお茶",
+                      "en": "hot tea"
+                    },
+                    {
+                      "jp": "お茶",
+                      "en": "tea"
+                    },
+                    {
+                      "jp": "水",
+                      "en": "water"
+                    },
+                    {
+                      "jp": "氷水",
+                      "en": "ice water"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "R-L2-S2-L1-C4",
+              "componentType": "review",
+              "goal": "Finish with quick mixed review.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S2-L1-V001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Hot Tea",
+                  "acceptedAnswers": [
+                    "温かいお茶"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "温かいお茶",
+                      "romaji": "atatakai ocha"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L1-V002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Cold Tea",
+                  "acceptedAnswers": [
+                    "冷たいお茶"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "冷たいお茶",
+                      "romaji": "tsumetai ocha"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L1-V003",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Tea",
+                  "acceptedAnswers": [
+                    "お茶"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    },
+                    {
+                      "jp": "紅茶",
+                      "romaji": "koucha"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L1-V004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Water",
+                  "acceptedAnswers": [
+                    "水"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    },
+                    {
+                      "jp": "紅茶",
+                      "romaji": "koucha"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L2-S2-L2",
+          "title": "Coffee and Juice",
+          "components": [
+            {
+              "id": "R-L2-S2-L2-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Introduce the core words for coffee and juice.",
+              "masteryRule": "all 5 items must be completed once",
+              "retryBehavior": "not applicable",
+              "items": [
+                {
+                  "jp": "コーヒー",
+                  "romaji": "koohii",
+                  "en": "coffee"
+                },
+                {
+                  "jp": "紅茶",
+                  "romaji": "koucha",
+                  "en": "black tea"
+                },
+                {
+                  "jp": "ジュース",
+                  "romaji": "juusu",
+                  "en": "juice"
+                },
+                {
+                  "jp": "オレンジジュース",
+                  "romaji": "orenji juusu",
+                  "en": "orange juice"
+                },
+                {
+                  "jp": "アイスコーヒー",
+                  "romaji": "aisu koohii",
+                  "en": "iced coffee"
+                }
+              ]
+            },
+            {
+              "id": "R-L2-S2-L2-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese word for coffee and juice.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S2-L2-R001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Coffee",
+                  "acceptedAnswers": [
+                    "コーヒー"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "紅茶",
+                      "romaji": "koucha"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L2-R002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Black Tea",
+                  "acceptedAnswers": [
+                    "紅茶"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "紅茶",
+                      "romaji": "koucha"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L2-R003",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Juice",
+                  "acceptedAnswers": [
+                    "ジュース"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ジュース",
+                      "romaji": "juusu"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L2-R004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Orange Juice",
+                  "acceptedAnswers": [
+                    "オレンジジュース"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "オレンジジュース",
+                      "romaji": "orenji juusu"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L2-R005",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Iced Coffee",
+                  "acceptedAnswers": [
+                    "アイスコーヒー"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "アイスコーヒー",
+                      "romaji": "aisu koohii"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "R-L2-S2-L2-C3",
+              "componentType": "matching",
+              "goal": "Read the Japanese and connect it back to meaning.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S2-L2-M001",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "コーヒー",
+                  "acceptedAnswers": [
+                    "coffee"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "コーヒー",
+                      "en": "coffee"
+                    },
+                    {
+                      "jp": "紅茶",
+                      "en": "black tea"
+                    },
+                    {
+                      "jp": "ジュース",
+                      "en": "juice"
+                    },
+                    {
+                      "jp": "オレンジジュース",
+                      "en": "orange juice"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L2-M002",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "紅茶",
+                  "acceptedAnswers": [
+                    "black tea"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "紅茶",
+                      "en": "black tea"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "en": "coffee"
+                    },
+                    {
+                      "jp": "ジュース",
+                      "en": "juice"
+                    },
+                    {
+                      "jp": "オレンジジュース",
+                      "en": "orange juice"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L2-M003",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "ジュース",
+                  "acceptedAnswers": [
+                    "juice"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ジュース",
+                      "en": "juice"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "en": "coffee"
+                    },
+                    {
+                      "jp": "紅茶",
+                      "en": "black tea"
+                    },
+                    {
+                      "jp": "オレンジジュース",
+                      "en": "orange juice"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L2-M004",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "オレンジジュース",
+                  "acceptedAnswers": [
+                    "orange juice"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "オレンジジュース",
+                      "en": "orange juice"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "en": "coffee"
+                    },
+                    {
+                      "jp": "紅茶",
+                      "en": "black tea"
+                    },
+                    {
+                      "jp": "ジュース",
+                      "en": "juice"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "R-L2-S2-L2-C4",
+              "componentType": "review",
+              "goal": "Finish with quick mixed review.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S2-L2-V001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Orange Juice",
+                  "acceptedAnswers": [
+                    "オレンジジュース"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "オレンジジュース",
+                      "romaji": "orenji juusu"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L2-V002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Iced Coffee",
+                  "acceptedAnswers": [
+                    "アイスコーヒー"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "アイスコーヒー",
+                      "romaji": "aisu koohii"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L2-V003",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Coffee",
+                  "acceptedAnswers": [
+                    "コーヒー"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "紅茶",
+                      "romaji": "koucha"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L2-V004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Black Tea",
+                  "acceptedAnswers": [
+                    "紅茶"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "紅茶",
+                      "romaji": "koucha"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L2-S2-L3",
+          "title": "Beer and Sake Basics",
+          "components": [
+            {
+              "id": "R-L2-S2-L3-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Introduce the core words for beer and sake basics.",
+              "masteryRule": "all 5 items must be completed once",
+              "retryBehavior": "not applicable",
+              "items": [
+                {
+                  "jp": "ビール",
+                  "romaji": "biiru",
+                  "en": "beer"
+                },
+                {
+                  "jp": "生ビール",
+                  "romaji": "nama biiru",
+                  "en": "draft beer"
+                },
+                {
+                  "jp": "日本酒",
+                  "romaji": "nihonshu",
+                  "en": "sake"
+                },
+                {
+                  "jp": "ハイボール",
+                  "romaji": "haibooru",
+                  "en": "highball"
+                },
+                {
+                  "jp": "ウーロン茶",
+                  "romaji": "uuroncha",
+                  "en": "oolong tea"
+                }
+              ]
+            },
+            {
+              "id": "R-L2-S2-L3-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese word for beer and sake basics.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S2-L3-R001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Beer",
+                  "acceptedAnswers": [
+                    "ビール"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ビール",
+                      "romaji": "biiru"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L3-R002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Draft Beer",
+                  "acceptedAnswers": [
+                    "生ビール"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "生ビール",
+                      "romaji": "nama biiru"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L3-R003",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Sake",
+                  "acceptedAnswers": [
+                    "日本酒"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "日本酒",
+                      "romaji": "nihonshu"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L3-R004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Highball",
+                  "acceptedAnswers": [
+                    "ハイボール"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ハイボール",
+                      "romaji": "haibooru"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L3-R005",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Oolong Tea",
+                  "acceptedAnswers": [
+                    "ウーロン茶"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ウーロン茶",
+                      "romaji": "uuroncha"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "R-L2-S2-L3-C3",
+              "componentType": "matching",
+              "goal": "Read the Japanese and connect it back to meaning.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S2-L3-M001",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "ビール",
+                  "acceptedAnswers": [
+                    "beer"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ビール",
+                      "en": "beer"
+                    },
+                    {
+                      "jp": "生ビール",
+                      "en": "draft beer"
+                    },
+                    {
+                      "jp": "日本酒",
+                      "en": "sake"
+                    },
+                    {
+                      "jp": "ハイボール",
+                      "en": "highball"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L3-M002",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "生ビール",
+                  "acceptedAnswers": [
+                    "draft beer"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "生ビール",
+                      "en": "draft beer"
+                    },
+                    {
+                      "jp": "ビール",
+                      "en": "beer"
+                    },
+                    {
+                      "jp": "日本酒",
+                      "en": "sake"
+                    },
+                    {
+                      "jp": "ハイボール",
+                      "en": "highball"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L3-M003",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "日本酒",
+                  "acceptedAnswers": [
+                    "sake"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "日本酒",
+                      "en": "sake"
+                    },
+                    {
+                      "jp": "ビール",
+                      "en": "beer"
+                    },
+                    {
+                      "jp": "生ビール",
+                      "en": "draft beer"
+                    },
+                    {
+                      "jp": "ハイボール",
+                      "en": "highball"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L3-M004",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "ハイボール",
+                  "acceptedAnswers": [
+                    "highball"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ハイボール",
+                      "en": "highball"
+                    },
+                    {
+                      "jp": "ビール",
+                      "en": "beer"
+                    },
+                    {
+                      "jp": "生ビール",
+                      "en": "draft beer"
+                    },
+                    {
+                      "jp": "日本酒",
+                      "en": "sake"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "R-L2-S2-L3-C4",
+              "componentType": "review",
+              "goal": "Finish with quick mixed review.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S2-L3-V001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Highball",
+                  "acceptedAnswers": [
+                    "ハイボール"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ハイボール",
+                      "romaji": "haibooru"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L3-V002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Oolong Tea",
+                  "acceptedAnswers": [
+                    "ウーロン茶"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ウーロン茶",
+                      "romaji": "uuroncha"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L3-V003",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Beer",
+                  "acceptedAnswers": [
+                    "ビール"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ビール",
+                      "romaji": "biiru"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L3-V004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Draft Beer",
+                  "acceptedAnswers": [
+                    "生ビール"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "生ビール",
+                      "romaji": "nama biiru"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L2-S2-L4",
+          "title": "Hot or Cold",
+          "components": [
+            {
+              "id": "R-L2-S2-L4-C1",
+              "componentType": "ordering",
+              "goal": "Understand temperature choices when ordering drinks.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S2-L4-001",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "You want iced coffee.",
+                  "acceptedAnswers": [
+                    "アイスコーヒーをお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "アイスコーヒーをお願いします",
+                      "romaji": "aisu koohii o onegaishimasu"
+                    },
+                    {
+                      "jp": "ホットコーヒーをお願いします",
+                      "romaji": "hotto koohii o onegaishimasu"
+                    },
+                    {
+                      "jp": "コーヒーですか",
+                      "romaji": "koohii desu ka"
+                    },
+                    {
+                      "jp": "冷たいです",
+                      "romaji": "tsumetai desu"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L4-002",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "You want hot tea.",
+                  "acceptedAnswers": [
+                    "温かいお茶をお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "温かいお茶をお願いします",
+                      "romaji": "atatakai ocha o onegaishimasu"
+                    },
+                    {
+                      "jp": "冷たいお茶をお願いします",
+                      "romaji": "tsumetai ocha o onegaishimasu"
+                    },
+                    {
+                      "jp": "お茶ですか",
+                      "romaji": "ocha desu ka"
+                    },
+                    {
+                      "jp": "お茶をお願いします",
+                      "romaji": "ocha o onegaishimasu"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L4-003",
+                  "promptMode": "What does this mean?",
+                  "promptPrimary": "冷たいお茶",
+                  "acceptedAnswers": [
+                    "cold tea"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "冷たいお茶",
+                      "en": "cold tea"
+                    },
+                    {
+                      "jp": "温かいお茶",
+                      "en": "hot tea"
+                    },
+                    {
+                      "jp": "水",
+                      "en": "water"
+                    },
+                    {
+                      "jp": "お茶",
+                      "en": "tea"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L4-004",
+                  "promptMode": "What does this mean?",
+                  "promptPrimary": "ホットコーヒー",
+                  "acceptedAnswers": [
+                    "hot coffee"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ホットコーヒー",
+                      "en": "hot coffee"
+                    },
+                    {
+                      "jp": "アイスコーヒー",
+                      "en": "iced coffee"
+                    },
+                    {
+                      "jp": "紅茶",
+                      "en": "black tea"
+                    },
+                    {
+                      "jp": "ジュース",
+                      "en": "juice"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L2-S2-L5",
+          "title": "One Drink for Now",
+          "components": [
+            {
+              "id": "R-L2-S2-L5-C1",
+              "componentType": "dialogue",
+              "goal": "Order just one drink to start the meal.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S2-L5-001",
+                  "promptMode": "Build the phrase for",
+                  "promptPrimary": "Tea, please.",
+                  "acceptedAnswers": [
+                    "お茶をお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "お茶をお願いします",
+                      "romaji": "ocha o onegaishimasu"
+                    },
+                    {
+                      "jp": "水をお願いします",
+                      "romaji": "mizu o onegaishimasu"
+                    },
+                    {
+                      "jp": "ジュースをお願いします",
+                      "romaji": "juusu o onegaishimasu"
+                    },
+                    {
+                      "jp": "ビールをお願いします",
+                      "romaji": "biiru o onegaishimasu"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L5-002",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "You want to start with one beer.",
+                  "acceptedAnswers": [
+                    "ビールをお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ビールをお願いします",
+                      "romaji": "biiru o onegaishimasu"
+                    },
+                    {
+                      "jp": "生ビールをお願いします",
+                      "romaji": "nama biiru o onegaishimasu"
+                    },
+                    {
+                      "jp": "日本酒をお願いします",
+                      "romaji": "nihonshu o onegaishimasu"
+                    },
+                    {
+                      "jp": "水をお願いします",
+                      "romaji": "mizu o onegaishimasu"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L5-003",
+                  "promptMode": "Choose the best next line",
+                  "promptPrimary": "The server asks about drinks and you want iced coffee.",
+                  "acceptedAnswers": [
+                    "アイスコーヒーをお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "アイスコーヒーをお願いします",
+                      "romaji": "aisu koohii o onegaishimasu"
+                    },
+                    {
+                      "jp": "コーヒーですか",
+                      "romaji": "koohii desu ka"
+                    },
+                    {
+                      "jp": "これをお願いします",
+                      "romaji": "kore o onegaishimasu"
+                    },
+                    {
+                      "jp": "すみません",
+                      "romaji": "sumimasen"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L2-S2-L6",
+          "title": "Drink Ordering Review",
+          "components": [
+            {
+              "id": "R-L2-S2-L6-C1",
+              "componentType": "review",
+              "goal": "Mix familiar drinks, temperatures, and direct drink orders.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S2-L6-001",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "You want water.",
+                  "acceptedAnswers": [
+                    "水をお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "水をお願いします",
+                      "romaji": "mizu o onegaishimasu"
+                    },
+                    {
+                      "jp": "お茶をお願いします",
+                      "romaji": "ocha o onegaishimasu"
+                    },
+                    {
+                      "jp": "ジュースをお願いします",
+                      "romaji": "juusu o onegaishimasu"
+                    },
+                    {
+                      "jp": "どれですか",
+                      "romaji": "dore desu ka"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L6-002",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "You want a hot coffee.",
+                  "acceptedAnswers": [
+                    "ホットコーヒーをお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ホットコーヒーをお願いします",
+                      "romaji": "hotto koohii o onegaishimasu"
+                    },
+                    {
+                      "jp": "アイスコーヒーをお願いします",
+                      "romaji": "aisu koohii o onegaishimasu"
+                    },
+                    {
+                      "jp": "紅茶をお願いします",
+                      "romaji": "koucha o onegaishimasu"
+                    },
+                    {
+                      "jp": "お会計お願いします",
+                      "romaji": "okaikei onegaishimasu"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L6-003",
+                  "promptMode": "What does this mean?",
+                  "promptPrimary": "生ビールをお願いします",
+                  "acceptedAnswers": [
+                    "Draft beer, please."
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "生ビールをお願いします",
+                      "en": "Draft beer, please."
+                    },
+                    {
+                      "jp": "ビールをお願いします",
+                      "en": "Beer, please."
+                    },
+                    {
+                      "jp": "日本酒をお願いします",
+                      "en": "Sake, please."
+                    },
+                    {
+                      "jp": "お茶をお願いします",
+                      "en": "Tea, please."
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S2-L6-004",
+                  "promptMode": "What does this mean?",
+                  "promptPrimary": "温かいお茶をお願いします",
+                  "acceptedAnswers": [
+                    "Hot tea, please."
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "温かいお茶をお願いします",
+                      "en": "Hot tea, please."
+                    },
+                    {
+                      "jp": "冷たいお茶をお願いします",
+                      "en": "Cold tea, please."
+                    },
+                    {
+                      "jp": "水をお願いします",
+                      "en": "Water, please."
+                    },
+                    {
+                      "jp": "コーヒーをお願いします",
+                      "en": "Coffee, please."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "components": [
+        {
+          "id": "R-L2-S2-C1",
+          "componentType": "vocabulary_intro",
+          "goal": "Introduce a tiny reusable drink set for polite ordering.",
+          "masteryRule": "all items must be completed once",
+          "retryBehavior": "not applicable",
+          "items": [
+            {
+              "jp": "お茶",
+              "romaji": "ocha",
+              "en": "tea"
+            },
+            {
+              "jp": "水",
+              "romaji": "mizu",
+              "en": "water"
+            },
+            {
+              "jp": "飲み物",
+              "romaji": "nomimono",
+              "en": "drink"
+            }
+          ]
+        },
+        {
+          "id": "R-L2-S2-C2",
+          "componentType": "substitution",
+          "goal": "Swap drink nouns into an order frame the learner already knows.",
+          "masteryRule": "all items must be answered correctly",
+          "retryBehavior": "missed items go to the back of the current component queue",
+          "questions": [
+            {
+              "id": "Q-R-L2-S2-001",
+              "promptMode": "Say this politely",
+              "promptPrimary": "Tea, please.",
+              "acceptedAnswers": [
+                "お茶をお願いします",
+                "おちゃをおねがいします"
+              ],
+              "referenceChoices": [
+                {
+                  "jp": "お茶をお願いします",
+                  "romaji": "ocha o onegaishimasu"
+                },
+                {
+                  "jp": "水をお願いします",
+                  "romaji": "mizu o onegaishimasu"
+                },
+                {
+                  "jp": "これをお願いします",
+                  "romaji": "kore o onegaishimasu"
+                },
+                {
+                  "jp": "おすすめは何ですか",
+                  "romaji": "osusume wa nan desu ka"
+                }
+              ]
+            },
+            {
+              "id": "Q-R-L2-S2-002",
+              "promptMode": "Say this politely",
+              "promptPrimary": "Water, please.",
+              "acceptedAnswers": [
+                "水をお願いします",
+                "みずをおねがいします"
+              ],
+              "referenceChoices": [
+                {
+                  "jp": "水をお願いします",
+                  "romaji": "mizu o onegaishimasu"
+                },
+                {
+                  "jp": "お茶をお願いします",
+                  "romaji": "ocha o onegaishimasu"
+                },
+                {
+                  "jp": "これをお願いします",
+                  "romaji": "kore o onegaishimasu"
+                },
+                {
+                  "jp": "これは何ですか",
+                  "romaji": "kore wa nan desu ka"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L2-S2-C3",
+          "componentType": "guided_recall",
+          "goal": "Ask for one simple drink politely using known words plus the order frame.",
+          "masteryRule": "all items must be answered correctly",
+          "retryBehavior": "missed items go to the back of the current component queue",
+          "questions": [
+            {
+              "id": "Q-R-L2-S2-003",
+              "promptMode": "Which reply fits",
+              "promptPrimary": "You want water, not a full meal item.",
+              "acceptedAnswers": [
+                "水をお願いします",
+                "みずをおねがいします"
+              ],
+              "referenceChoices": [
+                {
+                  "jp": "水をお願いします",
+                  "romaji": "mizu o onegaishimasu"
+                },
+                {
+                  "jp": "お会計お願いします",
+                  "romaji": "okaikei onegaishimasu"
+                },
+                {
+                  "jp": "これは何ですか",
+                  "romaji": "kore wa nan desu ka"
+                },
+                {
+                  "jp": "ご注文は？",
+                  "romaji": "gochumon wa?"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L2-S2-C4",
+          "componentType": "review",
+          "goal": "Review beginner drink ordering without adding quantity or modification language.",
+          "masteryRule": "all items must be answered correctly",
+          "retryBehavior": "missed items go to the back of the current component queue",
+          "questions": [
+            {
+              "id": "Q-R-L2-S2-004",
+              "promptMode": "Which one means",
+              "promptPrimary": "Tea, please.",
+              "acceptedAnswers": [
+                "お茶をお願いします",
+                "おちゃをおねがいします"
+              ],
+              "referenceChoices": [
+                {
+                  "jp": "お茶をお願いします",
+                  "romaji": "ocha o onegaishimasu"
+                },
+                {
+                  "jp": "水をお願いします",
+                  "romaji": "mizu o onegaishimasu"
+                },
+                {
+                  "jp": "これをお願いします",
+                  "romaji": "kore o onegaishimasu"
+                },
+                {
+                  "jp": "おすすめは何ですか",
+                  "romaji": "osusume wa nan desu ka"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R-L2-S3",
+      "title": "Ordering Meals and Set Meals",
+      "stage": "phrases",
+      "playerOutcome": "Can order familiar meal items by name and understand the basic idea of a set meal.",
+      "estimatedMinutes": 8,
+      "lessonLevels": [
+        {
+          "id": "R-L2-S3-L1",
+          "title": "Noodle Meals",
+          "components": [
+            {
+              "id": "R-L2-S3-L1-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Introduce the core words for noodle meals.",
+              "masteryRule": "all 5 items must be completed once",
+              "retryBehavior": "not applicable",
+              "items": [
+                {
+                  "jp": "ラーメン",
+                  "romaji": "raamen",
+                  "en": "ramen"
+                },
+                {
+                  "jp": "うどん",
+                  "romaji": "udon",
+                  "en": "udon"
+                },
+                {
+                  "jp": "そば",
+                  "romaji": "soba",
+                  "en": "soba"
+                },
+                {
+                  "jp": "焼きそば",
+                  "romaji": "yakisoba",
+                  "en": "yakisoba"
+                },
+                {
+                  "jp": "つけ麺",
+                  "romaji": "tsukemen",
+                  "en": "dipping noodles"
+                }
+              ]
+            },
+            {
+              "id": "R-L2-S3-L1-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese word for noodle meals.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S3-L1-R001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Ramen",
+                  "acceptedAnswers": [
+                    "ラーメン"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ラーメン",
+                      "romaji": "raamen"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L1-R002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Udon",
+                  "acceptedAnswers": [
+                    "うどん"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "うどん",
+                      "romaji": "udon"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L1-R003",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Soba",
+                  "acceptedAnswers": [
+                    "そば"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "そば",
+                      "romaji": "soba"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L1-R004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Yakisoba",
+                  "acceptedAnswers": [
+                    "焼きそば"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "焼きそば",
+                      "romaji": "yakisoba"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L1-R005",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Dipping Noodles",
+                  "acceptedAnswers": [
+                    "つけ麺"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "つけ麺",
+                      "romaji": "tsukemen"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "R-L2-S3-L1-C3",
+              "componentType": "matching",
+              "goal": "Read the Japanese and connect it back to meaning.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S3-L1-M001",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "ラーメン",
+                  "acceptedAnswers": [
+                    "ramen"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ラーメン",
+                      "en": "ramen"
+                    },
+                    {
+                      "jp": "うどん",
+                      "en": "udon"
+                    },
+                    {
+                      "jp": "そば",
+                      "en": "soba"
+                    },
+                    {
+                      "jp": "焼きそば",
+                      "en": "yakisoba"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L1-M002",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "うどん",
+                  "acceptedAnswers": [
+                    "udon"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "うどん",
+                      "en": "udon"
+                    },
+                    {
+                      "jp": "ラーメン",
+                      "en": "ramen"
+                    },
+                    {
+                      "jp": "そば",
+                      "en": "soba"
+                    },
+                    {
+                      "jp": "焼きそば",
+                      "en": "yakisoba"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L1-M003",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "そば",
+                  "acceptedAnswers": [
+                    "soba"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "そば",
+                      "en": "soba"
+                    },
+                    {
+                      "jp": "ラーメン",
+                      "en": "ramen"
+                    },
+                    {
+                      "jp": "うどん",
+                      "en": "udon"
+                    },
+                    {
+                      "jp": "焼きそば",
+                      "en": "yakisoba"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L1-M004",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "焼きそば",
+                  "acceptedAnswers": [
+                    "yakisoba"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "焼きそば",
+                      "en": "yakisoba"
+                    },
+                    {
+                      "jp": "ラーメン",
+                      "en": "ramen"
+                    },
+                    {
+                      "jp": "うどん",
+                      "en": "udon"
+                    },
+                    {
+                      "jp": "そば",
+                      "en": "soba"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "R-L2-S3-L1-C4",
+              "componentType": "review",
+              "goal": "Finish with quick mixed review.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S3-L1-V001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Yakisoba",
+                  "acceptedAnswers": [
+                    "焼きそば"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "焼きそば",
+                      "romaji": "yakisoba"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L1-V002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Dipping Noodles",
+                  "acceptedAnswers": [
+                    "つけ麺"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "つけ麺",
+                      "romaji": "tsukemen"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L1-V003",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Ramen",
+                  "acceptedAnswers": [
+                    "ラーメン"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ラーメン",
+                      "romaji": "raamen"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L1-V004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Udon",
+                  "acceptedAnswers": [
+                    "うどん"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "うどん",
+                      "romaji": "udon"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L2-S3-L2",
+          "title": "Rice Meals",
+          "components": [
+            {
+              "id": "R-L2-S3-L2-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Introduce the core words for rice meals.",
+              "masteryRule": "all 5 items must be completed once",
+              "retryBehavior": "not applicable",
+              "items": [
+                {
+                  "jp": "カレーライス",
+                  "romaji": "karee raisu",
+                  "en": "curry rice"
+                },
+                {
+                  "jp": "親子丼",
+                  "romaji": "oyakodon",
+                  "en": "chicken and egg rice bowl"
+                },
+                {
+                  "jp": "牛丼",
+                  "romaji": "gyuudon",
+                  "en": "beef bowl"
+                },
+                {
+                  "jp": "チャーハン",
+                  "romaji": "chaahan",
+                  "en": "fried rice"
+                },
+                {
+                  "jp": "海鮮丼",
+                  "romaji": "kaisen don",
+                  "en": "seafood bowl"
+                }
+              ]
+            },
+            {
+              "id": "R-L2-S3-L2-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese word for rice meals.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S3-L2-R001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Curry Rice",
+                  "acceptedAnswers": [
+                    "カレーライス"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "カレーライス",
+                      "romaji": "karee raisu"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L2-R002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Chicken And Egg Rice Bowl",
+                  "acceptedAnswers": [
+                    "親子丼"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "親子丼",
+                      "romaji": "oyakodon"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L2-R003",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Beef Bowl",
+                  "acceptedAnswers": [
+                    "牛丼"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "牛丼",
+                      "romaji": "gyuudon"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L2-R004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Fried Rice",
+                  "acceptedAnswers": [
+                    "チャーハン"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "チャーハン",
+                      "romaji": "chaahan"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L2-R005",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Seafood Bowl",
+                  "acceptedAnswers": [
+                    "海鮮丼"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "海鮮丼",
+                      "romaji": "kaisen don"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "R-L2-S3-L2-C3",
+              "componentType": "matching",
+              "goal": "Read the Japanese and connect it back to meaning.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S3-L2-M001",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "カレーライス",
+                  "acceptedAnswers": [
+                    "curry rice"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "カレーライス",
+                      "en": "curry rice"
+                    },
+                    {
+                      "jp": "親子丼",
+                      "en": "chicken and egg rice bowl"
+                    },
+                    {
+                      "jp": "牛丼",
+                      "en": "beef bowl"
+                    },
+                    {
+                      "jp": "チャーハン",
+                      "en": "fried rice"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L2-M002",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "親子丼",
+                  "acceptedAnswers": [
+                    "chicken and egg rice bowl"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "親子丼",
+                      "en": "chicken and egg rice bowl"
+                    },
+                    {
+                      "jp": "カレーライス",
+                      "en": "curry rice"
+                    },
+                    {
+                      "jp": "牛丼",
+                      "en": "beef bowl"
+                    },
+                    {
+                      "jp": "チャーハン",
+                      "en": "fried rice"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L2-M003",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "牛丼",
+                  "acceptedAnswers": [
+                    "beef bowl"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "牛丼",
+                      "en": "beef bowl"
+                    },
+                    {
+                      "jp": "カレーライス",
+                      "en": "curry rice"
+                    },
+                    {
+                      "jp": "親子丼",
+                      "en": "chicken and egg rice bowl"
+                    },
+                    {
+                      "jp": "チャーハン",
+                      "en": "fried rice"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L2-M004",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "チャーハン",
+                  "acceptedAnswers": [
+                    "fried rice"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "チャーハン",
+                      "en": "fried rice"
+                    },
+                    {
+                      "jp": "カレーライス",
+                      "en": "curry rice"
+                    },
+                    {
+                      "jp": "親子丼",
+                      "en": "chicken and egg rice bowl"
+                    },
+                    {
+                      "jp": "牛丼",
+                      "en": "beef bowl"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "R-L2-S3-L2-C4",
+              "componentType": "review",
+              "goal": "Finish with quick mixed review.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S3-L2-V001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Fried Rice",
+                  "acceptedAnswers": [
+                    "チャーハン"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "チャーハン",
+                      "romaji": "chaahan"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L2-V002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Seafood Bowl",
+                  "acceptedAnswers": [
+                    "海鮮丼"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "海鮮丼",
+                      "romaji": "kaisen don"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L2-V003",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Curry Rice",
+                  "acceptedAnswers": [
+                    "カレーライス"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "カレーライス",
+                      "romaji": "karee raisu"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L2-V004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Chicken And Egg Rice Bowl",
+                  "acceptedAnswers": [
+                    "親子丼"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "親子丼",
+                      "romaji": "oyakodon"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L2-S3-L3",
+          "title": "Soup and Salad",
+          "components": [
+            {
+              "id": "R-L2-S3-L3-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Introduce the core words for soup and salad.",
+              "masteryRule": "all 5 items must be completed once",
+              "retryBehavior": "not applicable",
+              "items": [
+                {
+                  "jp": "味噌汁",
+                  "romaji": "misoshiru",
+                  "en": "miso soup"
+                },
+                {
+                  "jp": "サラダ",
+                  "romaji": "sarada",
+                  "en": "salad"
+                },
+                {
+                  "jp": "ポテトサラダ",
+                  "romaji": "poteto sarada",
+                  "en": "potato salad"
+                },
+                {
+                  "jp": "コーンスープ",
+                  "romaji": "koon suupu",
+                  "en": "corn soup"
+                },
+                {
+                  "jp": "ぎょうざ",
+                  "romaji": "gyouza",
+                  "en": "gyoza"
+                }
+              ]
+            },
+            {
+              "id": "R-L2-S3-L3-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese word for soup and salad.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S3-L3-R001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Miso Soup",
+                  "acceptedAnswers": [
+                    "味噌汁"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "味噌汁",
+                      "romaji": "misoshiru"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L3-R002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Salad",
+                  "acceptedAnswers": [
+                    "サラダ"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "サラダ",
+                      "romaji": "sarada"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L3-R003",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Potato Salad",
+                  "acceptedAnswers": [
+                    "ポテトサラダ"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ポテトサラダ",
+                      "romaji": "poteto sarada"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L3-R004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Corn Soup",
+                  "acceptedAnswers": [
+                    "コーンスープ"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "コーンスープ",
+                      "romaji": "koon suupu"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L3-R005",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Gyoza",
+                  "acceptedAnswers": [
+                    "ぎょうざ"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ぎょうざ",
+                      "romaji": "gyouza"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "R-L2-S3-L3-C3",
+              "componentType": "matching",
+              "goal": "Read the Japanese and connect it back to meaning.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S3-L3-M001",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "味噌汁",
+                  "acceptedAnswers": [
+                    "miso soup"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "味噌汁",
+                      "en": "miso soup"
+                    },
+                    {
+                      "jp": "サラダ",
+                      "en": "salad"
+                    },
+                    {
+                      "jp": "ポテトサラダ",
+                      "en": "potato salad"
+                    },
+                    {
+                      "jp": "コーンスープ",
+                      "en": "corn soup"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L3-M002",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "サラダ",
+                  "acceptedAnswers": [
+                    "salad"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "サラダ",
+                      "en": "salad"
+                    },
+                    {
+                      "jp": "味噌汁",
+                      "en": "miso soup"
+                    },
+                    {
+                      "jp": "ポテトサラダ",
+                      "en": "potato salad"
+                    },
+                    {
+                      "jp": "コーンスープ",
+                      "en": "corn soup"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L3-M003",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "ポテトサラダ",
+                  "acceptedAnswers": [
+                    "potato salad"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ポテトサラダ",
+                      "en": "potato salad"
+                    },
+                    {
+                      "jp": "味噌汁",
+                      "en": "miso soup"
+                    },
+                    {
+                      "jp": "サラダ",
+                      "en": "salad"
+                    },
+                    {
+                      "jp": "コーンスープ",
+                      "en": "corn soup"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L3-M004",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "コーンスープ",
+                  "acceptedAnswers": [
+                    "corn soup"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "コーンスープ",
+                      "en": "corn soup"
+                    },
+                    {
+                      "jp": "味噌汁",
+                      "en": "miso soup"
+                    },
+                    {
+                      "jp": "サラダ",
+                      "en": "salad"
+                    },
+                    {
+                      "jp": "ポテトサラダ",
+                      "en": "potato salad"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "R-L2-S3-L3-C4",
+              "componentType": "review",
+              "goal": "Finish with quick mixed review.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S3-L3-V001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Corn Soup",
+                  "acceptedAnswers": [
+                    "コーンスープ"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "コーンスープ",
+                      "romaji": "koon suupu"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L3-V002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Gyoza",
+                  "acceptedAnswers": [
+                    "ぎょうざ"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ぎょうざ",
+                      "romaji": "gyouza"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L3-V003",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Miso Soup",
+                  "acceptedAnswers": [
+                    "味噌汁"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "味噌汁",
+                      "romaji": "misoshiru"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L3-V004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Salad",
+                  "acceptedAnswers": [
+                    "サラダ"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "サラダ",
+                      "romaji": "sarada"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L2-S3-L4",
+          "title": "Protein Plates",
+          "components": [
+            {
+              "id": "R-L2-S3-L4-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Introduce the core words for protein plates.",
+              "masteryRule": "all 5 items must be completed once",
+              "retryBehavior": "not applicable",
+              "items": [
+                {
+                  "jp": "焼き魚",
+                  "romaji": "yakizakana",
+                  "en": "grilled fish"
+                },
+                {
+                  "jp": "唐揚げ",
+                  "romaji": "karaage",
+                  "en": "fried chicken"
+                },
+                {
+                  "jp": "とんかつ",
+                  "romaji": "tonkatsu",
+                  "en": "pork cutlet"
+                },
+                {
+                  "jp": "焼き鳥",
+                  "romaji": "yakitori",
+                  "en": "grilled chicken skewers"
+                },
+                {
+                  "jp": "ハンバーグ",
+                  "romaji": "hanbaagu",
+                  "en": "hamburg steak"
+                }
+              ]
+            },
+            {
+              "id": "R-L2-S3-L4-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese word for protein plates.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S3-L4-R001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Grilled Fish",
+                  "acceptedAnswers": [
+                    "焼き魚"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "焼き魚",
+                      "romaji": "yakizakana"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L4-R002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Fried Chicken",
+                  "acceptedAnswers": [
+                    "唐揚げ"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "唐揚げ",
+                      "romaji": "karaage"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L4-R003",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Pork Cutlet",
+                  "acceptedAnswers": [
+                    "とんかつ"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "とんかつ",
+                      "romaji": "tonkatsu"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L4-R004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Grilled Chicken Skewers",
+                  "acceptedAnswers": [
+                    "焼き鳥"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "焼き鳥",
+                      "romaji": "yakitori"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L4-R005",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Hamburg Steak",
+                  "acceptedAnswers": [
+                    "ハンバーグ"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ハンバーグ",
+                      "romaji": "hanbaagu"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "R-L2-S3-L4-C3",
+              "componentType": "matching",
+              "goal": "Read the Japanese and connect it back to meaning.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S3-L4-M001",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "焼き魚",
+                  "acceptedAnswers": [
+                    "grilled fish"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "焼き魚",
+                      "en": "grilled fish"
+                    },
+                    {
+                      "jp": "唐揚げ",
+                      "en": "fried chicken"
+                    },
+                    {
+                      "jp": "とんかつ",
+                      "en": "pork cutlet"
+                    },
+                    {
+                      "jp": "焼き鳥",
+                      "en": "grilled chicken skewers"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L4-M002",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "唐揚げ",
+                  "acceptedAnswers": [
+                    "fried chicken"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "唐揚げ",
+                      "en": "fried chicken"
+                    },
+                    {
+                      "jp": "焼き魚",
+                      "en": "grilled fish"
+                    },
+                    {
+                      "jp": "とんかつ",
+                      "en": "pork cutlet"
+                    },
+                    {
+                      "jp": "焼き鳥",
+                      "en": "grilled chicken skewers"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L4-M003",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "とんかつ",
+                  "acceptedAnswers": [
+                    "pork cutlet"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "とんかつ",
+                      "en": "pork cutlet"
+                    },
+                    {
+                      "jp": "焼き魚",
+                      "en": "grilled fish"
+                    },
+                    {
+                      "jp": "唐揚げ",
+                      "en": "fried chicken"
+                    },
+                    {
+                      "jp": "焼き鳥",
+                      "en": "grilled chicken skewers"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L4-M004",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "焼き鳥",
+                  "acceptedAnswers": [
+                    "grilled chicken skewers"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "焼き鳥",
+                      "en": "grilled chicken skewers"
+                    },
+                    {
+                      "jp": "焼き魚",
+                      "en": "grilled fish"
+                    },
+                    {
+                      "jp": "唐揚げ",
+                      "en": "fried chicken"
+                    },
+                    {
+                      "jp": "とんかつ",
+                      "en": "pork cutlet"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "R-L2-S3-L4-C4",
+              "componentType": "review",
+              "goal": "Finish with quick mixed review.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S3-L4-V001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Grilled Chicken Skewers",
+                  "acceptedAnswers": [
+                    "焼き鳥"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "焼き鳥",
+                      "romaji": "yakitori"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L4-V002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Hamburg Steak",
+                  "acceptedAnswers": [
+                    "ハンバーグ"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ハンバーグ",
+                      "romaji": "hanbaagu"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L4-V003",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Grilled Fish",
+                  "acceptedAnswers": [
+                    "焼き魚"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "焼き魚",
+                      "romaji": "yakizakana"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L4-V004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Fried Chicken",
+                  "acceptedAnswers": [
+                    "唐揚げ"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "唐揚げ",
+                      "romaji": "karaage"
+                    },
+                    {
+                      "jp": "お茶",
+                      "romaji": "ocha"
+                    },
+                    {
+                      "jp": "水",
+                      "romaji": "mizu"
+                    },
+                    {
+                      "jp": "コーヒー",
+                      "romaji": "koohii"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L2-S3-L5",
+          "title": "Set Meals",
+          "components": [
+            {
+              "id": "R-L2-S3-L5-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Introduce the language around set meals.",
+              "masteryRule": "all 4 items must be completed once",
+              "retryBehavior": "not applicable",
+              "items": [
+                {
+                  "jp": "定食",
+                  "romaji": "teishoku",
+                  "en": "set meal"
+                },
+                {
+                  "jp": "ご飯付き",
+                  "romaji": "gohan tsuki",
+                  "en": "comes with rice"
+                },
+                {
+                  "jp": "味噌汁付き",
+                  "romaji": "misoshiru tsuki",
+                  "en": "comes with miso soup"
+                },
+                {
+                  "jp": "サラダ付き",
+                  "romaji": "sarada tsuki",
+                  "en": "comes with salad"
+                }
+              ]
+            },
+            {
+              "id": "R-L2-S3-L5-C2",
+              "componentType": "recognition",
+              "goal": "Recognize common set-meal language.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S3-L5-001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "set meal",
+                  "acceptedAnswers": [
+                    "定食"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "定食",
+                      "romaji": "teishoku"
+                    },
+                    {
+                      "jp": "ご飯付き",
+                      "romaji": "gohan tsuki"
+                    },
+                    {
+                      "jp": "味噌汁付き",
+                      "romaji": "misoshiru tsuki"
+                    },
+                    {
+                      "jp": "サラダ付き",
+                      "romaji": "sarada tsuki"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L5-002",
+                  "promptMode": "What does this mean?",
+                  "promptPrimary": "ご飯付き",
+                  "acceptedAnswers": [
+                    "comes with rice"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "ご飯付き",
+                      "en": "comes with rice"
+                    },
+                    {
+                      "jp": "味噌汁付き",
+                      "en": "comes with miso soup"
+                    },
+                    {
+                      "jp": "サラダ付き",
+                      "en": "comes with salad"
+                    },
+                    {
+                      "jp": "定食",
+                      "en": "set meal"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L5-003",
+                  "promptMode": "What does this mean?",
+                  "promptPrimary": "味噌汁付き",
+                  "acceptedAnswers": [
+                    "comes with miso soup"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "味噌汁付き",
+                      "en": "comes with miso soup"
+                    },
+                    {
+                      "jp": "ご飯付き",
+                      "en": "comes with rice"
+                    },
+                    {
+                      "jp": "サラダ付き",
+                      "en": "comes with salad"
+                    },
+                    {
+                      "jp": "定食",
+                      "en": "set meal"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L5-004",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "You want to order the fish set meal.",
+                  "acceptedAnswers": [
+                    "焼き魚定食をお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "焼き魚定食をお願いします",
+                      "romaji": "yakizakana teishoku o onegaishimasu"
+                    },
+                    {
+                      "jp": "焼き魚をお願いします",
+                      "romaji": "yakizakana o onegaishimasu"
+                    },
+                    {
+                      "jp": "定食ですか",
+                      "romaji": "teishoku desu ka"
+                    },
+                    {
+                      "jp": "味噌汁付きです",
+                      "romaji": "misoshiru tsuki desu"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L2-S3-L6",
+          "title": "Meal Order Review",
+          "components": [
+            {
+              "id": "R-L2-S3-L6-C1",
+              "componentType": "review",
+              "goal": "Review common meals and full meal orders.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S3-L6-001",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "You want soba.",
+                  "acceptedAnswers": [
+                    "そばをお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "そばをお願いします",
+                      "romaji": "soba o onegaishimasu"
+                    },
+                    {
+                      "jp": "ラーメンをお願いします",
+                      "romaji": "raamen o onegaishimasu"
+                    },
+                    {
+                      "jp": "カレーライスをお願いします",
+                      "romaji": "karee raisu o onegaishimasu"
+                    },
+                    {
+                      "jp": "サラダをお願いします",
+                      "romaji": "sarada o onegaishimasu"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L6-002",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "You want a beef bowl.",
+                  "acceptedAnswers": [
+                    "牛丼をお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "牛丼をお願いします",
+                      "romaji": "gyuudon o onegaishimasu"
+                    },
+                    {
+                      "jp": "親子丼をお願いします",
+                      "romaji": "oyakodon o onegaishimasu"
+                    },
+                    {
+                      "jp": "海鮮丼をお願いします",
+                      "romaji": "kaisen don o onegaishimasu"
+                    },
+                    {
+                      "jp": "チャーハンをお願いします",
+                      "romaji": "chaahan o onegaishimasu"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L6-003",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "You want the pork cutlet set meal.",
+                  "acceptedAnswers": [
+                    "とんかつ定食をお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "とんかつ定食をお願いします",
+                      "romaji": "tonkatsu teishoku o onegaishimasu"
+                    },
+                    {
+                      "jp": "とんかつをお願いします",
+                      "romaji": "tonkatsu o onegaishimasu"
+                    },
+                    {
+                      "jp": "定食ですか",
+                      "romaji": "teishoku desu ka"
+                    },
+                    {
+                      "jp": "ご飯付きです",
+                      "romaji": "gohan tsuki desu"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S3-L6-004",
+                  "promptMode": "What does this mean?",
+                  "promptPrimary": "サラダ付き",
+                  "acceptedAnswers": [
+                    "comes with salad"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "サラダ付き",
+                      "en": "comes with salad"
+                    },
+                    {
+                      "jp": "ご飯付き",
+                      "en": "comes with rice"
+                    },
+                    {
+                      "jp": "味噌汁付き",
+                      "en": "comes with miso soup"
+                    },
+                    {
+                      "jp": "定食",
+                      "en": "set meal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "components": []
+    },
+    {
+      "id": "R-L2-S4",
+      "title": "Getting the Server's Attention",
+      "stage": "phrases",
+      "playerOutcome": "Can get the server's attention politely and start an order or follow-up request naturally.",
+      "estimatedMinutes": 6,
+      "lessonLevels": [
+        {
+          "id": "R-L2-S4-L1",
+          "title": "Excuse Me",
+          "components": [
+            {
+              "id": "R-L2-S4-L1-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Introduce the most important attention-getting phrase in a restaurant.",
+              "masteryRule": "all 1 items must be completed once",
+              "retryBehavior": "not applicable",
+              "items": [
+                {
+                  "jp": "すみません",
+                  "romaji": "sumimasen",
+                  "en": "excuse me"
+                }
+              ]
+            },
+            {
+              "id": "R-L2-S4-L1-C2",
+              "componentType": "recognition",
+              "goal": "Recognize when to use excuse me to get help.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S4-L1-001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "excuse me",
+                  "acceptedAnswers": [
+                    "すみません"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "すみません",
+                      "romaji": "sumimasen"
+                    },
+                    {
+                      "jp": "ありがとうございます",
+                      "romaji": "arigatou gozaimasu"
+                    },
+                    {
+                      "jp": "お会計お願いします",
+                      "romaji": "okaikei onegaishimasu"
+                    },
+                    {
+                      "jp": "どれですか",
+                      "romaji": "dore desu ka"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S4-L1-002",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "You need to get the server’s attention politely.",
+                  "acceptedAnswers": [
+                    "すみません"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "すみません",
+                      "romaji": "sumimasen"
+                    },
+                    {
+                      "jp": "これをお願いします",
+                      "romaji": "kore o onegaishimasu"
+                    },
+                    {
+                      "jp": "ごちそうさまでした",
+                      "romaji": "gochisousama deshita"
+                    },
+                    {
+                      "jp": "おすすめは何ですか",
+                      "romaji": "osusume wa nan desu ka"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S4-L1-003",
+                  "promptMode": "What does this mean?",
+                  "promptPrimary": "すみません",
+                  "acceptedAnswers": [
+                    "excuse me"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "すみません",
+                      "en": "excuse me"
+                    },
+                    {
+                      "jp": "ありがとうございます",
+                      "en": "thank you"
+                    },
+                    {
+                      "jp": "ごめんなさい",
+                      "en": "I am sorry"
+                    },
+                    {
+                      "jp": "お願いします",
+                      "en": "please"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L2-S4-L2",
+          "title": "Before Ordering",
+          "components": [
+            {
+              "id": "R-L2-S4-L2-C1",
+              "componentType": "dialogue",
+              "goal": "Use excuse me before starting an order.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S4-L2-001",
+                  "promptMode": "Choose the best next line",
+                  "promptPrimary": "The server is across the room and you want to order.",
+                  "acceptedAnswers": [
+                    "すみません"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "すみません",
+                      "romaji": "sumimasen"
+                    },
+                    {
+                      "jp": "これをお願いします",
+                      "romaji": "kore o onegaishimasu"
+                    },
+                    {
+                      "jp": "お会計お願いします",
+                      "romaji": "okaikei onegaishimasu"
+                    },
+                    {
+                      "jp": "どれですか",
+                      "romaji": "dore desu ka"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S4-L2-002",
+                  "promptMode": "Choose the best next line",
+                  "promptPrimary": "The server comes over after you say excuse me. Now say “This one, please.”",
+                  "acceptedAnswers": [
+                    "これをお願いします",
+                    "これをください"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "これをお願いします",
+                      "romaji": "kore o onegaishimasu"
+                    },
+                    {
+                      "jp": "これをください",
+                      "romaji": "kore o kudasai"
+                    },
+                    {
+                      "jp": "おすすめは何ですか",
+                      "romaji": "osusume wa nan desu ka"
+                    },
+                    {
+                      "jp": "ありがとうございます",
+                      "romaji": "arigatou gozaimasu"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S4-L2-003",
+                  "promptMode": "Choose the best flow",
+                  "promptPrimary": "Get attention first, then order ramen.",
+                  "acceptedAnswers": [
+                    "すみません"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "すみません",
+                      "romaji": "sumimasen"
+                    },
+                    {
+                      "jp": "ラーメンをお願いします",
+                      "romaji": "raamen o onegaishimasu"
+                    },
+                    {
+                      "jp": "どれですか",
+                      "romaji": "dore desu ka"
+                    },
+                    {
+                      "jp": "お会計お願いします",
+                      "romaji": "okaikei onegaishimasu"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L2-S4-L3",
+          "title": "Before a Request",
+          "components": [
+            {
+              "id": "R-L2-S4-L3-C1",
+              "componentType": "dialogue",
+              "goal": "Use excuse me before asking for water or the menu.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S4-L3-001",
+                  "promptMode": "Choose the best flow",
+                  "promptPrimary": "You need water. Get attention first.",
+                  "acceptedAnswers": [
+                    "すみません"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "すみません",
+                      "romaji": "sumimasen"
+                    },
+                    {
+                      "jp": "お水お願いします",
+                      "romaji": "omizu onegaishimasu"
+                    },
+                    {
+                      "jp": "メニューお願いします",
+                      "romaji": "menyuu onegaishimasu"
+                    },
+                    {
+                      "jp": "ありがとうございます",
+                      "romaji": "arigatou gozaimasu"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S4-L3-002",
+                  "promptMode": "Choose the best next line",
+                  "promptPrimary": "You have the server’s attention and now want the menu.",
+                  "acceptedAnswers": [
+                    "メニューお願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "メニューお願いします",
+                      "romaji": "menyuu onegaishimasu"
+                    },
+                    {
+                      "jp": "お会計お願いします",
+                      "romaji": "okaikei onegaishimasu"
+                    },
+                    {
+                      "jp": "おすすめは何ですか",
+                      "romaji": "osusume wa nan desu ka"
+                    },
+                    {
+                      "jp": "どれですか",
+                      "romaji": "dore desu ka"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S4-L3-003",
+                  "promptMode": "Choose the best next line",
+                  "promptPrimary": "You have the server’s attention and now want more water.",
+                  "acceptedAnswers": [
+                    "お水お願いします"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "お水お願いします",
+                      "romaji": "omizu onegaishimasu"
+                    },
+                    {
+                      "jp": "これをお願いします",
+                      "romaji": "kore o onegaishimasu"
+                    },
+                    {
+                      "jp": "どれですか",
+                      "romaji": "dore desu ka"
+                    },
+                    {
+                      "jp": "ごちそうさまでした",
+                      "romaji": "gochisousama deshita"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L2-S4-L4",
+          "title": "Order and Follow-Up",
+          "components": [
+            {
+              "id": "R-L2-S4-L4-C1",
+              "componentType": "dialogue",
+              "goal": "Practice getting attention and then asking a follow-up question.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S4-L4-001",
+                  "promptMode": "Choose the best next line",
+                  "promptPrimary": "You want the server to come over because you have a menu question.",
+                  "acceptedAnswers": [
+                    "すみません"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "すみません",
+                      "romaji": "sumimasen"
+                    },
+                    {
+                      "jp": "おすすめは何ですか",
+                      "romaji": "osusume wa nan desu ka"
+                    },
+                    {
+                      "jp": "どれですか",
+                      "romaji": "dore desu ka"
+                    },
+                    {
+                      "jp": "お会計お願いします",
+                      "romaji": "okaikei onegaishimasu"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S4-L4-002",
+                  "promptMode": "Choose the best next line",
+                  "promptPrimary": "The server comes over. Ask what they recommend.",
+                  "acceptedAnswers": [
+                    "おすすめは何ですか",
+                    "おすすめはなんですか"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "おすすめは何ですか",
+                      "romaji": "osusume wa nan desu ka"
+                    },
+                    {
+                      "jp": "これをお願いします",
+                      "romaji": "kore o onegaishimasu"
+                    },
+                    {
+                      "jp": "メニューお願いします",
+                      "romaji": "menyuu onegaishimasu"
+                    },
+                    {
+                      "jp": "どれですか",
+                      "romaji": "dore desu ka"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S4-L4-003",
+                  "promptMode": "Choose the best next line",
+                  "promptPrimary": "After they answer, say “That one, please.”",
+                  "acceptedAnswers": [
+                    "それをお願いします",
+                    "それをください"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "それをお願いします",
+                      "romaji": "sore o onegaishimasu"
+                    },
+                    {
+                      "jp": "これをお願いします",
+                      "romaji": "kore o onegaishimasu"
+                    },
+                    {
+                      "jp": "すみません",
+                      "romaji": "sumimasen"
+                    },
+                    {
+                      "jp": "お会計お願いします",
+                      "romaji": "okaikei onegaishimasu"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "R-L2-S4-L5",
+          "title": "Attention Review",
+          "components": [
+            {
+              "id": "R-L2-S4-L5-C1",
+              "componentType": "review",
+              "goal": "Review the habit of getting attention before you speak.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-R-L2-S4-L5-001",
+                  "promptMode": "Which reply fits",
+                  "promptPrimary": "You need the server first.",
+                  "acceptedAnswers": [
+                    "すみません"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "すみません",
+                      "romaji": "sumimasen"
+                    },
+                    {
+                      "jp": "ありがとうございます",
+                      "romaji": "arigatou gozaimasu"
+                    },
+                    {
+                      "jp": "ごちそうさまでした",
+                      "romaji": "gochisousama deshita"
+                    },
+                    {
+                      "jp": "これをお願いします",
+                      "romaji": "kore o onegaishimasu"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S4-L5-002",
+                  "promptMode": "Choose the best flow",
+                  "promptPrimary": "Get the server’s attention, then ask for water.",
+                  "acceptedAnswers": [
+                    "すみません"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "すみません",
+                      "romaji": "sumimasen"
+                    },
+                    {
+                      "jp": "お水お願いします",
+                      "romaji": "omizu onegaishimasu"
+                    },
+                    {
+                      "jp": "これをお願いします",
+                      "romaji": "kore o onegaishimasu"
+                    },
+                    {
+                      "jp": "おすすめは何ですか",
+                      "romaji": "osusume wa nan desu ka"
+                    }
+                  ]
+                },
+                {
+                  "id": "Q-R-L2-S4-L5-003",
+                  "promptMode": "Choose the best flow",
+                  "promptPrimary": "Get the server’s attention, then order sushi.",
+                  "acceptedAnswers": [
+                    "すみません"
+                  ],
+                  "referenceChoices": [
+                    {
+                      "jp": "すみません",
+                      "romaji": "sumimasen"
+                    },
+                    {
+                      "jp": "すしをお願いします",
+                      "romaji": "sushi o onegaishimasu"
+                    },
+                    {
+                      "jp": "どれですか",
+                      "romaji": "dore desu ka"
+                    },
+                    {
+                      "jp": "お会計お願いします",
+                      "romaji": "okaikei onegaishimasu"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "components": []
+    }
+  ]
+}

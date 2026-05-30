@@ -1,0 +1,14 @@
+{
+  "locationId": "arrival",
+  "slice": "v1",
+  "levels": [
+    {
+      "id": "A-L1",
+      "title": "Arrival Essentials",
+      "oneSentenceGoal": "Handle the first practical Japanese needed after landing, getting into the city, and checking into the hotel.",
+      "hardPrerequisiteIds": ["F-02"],
+      "softPrerequisiteIds": ["F-01"],
+      "sublevelIds": ["tokyo-arrival-airport", "tokyo-arrival-transfer", "tokyo-arrival-checkin"]
+    }
+  ]
+}

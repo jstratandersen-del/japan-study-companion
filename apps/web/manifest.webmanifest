@@ -1,0 +1,22 @@
+{
+  "name": "Japan Study Companion",
+  "short_name": "Japan Study",
+  "description": "Personal Japanese study app for trip prep with offline-friendly lessons on iPad.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f0e4",
+  "theme_color": "#f6f0e4",
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

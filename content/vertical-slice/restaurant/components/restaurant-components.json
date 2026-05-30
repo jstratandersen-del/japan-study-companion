@@ -1,0 +1,492 @@
+{
+  "locationId": "restaurant",
+  "slice": "v2-beginner",
+  "components": [
+    {
+      "id": "R-L1-S1-C1",
+      "sublevelId": "R-L1-S1",
+      "componentType": "vocabulary_intro",
+      "goal": "See the 5 core restaurant words with meaning support before any recall is required.",
+      "itemCount": 5,
+      "masteryRule": "all 5 items must be completed once",
+      "retryBehavior": "not applicable"
+    },
+    {
+      "id": "R-L1-S1-C2",
+      "sublevelId": "R-L1-S1",
+      "componentType": "recognition",
+      "goal": "Choose the correct Japanese word when shown a basic English food or drink prompt.",
+      "itemCount": 5,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L1-S1-C3",
+      "sublevelId": "R-L1-S1",
+      "componentType": "matching",
+      "goal": "Connect Japanese forms and English meanings from both directions.",
+      "itemCount": 5,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L1-S1-C4",
+      "sublevelId": "R-L1-S1",
+      "componentType": "guided_recall",
+      "goal": "Produce the correct Japanese food word with visible answer support still available.",
+      "itemCount": 5,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L1-S1-C5",
+      "sublevelId": "R-L1-S1",
+      "componentType": "review",
+      "goal": "Finish with a short mixed review using only the 5 target words.",
+      "itemCount": 5,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L1-S2-C1",
+      "sublevelId": "R-L1-S2",
+      "componentType": "vocabulary_intro",
+      "goal": "Introduce menu category labels needed to navigate a simple menu.",
+      "itemCount": 4,
+      "masteryRule": "all items must be completed once",
+      "retryBehavior": "not applicable"
+    },
+    {
+      "id": "R-L1-S2-C2",
+      "sublevelId": "R-L1-S2",
+      "componentType": "matching",
+      "goal": "Match menu items to their likely category headings.",
+      "itemCount": 6,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L1-S2-C3",
+      "sublevelId": "R-L1-S2",
+      "componentType": "review",
+      "goal": "Review category recognition in a simple menu-like layout.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L1-S3-C1",
+      "sublevelId": "R-L1-S3",
+      "componentType": "recognition",
+      "goal": "Read a very small menu and connect familiar items to visible prices.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L1-S3-C2",
+      "sublevelId": "R-L1-S3",
+      "componentType": "matching",
+      "goal": "Match familiar items with their price labels in a simple menu layout.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L1-S3-C3",
+      "sublevelId": "R-L1-S3",
+      "componentType": "review",
+      "goal": "Review small menu reading without introducing any new phrase frame.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L1-S4-C1",
+      "sublevelId": "R-L1-S4",
+      "componentType": "vocabulary_intro",
+      "goal": "Introduce the two restaurant question frames `これは何ですか` and `おすすめは何ですか`.",
+      "itemCount": 2,
+      "masteryRule": "all items must be completed once",
+      "retryBehavior": "not applicable"
+    },
+    {
+      "id": "R-L1-S4-C2",
+      "sublevelId": "R-L1-S4",
+      "componentType": "assembly",
+      "goal": "Build the new question frames from smaller chunks before full phrase recall.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L1-S4-C3",
+      "sublevelId": "R-L1-S4",
+      "componentType": "recognition",
+      "goal": "Choose the correct question for a recommendation or identification situation.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L1-S4-C4",
+      "sublevelId": "R-L1-S4",
+      "componentType": "guided_dialogue",
+      "goal": "Use the two question frames in very short guided restaurant exchanges.",
+      "itemCount": 3,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L1-S4-C5",
+      "sublevelId": "R-L1-S4",
+      "componentType": "review",
+      "goal": "Review the two question frames without adding new menu vocabulary.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L2-S1-C1",
+      "sublevelId": "R-L2-S1",
+      "componentType": "vocabulary_intro",
+      "goal": "Introduce the phrase frame `これをお願いします` in one bounded situation.",
+      "itemCount": 3,
+      "masteryRule": "all items must be completed once",
+      "retryBehavior": "not applicable"
+    },
+    {
+      "id": "R-L2-S1-C2",
+      "sublevelId": "R-L2-S1",
+      "componentType": "assembly",
+      "goal": "Build the phrase from smaller chunks before full recall is required.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L2-S1-C3",
+      "sublevelId": "R-L2-S1",
+      "componentType": "guided_recall",
+      "goal": "Use the full phrase while pointing to one item.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L2-S1-C4",
+      "sublevelId": "R-L2-S1",
+      "componentType": "scenario_check",
+      "goal": "Choose the correct phrase for a simple one-item ordering moment.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L2-S1-C5",
+      "sublevelId": "R-L2-S1",
+      "componentType": "review",
+      "goal": "Finish by reusing `これをお願いします` across a few familiar item choices.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L2-S2-C1",
+      "sublevelId": "R-L2-S2",
+      "componentType": "vocabulary_intro",
+      "goal": "Introduce a tiny reusable drink set for polite ordering.",
+      "itemCount": 3,
+      "masteryRule": "all items must be completed once",
+      "retryBehavior": "not applicable"
+    },
+    {
+      "id": "R-L2-S2-C2",
+      "sublevelId": "R-L2-S2",
+      "componentType": "substitution",
+      "goal": "Swap drink nouns into an order frame the learner already knows.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L2-S2-C3",
+      "sublevelId": "R-L2-S2",
+      "componentType": "guided_recall",
+      "goal": "Ask for one simple drink politely using known words plus the order frame.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L2-S2-C4",
+      "sublevelId": "R-L2-S2",
+      "componentType": "review",
+      "goal": "Review beginner drink ordering without adding quantity or modification language.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L3-S1-C1",
+      "sublevelId": "R-L3-S1",
+      "componentType": "vocabulary_intro",
+      "goal": "Introduce two common first server questions without requiring a full reply yet.",
+      "itemCount": 2,
+      "masteryRule": "all items must be completed once",
+      "retryBehavior": "not applicable"
+    },
+    {
+      "id": "R-L3-S1-C2",
+      "sublevelId": "R-L3-S1",
+      "componentType": "recognition",
+      "goal": "Recognize when the server is asking for your order versus asking whether you are ready.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L3-S1-C3",
+      "sublevelId": "R-L3-S1",
+      "componentType": "guided_dialogue",
+      "goal": "Pair each first server prompt with the most natural beginner response.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L3-S1-C4",
+      "sublevelId": "R-L3-S1",
+      "componentType": "review",
+      "goal": "Finish with a short mixed review of the two server-opening questions.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L3-S2-C1",
+      "sublevelId": "R-L3-S2",
+      "componentType": "vocabulary_intro",
+      "goal": "Introduce yes/no response language and one simple decline pattern for beginner restaurant moments.",
+      "itemCount": 4,
+      "masteryRule": "all items must be completed once",
+      "retryBehavior": "not applicable"
+    },
+    {
+      "id": "R-L3-S2-C2",
+      "sublevelId": "R-L3-S2",
+      "componentType": "matching",
+      "goal": "Match simple prompts with yes, no, or a decline phrase.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L3-S2-C3",
+      "sublevelId": "R-L3-S2",
+      "componentType": "substitution",
+      "goal": "Use one small modification frame with known nouns rather than inventing new order structures.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L3-S2-C4",
+      "sublevelId": "R-L3-S2",
+      "componentType": "review",
+      "goal": "Review yes/no and simple modification handling in a short bounded exchange.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L3-S3-C1",
+      "sublevelId": "R-L3-S3",
+      "componentType": "vocabulary_intro",
+      "goal": "Introduce one polite attention-getter and two small request targets.",
+      "itemCount": 3,
+      "masteryRule": "all items must be completed once",
+      "retryBehavior": "not applicable"
+    },
+    {
+      "id": "R-L3-S3-C2",
+      "sublevelId": "R-L3-S3",
+      "componentType": "assembly",
+      "goal": "Build extra-request phrases from known pieces before requiring full recall.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L3-S3-C3",
+      "sublevelId": "R-L3-S3",
+      "componentType": "guided_recall",
+      "goal": "Use simple extra-request phrases such as asking for water or the menu.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L3-S3-C4",
+      "sublevelId": "R-L3-S3",
+      "componentType": "review",
+      "goal": "Review simple extra requests with no new grammar outside the request frame.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L3-S4-C1",
+      "sublevelId": "R-L3-S4",
+      "componentType": "recognition",
+      "goal": "Recognize the structure of a short restaurant exchange from server prompt to order or request.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L3-S4-C2",
+      "sublevelId": "R-L3-S4",
+      "componentType": "guided_dialogue",
+      "goal": "Choose the best next line inside a short guided restaurant exchange.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L3-S4-C3",
+      "sublevelId": "R-L3-S4",
+      "componentType": "scenario_check",
+      "goal": "Apply earlier restaurant language to one bounded interaction from beginning to middle.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L3-S4-C4",
+      "sublevelId": "R-L3-S4",
+      "componentType": "review",
+      "goal": "Finish with a compact mixed review of the short exchange patterns.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L4-S1-C1",
+      "sublevelId": "R-L4-S1",
+      "componentType": "vocabulary_intro",
+      "goal": "Introduce the check request phrase in one bounded payment moment.",
+      "itemCount": 2,
+      "masteryRule": "all items must be completed once",
+      "retryBehavior": "not applicable"
+    },
+    {
+      "id": "R-L4-S1-C2",
+      "sublevelId": "R-L4-S1",
+      "componentType": "guided_recall",
+      "goal": "Recall the phrase for asking for the check with support still visible.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L4-S1-C3",
+      "sublevelId": "R-L4-S1",
+      "componentType": "review",
+      "goal": "Review the check phrase in one or two short restaurant scenarios.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L4-S2-C1",
+      "sublevelId": "R-L4-S2",
+      "componentType": "vocabulary_intro",
+      "goal": "Introduce basic payment words needed for a simple cash-or-card exchange.",
+      "itemCount": 4,
+      "masteryRule": "all items must be completed once",
+      "retryBehavior": "not applicable"
+    },
+    {
+      "id": "R-L4-S2-C2",
+      "sublevelId": "R-L4-S2",
+      "componentType": "matching",
+      "goal": "Match payment words to their simple English meaning or function.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L4-S2-C3",
+      "sublevelId": "R-L4-S2",
+      "componentType": "recognition",
+      "goal": "Recognize a simple cash-or-card question and a simple card-or-cash answer.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L4-S2-C4",
+      "sublevelId": "R-L4-S2",
+      "componentType": "review",
+      "goal": "Review a tiny payment exchange without adding advanced register language.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L4-S3-C1",
+      "sublevelId": "R-L4-S3",
+      "componentType": "vocabulary_intro",
+      "goal": "Introduce one-bill language while avoiding split-bill complexity.",
+      "itemCount": 2,
+      "masteryRule": "all items must be completed once",
+      "retryBehavior": "not applicable"
+    },
+    {
+      "id": "R-L4-S3-C2",
+      "sublevelId": "R-L4-S3",
+      "componentType": "recognition",
+      "goal": "Recognize whether the exchange is about one bill or paying now.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L4-S3-C3",
+      "sublevelId": "R-L4-S3",
+      "componentType": "review",
+      "goal": "Review one-bill handling in a simple closing payment moment.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L4-S4-C1",
+      "sublevelId": "R-L4-S4",
+      "componentType": "vocabulary_intro",
+      "goal": "Introduce the natural thank-you phrase for after finishing a meal.",
+      "itemCount": 2,
+      "masteryRule": "all items must be completed once",
+      "retryBehavior": "not applicable"
+    },
+    {
+      "id": "R-L4-S4-C2",
+      "sublevelId": "R-L4-S4",
+      "componentType": "guided_recall",
+      "goal": "Use the thank-you phrase in the correct end-of-meal moment.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    },
+    {
+      "id": "R-L4-S4-C3",
+      "sublevelId": "R-L4-S4",
+      "componentType": "review",
+      "goal": "Close the restaurant interaction with a short natural finish.",
+      "itemCount": 4,
+      "masteryRule": "all items must be answered correctly",
+      "retryBehavior": "missed items go to the back of the current component queue"
+    }
+  ]
+}

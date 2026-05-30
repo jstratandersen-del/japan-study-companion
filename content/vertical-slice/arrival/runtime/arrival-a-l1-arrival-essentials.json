@@ -1,0 +1,1614 @@
+{
+  "locationId": "arrival",
+  "levelId": "A-L1",
+  "title": "Arrival Essentials",
+  "oneSentenceGoal": "Handle the first practical Japanese needed after landing, getting into the city, and checking into the hotel.",
+  "runtimeNotes": "Runtime-ready content bundle for Tokyo arrival. This is the first authored non-restaurant branch intended to be directly consumable by the game.",
+  "sublevels": [
+    {
+      "id": "tokyo-arrival-airport",
+      "title": "Airport Basics",
+      "stage": "words",
+      "playerOutcome": "Can recognize the most important airport signs, places, and simple help questions after landing.",
+      "estimatedMinutes": 8,
+      "lessonLevels": [
+        {
+          "id": "A-L1-S1-L1",
+          "title": "Airport Signs",
+          "components": [
+            {
+              "id": "A-L1-S1-L1-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Introduce the most useful airport sign words.",
+              "masteryRule": "all 5 items must be completed once",
+              "retryBehavior": "not applicable",
+              "items": [
+                { "jp": "出口", "romaji": "deguchi", "en": "exit" },
+                { "jp": "到着", "romaji": "touchaku", "en": "arrivals" },
+                { "jp": "手荷物", "romaji": "tenimotsu", "en": "baggage" },
+                { "jp": "トイレ", "romaji": "toire", "en": "restroom" },
+                { "jp": "駅", "romaji": "eki", "en": "station" }
+              ]
+            },
+            {
+              "id": "A-L1-S1-L1-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese airport sign word that matches the English prompt.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-A-L1-S1-L1-R001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Exit",
+                  "acceptedAnswers": ["出口"],
+                  "referenceChoices": [
+                    { "jp": "出口", "romaji": "deguchi" },
+                    { "jp": "到着", "romaji": "touchaku" },
+                    { "jp": "手荷物", "romaji": "tenimotsu" },
+                    { "jp": "トイレ", "romaji": "toire" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S1-L1-R002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Arrivals",
+                  "acceptedAnswers": ["到着"],
+                  "referenceChoices": [
+                    { "jp": "到着", "romaji": "touchaku" },
+                    { "jp": "出口", "romaji": "deguchi" },
+                    { "jp": "駅", "romaji": "eki" },
+                    { "jp": "トイレ", "romaji": "toire" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S1-L1-R003",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Baggage",
+                  "acceptedAnswers": ["手荷物"],
+                  "referenceChoices": [
+                    { "jp": "手荷物", "romaji": "tenimotsu" },
+                    { "jp": "駅", "romaji": "eki" },
+                    { "jp": "出口", "romaji": "deguchi" },
+                    { "jp": "到着", "romaji": "touchaku" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S1-L1-R004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Restroom",
+                  "acceptedAnswers": ["トイレ"],
+                  "referenceChoices": [
+                    { "jp": "トイレ", "romaji": "toire" },
+                    { "jp": "手荷物", "romaji": "tenimotsu" },
+                    { "jp": "到着", "romaji": "touchaku" },
+                    { "jp": "駅", "romaji": "eki" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S1-L1-R005",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Station",
+                  "acceptedAnswers": ["駅"],
+                  "referenceChoices": [
+                    { "jp": "駅", "romaji": "eki" },
+                    { "jp": "出口", "romaji": "deguchi" },
+                    { "jp": "到着", "romaji": "touchaku" },
+                    { "jp": "トイレ", "romaji": "toire" }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "A-L1-S1-L1-C3",
+              "componentType": "matching",
+              "goal": "Read the Japanese sign and connect it back to the English meaning.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-A-L1-S1-L1-M001",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "出口",
+                  "acceptedAnswers": ["exit"],
+                  "referenceChoices": [
+                    { "jp": "出口", "en": "exit" },
+                    { "jp": "到着", "en": "arrivals" },
+                    { "jp": "手荷物", "en": "baggage" },
+                    { "jp": "トイレ", "en": "restroom" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S1-L1-M002",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "到着",
+                  "acceptedAnswers": ["arrivals"],
+                  "referenceChoices": [
+                    { "jp": "到着", "en": "arrivals" },
+                    { "jp": "出口", "en": "exit" },
+                    { "jp": "駅", "en": "station" },
+                    { "jp": "トイレ", "en": "restroom" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S1-L1-M003",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "手荷物",
+                  "acceptedAnswers": ["baggage"],
+                  "referenceChoices": [
+                    { "jp": "手荷物", "en": "baggage" },
+                    { "jp": "駅", "en": "station" },
+                    { "jp": "出口", "en": "exit" },
+                    { "jp": "到着", "en": "arrivals" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S1-L1-M004",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "トイレ",
+                  "acceptedAnswers": ["restroom"],
+                  "referenceChoices": [
+                    { "jp": "トイレ", "en": "restroom" },
+                    { "jp": "出口", "en": "exit" },
+                    { "jp": "到着", "en": "arrivals" },
+                    { "jp": "駅", "en": "station" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S1-L1-M005",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "駅",
+                  "acceptedAnswers": ["station"],
+                  "referenceChoices": [
+                    { "jp": "駅", "en": "station" },
+                    { "jp": "手荷物", "en": "baggage" },
+                    { "jp": "出口", "en": "exit" },
+                    { "jp": "トイレ", "en": "restroom" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "A-L1-S1-L2",
+          "title": "Documents and Counters",
+          "components": [
+            {
+              "id": "A-L1-S1-L2-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Introduce the first airport document and counter words.",
+              "masteryRule": "all 5 items must be completed once",
+              "retryBehavior": "not applicable",
+              "items": [
+                { "jp": "パスポート", "romaji": "pasupooto", "en": "passport" },
+                { "jp": "税関", "romaji": "zeikan", "en": "customs" },
+                { "jp": "入国審査", "romaji": "nyuukoku shinsa", "en": "immigration" },
+                { "jp": "カウンター", "romaji": "kauntaa", "en": "counter" },
+                { "jp": "案内所", "romaji": "annaijo", "en": "information desk" }
+              ]
+            },
+            {
+              "id": "A-L1-S1-L2-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese word for the airport document or counter item.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-A-L1-S1-L2-R001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Passport",
+                  "acceptedAnswers": ["パスポート"],
+                  "referenceChoices": [
+                    { "jp": "パスポート", "romaji": "pasupooto" },
+                    { "jp": "税関", "romaji": "zeikan" },
+                    { "jp": "入国審査", "romaji": "nyuukoku shinsa" },
+                    { "jp": "カウンター", "romaji": "kauntaa" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S1-L2-R002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Customs",
+                  "acceptedAnswers": ["税関"],
+                  "referenceChoices": [
+                    { "jp": "税関", "romaji": "zeikan" },
+                    { "jp": "パスポート", "romaji": "pasupooto" },
+                    { "jp": "案内所", "romaji": "annaijo" },
+                    { "jp": "入国審査", "romaji": "nyuukoku shinsa" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S1-L2-R003",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Immigration",
+                  "acceptedAnswers": ["入国審査"],
+                  "referenceChoices": [
+                    { "jp": "入国審査", "romaji": "nyuukoku shinsa" },
+                    { "jp": "税関", "romaji": "zeikan" },
+                    { "jp": "案内所", "romaji": "annaijo" },
+                    { "jp": "カウンター", "romaji": "kauntaa" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S1-L2-R004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Counter",
+                  "acceptedAnswers": ["カウンター"],
+                  "referenceChoices": [
+                    { "jp": "カウンター", "romaji": "kauntaa" },
+                    { "jp": "パスポート", "romaji": "pasupooto" },
+                    { "jp": "税関", "romaji": "zeikan" },
+                    { "jp": "案内所", "romaji": "annaijo" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S1-L2-R005",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Information desk",
+                  "acceptedAnswers": ["案内所"],
+                  "referenceChoices": [
+                    { "jp": "案内所", "romaji": "annaijo" },
+                    { "jp": "入国審査", "romaji": "nyuukoku shinsa" },
+                    { "jp": "税関", "romaji": "zeikan" },
+                    { "jp": "カウンター", "romaji": "kauntaa" }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "A-L1-S1-L2-C3",
+              "componentType": "matching",
+              "goal": "Read the Japanese airport document and counter words and connect them to meaning.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-A-L1-S1-L2-M001",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "パスポート",
+                  "acceptedAnswers": ["passport"],
+                  "referenceChoices": [
+                    { "jp": "パスポート", "en": "passport" },
+                    { "jp": "税関", "en": "customs" },
+                    { "jp": "入国審査", "en": "immigration" },
+                    { "jp": "カウンター", "en": "counter" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S1-L2-M002",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "税関",
+                  "acceptedAnswers": ["customs"],
+                  "referenceChoices": [
+                    { "jp": "税関", "en": "customs" },
+                    { "jp": "入国審査", "en": "immigration" },
+                    { "jp": "カウンター", "en": "counter" },
+                    { "jp": "案内所", "en": "information desk" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S1-L2-M003",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "入国審査",
+                  "acceptedAnswers": ["immigration"],
+                  "referenceChoices": [
+                    { "jp": "入国審査", "en": "immigration" },
+                    { "jp": "パスポート", "en": "passport" },
+                    { "jp": "税関", "en": "customs" },
+                    { "jp": "案内所", "en": "information desk" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S1-L2-M004",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "カウンター",
+                  "acceptedAnswers": ["counter"],
+                  "referenceChoices": [
+                    { "jp": "カウンター", "en": "counter" },
+                    { "jp": "税関", "en": "customs" },
+                    { "jp": "入国審査", "en": "immigration" },
+                    { "jp": "案内所", "en": "information desk" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S1-L2-M005",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "案内所",
+                  "acceptedAnswers": ["information desk"],
+                  "referenceChoices": [
+                    { "jp": "案内所", "en": "information desk" },
+                    { "jp": "パスポート", "en": "passport" },
+                    { "jp": "税関", "en": "customs" },
+                    { "jp": "カウンター", "en": "counter" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "A-L1-S1-L3",
+          "title": "Finding Key Places",
+          "components": [
+            {
+              "id": "A-L1-S1-L3-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Introduce a few very short airport help questions and place words.",
+              "masteryRule": "all 5 items must be completed once",
+              "retryBehavior": "not applicable",
+              "items": [
+                { "jp": "どこですか", "romaji": "doko desu ka", "en": "where is it?" },
+                { "jp": "タクシー", "romaji": "takushii", "en": "taxi" },
+                { "jp": "電車", "romaji": "densha", "en": "train" },
+                { "jp": "ここ", "romaji": "koko", "en": "here" },
+                { "jp": "あそこ", "romaji": "asoko", "en": "over there" }
+              ]
+            },
+            {
+              "id": "A-L1-S1-L3-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese phrase or word for a key help question or transport word.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-A-L1-S1-L3-R001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Where is it?",
+                  "acceptedAnswers": ["どこですか"],
+                  "referenceChoices": [
+                    { "jp": "どこですか", "romaji": "doko desu ka" },
+                    { "jp": "ここ", "romaji": "koko" },
+                    { "jp": "あそこ", "romaji": "asoko" },
+                    { "jp": "電車", "romaji": "densha" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S1-L3-R002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Taxi",
+                  "acceptedAnswers": ["タクシー"],
+                  "referenceChoices": [
+                    { "jp": "タクシー", "romaji": "takushii" },
+                    { "jp": "電車", "romaji": "densha" },
+                    { "jp": "ここ", "romaji": "koko" },
+                    { "jp": "あそこ", "romaji": "asoko" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S1-L3-R003",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Train",
+                  "acceptedAnswers": ["電車"],
+                  "referenceChoices": [
+                    { "jp": "電車", "romaji": "densha" },
+                    { "jp": "タクシー", "romaji": "takushii" },
+                    { "jp": "どこですか", "romaji": "doko desu ka" },
+                    { "jp": "ここ", "romaji": "koko" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S1-L3-R004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Here",
+                  "acceptedAnswers": ["ここ"],
+                  "referenceChoices": [
+                    { "jp": "ここ", "romaji": "koko" },
+                    { "jp": "あそこ", "romaji": "asoko" },
+                    { "jp": "どこですか", "romaji": "doko desu ka" },
+                    { "jp": "電車", "romaji": "densha" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S1-L3-R005",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Over there",
+                  "acceptedAnswers": ["あそこ"],
+                  "referenceChoices": [
+                    { "jp": "あそこ", "romaji": "asoko" },
+                    { "jp": "ここ", "romaji": "koko" },
+                    { "jp": "どこですか", "romaji": "doko desu ka" },
+                    { "jp": "タクシー", "romaji": "takushii" }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "A-L1-S1-L3-C3",
+              "componentType": "matching",
+              "goal": "Read a short Japanese help phrase and connect it to meaning.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-A-L1-S1-L3-M001",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "どこですか",
+                  "acceptedAnswers": ["where is it?"],
+                  "referenceChoices": [
+                    { "jp": "どこですか", "en": "where is it?" },
+                    { "jp": "ここ", "en": "here" },
+                    { "jp": "あそこ", "en": "over there" },
+                    { "jp": "電車", "en": "train" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S1-L3-M002",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "タクシー",
+                  "acceptedAnswers": ["taxi"],
+                  "referenceChoices": [
+                    { "jp": "タクシー", "en": "taxi" },
+                    { "jp": "電車", "en": "train" },
+                    { "jp": "ここ", "en": "here" },
+                    { "jp": "あそこ", "en": "over there" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S1-L3-M003",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "電車",
+                  "acceptedAnswers": ["train"],
+                  "referenceChoices": [
+                    { "jp": "電車", "en": "train" },
+                    { "jp": "タクシー", "en": "taxi" },
+                    { "jp": "ここ", "en": "here" },
+                    { "jp": "あそこ", "en": "over there" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S1-L3-M004",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "ここ",
+                  "acceptedAnswers": ["here"],
+                  "referenceChoices": [
+                    { "jp": "ここ", "en": "here" },
+                    { "jp": "あそこ", "en": "over there" },
+                    { "jp": "どこですか", "en": "where is it?" },
+                    { "jp": "電車", "en": "train" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S1-L3-M005",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "あそこ",
+                  "acceptedAnswers": ["over there"],
+                  "referenceChoices": [
+                    { "jp": "あそこ", "en": "over there" },
+                    { "jp": "ここ", "en": "here" },
+                    { "jp": "どこですか", "en": "where is it?" },
+                    { "jp": "タクシー", "en": "taxi" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "A-L1-S1-L4",
+          "title": "Arrival Review",
+          "components": [
+            {
+              "id": "A-L1-S1-L4-C1",
+              "componentType": "matching",
+              "goal": "Mix the first airport words and short help phrases together.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-A-L1-S1-L4-M001",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "駅",
+                  "acceptedAnswers": ["station"],
+                  "referenceChoices": [
+                    { "jp": "駅", "en": "station" },
+                    { "jp": "出口", "en": "exit" },
+                    { "jp": "到着", "en": "arrivals" },
+                    { "jp": "タクシー", "en": "taxi" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S1-L4-M002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Immigration",
+                  "acceptedAnswers": ["入国審査"],
+                  "referenceChoices": [
+                    { "jp": "入国審査", "romaji": "nyuukoku shinsa" },
+                    { "jp": "税関", "romaji": "zeikan" },
+                    { "jp": "手荷物", "romaji": "tenimotsu" },
+                    { "jp": "案内所", "romaji": "annaijo" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S1-L4-M003",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "どこですか",
+                  "acceptedAnswers": ["where is it?"],
+                  "referenceChoices": [
+                    { "jp": "どこですか", "en": "where is it?" },
+                    { "jp": "ここ", "en": "here" },
+                    { "jp": "あそこ", "en": "over there" },
+                    { "jp": "出口", "en": "exit" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S1-L4-M004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Passport",
+                  "acceptedAnswers": ["パスポート"],
+                  "referenceChoices": [
+                    { "jp": "パスポート", "romaji": "pasupooto" },
+                    { "jp": "カウンター", "romaji": "kauntaa" },
+                    { "jp": "税関", "romaji": "zeikan" },
+                    { "jp": "駅", "romaji": "eki" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S1-L4-M005",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Restroom",
+                  "acceptedAnswers": ["トイレ"],
+                  "referenceChoices": [
+                    { "jp": "トイレ", "romaji": "toire" },
+                    { "jp": "出口", "romaji": "deguchi" },
+                    { "jp": "到着", "romaji": "touchaku" },
+                    { "jp": "手荷物", "romaji": "tenimotsu" }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tokyo-arrival-transfer",
+      "title": "Transfer to City",
+      "stage": "phrases",
+      "playerOutcome": "Can handle essential train, ticket, and taxi language needed to get from the airport into Tokyo.",
+      "estimatedMinutes": 9,
+      "lessonLevels": [
+        {
+          "id": "A-L1-S2-L1",
+          "title": "Train and Station Basics",
+          "components": [
+            {
+              "id": "A-L1-S2-L1-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Introduce the first train and station words needed after landing.",
+              "masteryRule": "all 5 items must be completed once",
+              "retryBehavior": "not applicable",
+              "items": [
+                { "jp": "電車", "romaji": "densha", "en": "train" },
+                { "jp": "ホーム", "romaji": "hoomu", "en": "platform" },
+                { "jp": "乗り場", "romaji": "noriba", "en": "boarding area" },
+                { "jp": "切符", "romaji": "kippu", "en": "ticket" },
+                { "jp": "路線", "romaji": "rosen", "en": "line" }
+              ]
+            },
+            {
+              "id": "A-L1-S2-L1-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese station word that matches the English prompt.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-A-L1-S2-L1-R001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Platform",
+                  "acceptedAnswers": ["ホーム"],
+                  "referenceChoices": [
+                    { "jp": "ホーム", "romaji": "hoomu" },
+                    { "jp": "乗り場", "romaji": "noriba" },
+                    { "jp": "切符", "romaji": "kippu" },
+                    { "jp": "路線", "romaji": "rosen" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S2-L1-R002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Boarding area",
+                  "acceptedAnswers": ["乗り場"],
+                  "referenceChoices": [
+                    { "jp": "乗り場", "romaji": "noriba" },
+                    { "jp": "ホーム", "romaji": "hoomu" },
+                    { "jp": "切符", "romaji": "kippu" },
+                    { "jp": "電車", "romaji": "densha" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S2-L1-R003",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Ticket",
+                  "acceptedAnswers": ["切符"],
+                  "referenceChoices": [
+                    { "jp": "切符", "romaji": "kippu" },
+                    { "jp": "電車", "romaji": "densha" },
+                    { "jp": "路線", "romaji": "rosen" },
+                    { "jp": "ホーム", "romaji": "hoomu" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S2-L1-R004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Line",
+                  "acceptedAnswers": ["路線"],
+                  "referenceChoices": [
+                    { "jp": "路線", "romaji": "rosen" },
+                    { "jp": "切符", "romaji": "kippu" },
+                    { "jp": "電車", "romaji": "densha" },
+                    { "jp": "乗り場", "romaji": "noriba" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S2-L1-R005",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Train",
+                  "acceptedAnswers": ["電車"],
+                  "referenceChoices": [
+                    { "jp": "電車", "romaji": "densha" },
+                    { "jp": "ホーム", "romaji": "hoomu" },
+                    { "jp": "切符", "romaji": "kippu" },
+                    { "jp": "路線", "romaji": "rosen" }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "A-L1-S2-L1-C3",
+              "componentType": "matching",
+              "goal": "Read the Japanese station words and connect them back to meaning.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-A-L1-S2-L1-M001",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "ホーム",
+                  "acceptedAnswers": ["platform"],
+                  "referenceChoices": [
+                    { "jp": "ホーム", "en": "platform" },
+                    { "jp": "乗り場", "en": "boarding area" },
+                    { "jp": "切符", "en": "ticket" },
+                    { "jp": "路線", "en": "line" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S2-L1-M002",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "乗り場",
+                  "acceptedAnswers": ["boarding area"],
+                  "referenceChoices": [
+                    { "jp": "乗り場", "en": "boarding area" },
+                    { "jp": "ホーム", "en": "platform" },
+                    { "jp": "切符", "en": "ticket" },
+                    { "jp": "電車", "en": "train" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S2-L1-M003",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "切符",
+                  "acceptedAnswers": ["ticket"],
+                  "referenceChoices": [
+                    { "jp": "切符", "en": "ticket" },
+                    { "jp": "電車", "en": "train" },
+                    { "jp": "路線", "en": "line" },
+                    { "jp": "ホーム", "en": "platform" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S2-L1-M004",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "路線",
+                  "acceptedAnswers": ["line"],
+                  "referenceChoices": [
+                    { "jp": "路線", "en": "line" },
+                    { "jp": "切符", "en": "ticket" },
+                    { "jp": "電車", "en": "train" },
+                    { "jp": "乗り場", "en": "boarding area" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S2-L1-M005",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "電車",
+                  "acceptedAnswers": ["train"],
+                  "referenceChoices": [
+                    { "jp": "電車", "en": "train" },
+                    { "jp": "ホーム", "en": "platform" },
+                    { "jp": "切符", "en": "ticket" },
+                    { "jp": "路線", "en": "line" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "A-L1-S2-L2",
+          "title": "Tickets and IC Cards",
+          "components": [
+            {
+              "id": "A-L1-S2-L2-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Introduce a few essential ticket and IC card words.",
+              "masteryRule": "all 5 items must be completed once",
+              "retryBehavior": "not applicable",
+              "items": [
+                { "jp": "ICカード", "romaji": "aishii kaado", "en": "IC card" },
+                { "jp": "チャージ", "romaji": "chaaji", "en": "reload" },
+                { "jp": "片道", "romaji": "katamichi", "en": "one way" },
+                { "jp": "往復", "romaji": "oufuku", "en": "round trip" },
+                { "jp": "切符売り場", "romaji": "kippu uriba", "en": "ticket machine area" }
+              ]
+            },
+            {
+              "id": "A-L1-S2-L2-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese ticketing word that matches the English prompt.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-A-L1-S2-L2-R001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "IC card",
+                  "acceptedAnswers": ["ICカード"],
+                  "referenceChoices": [
+                    { "jp": "ICカード", "romaji": "aishii kaado" },
+                    { "jp": "チャージ", "romaji": "chaaji" },
+                    { "jp": "片道", "romaji": "katamichi" },
+                    { "jp": "往復", "romaji": "oufuku" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S2-L2-R002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Reload",
+                  "acceptedAnswers": ["チャージ"],
+                  "referenceChoices": [
+                    { "jp": "チャージ", "romaji": "chaaji" },
+                    { "jp": "ICカード", "romaji": "aishii kaado" },
+                    { "jp": "片道", "romaji": "katamichi" },
+                    { "jp": "切符売り場", "romaji": "kippu uriba" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S2-L2-R003",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "One way",
+                  "acceptedAnswers": ["片道"],
+                  "referenceChoices": [
+                    { "jp": "片道", "romaji": "katamichi" },
+                    { "jp": "往復", "romaji": "oufuku" },
+                    { "jp": "チャージ", "romaji": "chaaji" },
+                    { "jp": "ICカード", "romaji": "aishii kaado" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S2-L2-R004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Round trip",
+                  "acceptedAnswers": ["往復"],
+                  "referenceChoices": [
+                    { "jp": "往復", "romaji": "oufuku" },
+                    { "jp": "片道", "romaji": "katamichi" },
+                    { "jp": "ICカード", "romaji": "aishii kaado" },
+                    { "jp": "チャージ", "romaji": "chaaji" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S2-L2-R005",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Ticket machine area",
+                  "acceptedAnswers": ["切符売り場"],
+                  "referenceChoices": [
+                    { "jp": "切符売り場", "romaji": "kippu uriba" },
+                    { "jp": "ICカード", "romaji": "aishii kaado" },
+                    { "jp": "チャージ", "romaji": "chaaji" },
+                    { "jp": "片道", "romaji": "katamichi" }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "A-L1-S2-L2-C3",
+              "componentType": "matching",
+              "goal": "Read the Japanese ticket words and connect them back to meaning.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-A-L1-S2-L2-M001",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "ICカード",
+                  "acceptedAnswers": ["IC card"],
+                  "referenceChoices": [
+                    { "jp": "ICカード", "en": "IC card" },
+                    { "jp": "チャージ", "en": "reload" },
+                    { "jp": "片道", "en": "one way" },
+                    { "jp": "往復", "en": "round trip" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S2-L2-M002",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "チャージ",
+                  "acceptedAnswers": ["reload"],
+                  "referenceChoices": [
+                    { "jp": "チャージ", "en": "reload" },
+                    { "jp": "ICカード", "en": "IC card" },
+                    { "jp": "片道", "en": "one way" },
+                    { "jp": "往復", "en": "round trip" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S2-L2-M003",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "片道",
+                  "acceptedAnswers": ["one way"],
+                  "referenceChoices": [
+                    { "jp": "片道", "en": "one way" },
+                    { "jp": "往復", "en": "round trip" },
+                    { "jp": "チャージ", "en": "reload" },
+                    { "jp": "ICカード", "en": "IC card" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S2-L2-M004",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "往復",
+                  "acceptedAnswers": ["round trip"],
+                  "referenceChoices": [
+                    { "jp": "往復", "en": "round trip" },
+                    { "jp": "片道", "en": "one way" },
+                    { "jp": "ICカード", "en": "IC card" },
+                    { "jp": "チャージ", "en": "reload" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S2-L2-M005",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "切符売り場",
+                  "acceptedAnswers": ["ticket machine area"],
+                  "referenceChoices": [
+                    { "jp": "切符売り場", "en": "ticket machine area" },
+                    { "jp": "ICカード", "en": "IC card" },
+                    { "jp": "チャージ", "en": "reload" },
+                    { "jp": "片道", "en": "one way" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "A-L1-S2-L3",
+          "title": "Taxi Basics",
+          "components": [
+            {
+              "id": "A-L1-S2-L3-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Introduce short taxi phrases and related travel words.",
+              "masteryRule": "all 5 items must be completed once",
+              "retryBehavior": "not applicable",
+              "items": [
+                { "jp": "このホテルまでお願いします", "romaji": "kono hoteru made onegaishimasu", "en": "to this hotel, please" },
+                { "jp": "ここへお願いします", "romaji": "koko e onegaishimasu", "en": "here, please" },
+                { "jp": "住所", "romaji": "juusho", "en": "address" },
+                { "jp": "荷物", "romaji": "nimotsu", "en": "luggage" },
+                { "jp": "タクシー", "romaji": "takushii", "en": "taxi" }
+              ]
+            },
+            {
+              "id": "A-L1-S2-L3-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese taxi phrase or travel word that matches the English prompt.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-A-L1-S2-L3-R001",
+                  "promptMode": "Say this politely",
+                  "promptPrimary": "To this hotel, please.",
+                  "acceptedAnswers": ["このホテルまでお願いします"],
+                  "referenceChoices": [
+                    { "jp": "このホテルまでお願いします", "romaji": "kono hoteru made onegaishimasu" },
+                    { "jp": "ここへお願いします", "romaji": "koko e onegaishimasu" },
+                    { "jp": "タクシー", "romaji": "takushii" },
+                    { "jp": "住所", "romaji": "juusho" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S2-L3-R002",
+                  "promptMode": "Say this politely",
+                  "promptPrimary": "Here, please.",
+                  "acceptedAnswers": ["ここへお願いします"],
+                  "referenceChoices": [
+                    { "jp": "ここへお願いします", "romaji": "koko e onegaishimasu" },
+                    { "jp": "このホテルまでお願いします", "romaji": "kono hoteru made onegaishimasu" },
+                    { "jp": "荷物", "romaji": "nimotsu" },
+                    { "jp": "住所", "romaji": "juusho" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S2-L3-R003",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Address",
+                  "acceptedAnswers": ["住所"],
+                  "referenceChoices": [
+                    { "jp": "住所", "romaji": "juusho" },
+                    { "jp": "荷物", "romaji": "nimotsu" },
+                    { "jp": "タクシー", "romaji": "takushii" },
+                    { "jp": "ここへお願いします", "romaji": "koko e onegaishimasu" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S2-L3-R004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Luggage",
+                  "acceptedAnswers": ["荷物"],
+                  "referenceChoices": [
+                    { "jp": "荷物", "romaji": "nimotsu" },
+                    { "jp": "住所", "romaji": "juusho" },
+                    { "jp": "タクシー", "romaji": "takushii" },
+                    { "jp": "このホテルまでお願いします", "romaji": "kono hoteru made onegaishimasu" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S2-L3-R005",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Taxi",
+                  "acceptedAnswers": ["タクシー"],
+                  "referenceChoices": [
+                    { "jp": "タクシー", "romaji": "takushii" },
+                    { "jp": "荷物", "romaji": "nimotsu" },
+                    { "jp": "住所", "romaji": "juusho" },
+                    { "jp": "ここへお願いします", "romaji": "koko e onegaishimasu" }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "A-L1-S2-L3-C3",
+              "componentType": "matching",
+              "goal": "Read the Japanese taxi phrase or word and connect it back to meaning.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-A-L1-S2-L3-M001",
+                  "promptMode": "What are they asking",
+                  "promptPrimary": "このホテルまでお願いします",
+                  "acceptedAnswers": ["to this hotel, please"],
+                  "referenceChoices": [
+                    { "jp": "このホテルまでお願いします", "en": "to this hotel, please" },
+                    { "jp": "ここへお願いします", "en": "here, please" },
+                    { "jp": "住所", "en": "address" },
+                    { "jp": "荷物", "en": "luggage" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S2-L3-M002",
+                  "promptMode": "What are they asking",
+                  "promptPrimary": "ここへお願いします",
+                  "acceptedAnswers": ["here, please"],
+                  "referenceChoices": [
+                    { "jp": "ここへお願いします", "en": "here, please" },
+                    { "jp": "このホテルまでお願いします", "en": "to this hotel, please" },
+                    { "jp": "住所", "en": "address" },
+                    { "jp": "タクシー", "en": "taxi" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S2-L3-M003",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "住所",
+                  "acceptedAnswers": ["address"],
+                  "referenceChoices": [
+                    { "jp": "住所", "en": "address" },
+                    { "jp": "荷物", "en": "luggage" },
+                    { "jp": "タクシー", "en": "taxi" },
+                    { "jp": "ここへお願いします", "en": "here, please" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S2-L3-M004",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "荷物",
+                  "acceptedAnswers": ["luggage"],
+                  "referenceChoices": [
+                    { "jp": "荷物", "en": "luggage" },
+                    { "jp": "住所", "en": "address" },
+                    { "jp": "タクシー", "en": "taxi" },
+                    { "jp": "このホテルまでお願いします", "en": "to this hotel, please" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S2-L3-M005",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "タクシー",
+                  "acceptedAnswers": ["taxi"],
+                  "referenceChoices": [
+                    { "jp": "タクシー", "en": "taxi" },
+                    { "jp": "荷物", "en": "luggage" },
+                    { "jp": "住所", "en": "address" },
+                    { "jp": "ここへお願いします", "en": "here, please" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "A-L1-S2-L4",
+          "title": "Transfer Review",
+          "components": [
+            {
+              "id": "A-L1-S2-L4-C1",
+              "componentType": "matching",
+              "goal": "Mix train, ticket, and taxi language together before moving on to hotel check-in.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-A-L1-S2-L4-M001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "One way",
+                  "acceptedAnswers": ["片道"],
+                  "referenceChoices": [
+                    { "jp": "片道", "romaji": "katamichi" },
+                    { "jp": "往復", "romaji": "oufuku" },
+                    { "jp": "切符", "romaji": "kippu" },
+                    { "jp": "路線", "romaji": "rosen" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S2-L4-M002",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "ホーム",
+                  "acceptedAnswers": ["platform"],
+                  "referenceChoices": [
+                    { "jp": "ホーム", "en": "platform" },
+                    { "jp": "乗り場", "en": "boarding area" },
+                    { "jp": "切符", "en": "ticket" },
+                    { "jp": "路線", "en": "line" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S2-L4-M003",
+                  "promptMode": "What are they asking",
+                  "promptPrimary": "このホテルまでお願いします",
+                  "acceptedAnswers": ["to this hotel, please"],
+                  "referenceChoices": [
+                    { "jp": "このホテルまでお願いします", "en": "to this hotel, please" },
+                    { "jp": "ここへお願いします", "en": "here, please" },
+                    { "jp": "住所", "en": "address" },
+                    { "jp": "荷物", "en": "luggage" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S2-L4-M004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Reload",
+                  "acceptedAnswers": ["チャージ"],
+                  "referenceChoices": [
+                    { "jp": "チャージ", "romaji": "chaaji" },
+                    { "jp": "ICカード", "romaji": "aishii kaado" },
+                    { "jp": "片道", "romaji": "katamichi" },
+                    { "jp": "往復", "romaji": "oufuku" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S2-L4-M005",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "路線",
+                  "acceptedAnswers": ["line"],
+                  "referenceChoices": [
+                    { "jp": "路線", "en": "line" },
+                    { "jp": "切符", "en": "ticket" },
+                    { "jp": "電車", "en": "train" },
+                    { "jp": "乗り場", "en": "boarding area" }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tokyo-arrival-checkin",
+      "title": "Hotel Check-In",
+      "stage": "simple_conversation",
+      "playerOutcome": "Can complete a basic hotel check-in using a reservation name, passport, and a few common follow-up words.",
+      "estimatedMinutes": 10,
+      "lessonLevels": [
+        {
+          "id": "A-L1-S3-L1",
+          "title": "Reservation Words",
+          "components": [
+            {
+              "id": "A-L1-S3-L1-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Introduce the first hotel reservation and room words.",
+              "masteryRule": "all 5 items must be completed once",
+              "retryBehavior": "not applicable",
+              "items": [
+                { "jp": "予約", "romaji": "yoyaku", "en": "reservation" },
+                { "jp": "名前", "romaji": "namae", "en": "name" },
+                { "jp": "部屋", "romaji": "heya", "en": "room" },
+                { "jp": "鍵", "romaji": "kagi", "en": "key" },
+                { "jp": "朝食", "romaji": "choushoku", "en": "breakfast" }
+              ]
+            },
+            {
+              "id": "A-L1-S3-L1-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese hotel word that matches the English prompt.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-A-L1-S3-L1-R001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Reservation",
+                  "acceptedAnswers": ["予約"],
+                  "referenceChoices": [
+                    { "jp": "予約", "romaji": "yoyaku" },
+                    { "jp": "名前", "romaji": "namae" },
+                    { "jp": "部屋", "romaji": "heya" },
+                    { "jp": "鍵", "romaji": "kagi" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S3-L1-R002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Name",
+                  "acceptedAnswers": ["名前"],
+                  "referenceChoices": [
+                    { "jp": "名前", "romaji": "namae" },
+                    { "jp": "予約", "romaji": "yoyaku" },
+                    { "jp": "部屋", "romaji": "heya" },
+                    { "jp": "朝食", "romaji": "choushoku" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S3-L1-R003",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Room",
+                  "acceptedAnswers": ["部屋"],
+                  "referenceChoices": [
+                    { "jp": "部屋", "romaji": "heya" },
+                    { "jp": "鍵", "romaji": "kagi" },
+                    { "jp": "予約", "romaji": "yoyaku" },
+                    { "jp": "朝食", "romaji": "choushoku" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S3-L1-R004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Key",
+                  "acceptedAnswers": ["鍵"],
+                  "referenceChoices": [
+                    { "jp": "鍵", "romaji": "kagi" },
+                    { "jp": "部屋", "romaji": "heya" },
+                    { "jp": "予約", "romaji": "yoyaku" },
+                    { "jp": "名前", "romaji": "namae" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S3-L1-R005",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Breakfast",
+                  "acceptedAnswers": ["朝食"],
+                  "referenceChoices": [
+                    { "jp": "朝食", "romaji": "choushoku" },
+                    { "jp": "鍵", "romaji": "kagi" },
+                    { "jp": "部屋", "romaji": "heya" },
+                    { "jp": "予約", "romaji": "yoyaku" }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "A-L1-S3-L1-C3",
+              "componentType": "matching",
+              "goal": "Read the Japanese hotel word and connect it back to meaning.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-A-L1-S3-L1-M001",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "予約",
+                  "acceptedAnswers": ["reservation"],
+                  "referenceChoices": [
+                    { "jp": "予約", "en": "reservation" },
+                    { "jp": "名前", "en": "name" },
+                    { "jp": "部屋", "en": "room" },
+                    { "jp": "鍵", "en": "key" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S3-L1-M002",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "名前",
+                  "acceptedAnswers": ["name"],
+                  "referenceChoices": [
+                    { "jp": "名前", "en": "name" },
+                    { "jp": "予約", "en": "reservation" },
+                    { "jp": "部屋", "en": "room" },
+                    { "jp": "朝食", "en": "breakfast" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S3-L1-M003",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "部屋",
+                  "acceptedAnswers": ["room"],
+                  "referenceChoices": [
+                    { "jp": "部屋", "en": "room" },
+                    { "jp": "鍵", "en": "key" },
+                    { "jp": "予約", "en": "reservation" },
+                    { "jp": "朝食", "en": "breakfast" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S3-L1-M004",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "鍵",
+                  "acceptedAnswers": ["key"],
+                  "referenceChoices": [
+                    { "jp": "鍵", "en": "key" },
+                    { "jp": "部屋", "en": "room" },
+                    { "jp": "予約", "en": "reservation" },
+                    { "jp": "名前", "en": "name" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S3-L1-M005",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "朝食",
+                  "acceptedAnswers": ["breakfast"],
+                  "referenceChoices": [
+                    { "jp": "朝食", "en": "breakfast" },
+                    { "jp": "鍵", "en": "key" },
+                    { "jp": "部屋", "en": "room" },
+                    { "jp": "予約", "en": "reservation" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "A-L1-S3-L2",
+          "title": "Check-In Phrases",
+          "components": [
+            {
+              "id": "A-L1-S3-L2-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Introduce the first check-in phrases.",
+              "masteryRule": "all 5 items must be completed once",
+              "retryBehavior": "not applicable",
+              "items": [
+                { "jp": "チェックイン", "romaji": "chekkuin", "en": "check in" },
+                { "jp": "予約しています", "romaji": "yoyaku shiteimasu", "en": "I have a reservation" },
+                { "jp": "ジャレッドです", "romaji": "Jared desu", "en": "I am Jared" },
+                { "jp": "一泊", "romaji": "ippaku", "en": "one night" },
+                { "jp": "二人", "romaji": "futari", "en": "two people" }
+              ]
+            },
+            {
+              "id": "A-L1-S3-L2-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese check-in phrase that matches the English prompt.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-A-L1-S3-L2-R001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "I have a reservation",
+                  "acceptedAnswers": ["予約しています"],
+                  "referenceChoices": [
+                    { "jp": "予約しています", "romaji": "yoyaku shiteimasu" },
+                    { "jp": "チェックイン", "romaji": "chekkuin" },
+                    { "jp": "ジャレッドです", "romaji": "Jared desu" },
+                    { "jp": "一泊", "romaji": "ippaku" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S3-L2-R002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "I am Jared",
+                  "acceptedAnswers": ["ジャレッドです"],
+                  "referenceChoices": [
+                    { "jp": "ジャレッドです", "romaji": "Jared desu" },
+                    { "jp": "予約しています", "romaji": "yoyaku shiteimasu" },
+                    { "jp": "二人", "romaji": "futari" },
+                    { "jp": "一泊", "romaji": "ippaku" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S3-L2-R003",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "One night",
+                  "acceptedAnswers": ["一泊"],
+                  "referenceChoices": [
+                    { "jp": "一泊", "romaji": "ippaku" },
+                    { "jp": "二人", "romaji": "futari" },
+                    { "jp": "チェックイン", "romaji": "chekkuin" },
+                    { "jp": "予約しています", "romaji": "yoyaku shiteimasu" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S3-L2-R004",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Two people",
+                  "acceptedAnswers": ["二人"],
+                  "referenceChoices": [
+                    { "jp": "二人", "romaji": "futari" },
+                    { "jp": "一泊", "romaji": "ippaku" },
+                    { "jp": "ジャレッドです", "romaji": "Jared desu" },
+                    { "jp": "チェックイン", "romaji": "chekkuin" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S3-L2-R005",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Check in",
+                  "acceptedAnswers": ["チェックイン"],
+                  "referenceChoices": [
+                    { "jp": "チェックイン", "romaji": "chekkuin" },
+                    { "jp": "予約しています", "romaji": "yoyaku shiteimasu" },
+                    { "jp": "一泊", "romaji": "ippaku" },
+                    { "jp": "二人", "romaji": "futari" }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "A-L1-S3-L2-C3",
+              "componentType": "matching",
+              "goal": "Read the Japanese check-in phrase and connect it back to meaning.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-A-L1-S3-L2-M001",
+                  "promptMode": "What are they asking",
+                  "promptPrimary": "予約しています",
+                  "acceptedAnswers": ["I have a reservation"],
+                  "referenceChoices": [
+                    { "jp": "予約しています", "en": "I have a reservation" },
+                    { "jp": "ジャレッドです", "en": "I am Jared" },
+                    { "jp": "一泊", "en": "one night" },
+                    { "jp": "二人", "en": "two people" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S3-L2-M002",
+                  "promptMode": "What are they asking",
+                  "promptPrimary": "ジャレッドです",
+                  "acceptedAnswers": ["I am Jared"],
+                  "referenceChoices": [
+                    { "jp": "ジャレッドです", "en": "I am Jared" },
+                    { "jp": "予約しています", "en": "I have a reservation" },
+                    { "jp": "チェックイン", "en": "check in" },
+                    { "jp": "二人", "en": "two people" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S3-L2-M003",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "一泊",
+                  "acceptedAnswers": ["one night"],
+                  "referenceChoices": [
+                    { "jp": "一泊", "en": "one night" },
+                    { "jp": "二人", "en": "two people" },
+                    { "jp": "予約しています", "en": "I have a reservation" },
+                    { "jp": "チェックイン", "en": "check in" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S3-L2-M004",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "二人",
+                  "acceptedAnswers": ["two people"],
+                  "referenceChoices": [
+                    { "jp": "二人", "en": "two people" },
+                    { "jp": "一泊", "en": "one night" },
+                    { "jp": "ジャレッドです", "en": "I am Jared" },
+                    { "jp": "チェックイン", "en": "check in" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S3-L2-M005",
+                  "promptMode": "Which one means",
+                  "promptPrimary": "チェックイン",
+                  "acceptedAnswers": ["check in"],
+                  "referenceChoices": [
+                    { "jp": "チェックイン", "en": "check in" },
+                    { "jp": "予約しています", "en": "I have a reservation" },
+                    { "jp": "一泊", "en": "one night" },
+                    { "jp": "二人", "en": "two people" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "A-L1-S3-L3",
+          "title": "Room and Breakfast",
+          "components": [
+            {
+              "id": "A-L1-S3-L3-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Introduce common follow-up hotel words after check-in starts.",
+              "masteryRule": "all 5 items must be completed once",
+              "retryBehavior": "not applicable",
+              "items": [
+                { "jp": "チェックアウト", "romaji": "chekkuauto", "en": "check out" },
+                { "jp": "エレベーター", "romaji": "erebeetaa", "en": "elevator" },
+                { "jp": "朝食は七時です", "romaji": "choushoku wa shichiji desu", "en": "breakfast is at seven" },
+                { "jp": "パスポートをお願いします", "romaji": "pasupooto o onegaishimasu", "en": "passport, please" },
+                { "jp": "こちらです", "romaji": "kochira desu", "en": "this way / here it is" }
+              ]
+            },
+            {
+              "id": "A-L1-S3-L3-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese hotel follow-up phrase that matches the English prompt.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-A-L1-S3-L3-R001",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Check out",
+                  "acceptedAnswers": ["チェックアウト"],
+                  "referenceChoices": [
+                    { "jp": "チェックアウト", "romaji": "chekkuauto" },
+                    { "jp": "エレベーター", "romaji": "erebeetaa" },
+                    { "jp": "こちらです", "romaji": "kochira desu" },
+                    { "jp": "パスポートをお願いします", "romaji": "pasupooto o onegaishimasu" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S3-L3-R002",
+                  "promptMode": "How do you say",
+                  "promptPrimary": "Elevator",
+                  "acceptedAnswers": ["エレベーター"],
+                  "referenceChoices": [
+                    { "jp": "エレベーター", "romaji": "erebeetaa" },
+                    { "jp": "チェックアウト", "romaji": "chekkuauto" },
+                    { "jp": "こちらです", "romaji": "kochira desu" },
+                    { "jp": "朝食は七時です", "romaji": "choushoku wa shichiji desu" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S3-L3-R003",
+                  "promptMode": "Say this politely",
+                  "promptPrimary": "Passport, please.",
+                  "acceptedAnswers": ["パスポートをお願いします"],
+                  "referenceChoices": [
+                    { "jp": "パスポートをお願いします", "romaji": "pasupooto o onegaishimasu" },
+                    { "jp": "こちらです", "romaji": "kochira desu" },
+                    { "jp": "朝食は七時です", "romaji": "choushoku wa shichiji desu" },
+                    { "jp": "チェックアウト", "romaji": "chekkuauto" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S3-L3-R004",
+                  "promptMode": "What are they asking",
+                  "promptPrimary": "朝食は七時です",
+                  "acceptedAnswers": ["breakfast is at seven"],
+                  "referenceChoices": [
+                    { "jp": "朝食は七時です", "en": "breakfast is at seven" },
+                    { "jp": "こちらです", "en": "this way / here it is" },
+                    { "jp": "パスポートをお願いします", "en": "passport, please" },
+                    { "jp": "エレベーター", "en": "elevator" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S3-L3-R005",
+                  "promptMode": "What are they asking",
+                  "promptPrimary": "こちらです",
+                  "acceptedAnswers": ["this way / here it is"],
+                  "referenceChoices": [
+                    { "jp": "こちらです", "en": "this way / here it is" },
+                    { "jp": "朝食は七時です", "en": "breakfast is at seven" },
+                    { "jp": "パスポートをお願いします", "en": "passport, please" },
+                    { "jp": "エレベーター", "en": "elevator" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "A-L1-S3-L4",
+          "title": "Short Check-In Exchange",
+          "components": [
+            {
+              "id": "A-L1-S3-L4-C1",
+              "componentType": "matching",
+              "goal": "Use the earliest hotel phrases in a short bounded check-in exchange.",
+              "masteryRule": "all items must be answered correctly",
+              "retryBehavior": "missed items go to the back of the current component queue",
+              "questions": [
+                {
+                  "id": "Q-A-L1-S3-L4-E001",
+                  "promptMode": "Choose the best next line",
+                  "promptPrimary": "The staff says: パスポートをお願いします",
+                  "acceptedAnswers": ["passport, please"],
+                  "referenceChoices": [
+                    { "jp": "パスポートをお願いします", "en": "passport, please" },
+                    { "jp": "朝食は七時です", "en": "breakfast is at seven" },
+                    { "jp": "こちらです", "en": "this way / here it is" },
+                    { "jp": "チェックアウト", "en": "check out" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S3-L4-E002",
+                  "promptMode": "Say this politely",
+                  "promptPrimary": "I have a reservation.",
+                  "acceptedAnswers": ["予約しています"],
+                  "referenceChoices": [
+                    { "jp": "予約しています", "romaji": "yoyaku shiteimasu" },
+                    { "jp": "ジャレッドです", "romaji": "Jared desu" },
+                    { "jp": "一泊", "romaji": "ippaku" },
+                    { "jp": "二人", "romaji": "futari" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S3-L4-E003",
+                  "promptMode": "Say this politely",
+                  "promptPrimary": "I am Jared.",
+                  "acceptedAnswers": ["ジャレッドです"],
+                  "referenceChoices": [
+                    { "jp": "ジャレッドです", "romaji": "Jared desu" },
+                    { "jp": "予約しています", "romaji": "yoyaku shiteimasu" },
+                    { "jp": "一泊", "romaji": "ippaku" },
+                    { "jp": "二人", "romaji": "futari" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S3-L4-E004",
+                  "promptMode": "What are they asking",
+                  "promptPrimary": "朝食は七時です",
+                  "acceptedAnswers": ["breakfast is at seven"],
+                  "referenceChoices": [
+                    { "jp": "朝食は七時です", "en": "breakfast is at seven" },
+                    { "jp": "こちらです", "en": "this way / here it is" },
+                    { "jp": "パスポートをお願いします", "en": "passport, please" },
+                    { "jp": "エレベーター", "en": "elevator" }
+                  ]
+                },
+                {
+                  "id": "Q-A-L1-S3-L4-E005",
+                  "promptMode": "What are they asking",
+                  "promptPrimary": "こちらです",
+                  "acceptedAnswers": ["this way / here it is"],
+                  "referenceChoices": [
+                    { "jp": "こちらです", "en": "this way / here it is" },
+                    { "jp": "朝食は七時です", "en": "breakfast is at seven" },
+                    { "jp": "パスポートをお願いします", "en": "passport, please" },
+                    { "jp": "チェックアウト", "en": "check out" }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
