@@ -1,11 +1,11 @@
-const CACHE_NAME = "japan-study-companion-v20260530a";
+const CACHE_NAME = "japan-study-companion-v20260820c";
 
 const OFFLINE_ASSETS = [
   "./",
   "./index.html",
-  "./styles.css?v=20260528e",
-  "./app.js?v=20260530a",
-  "./manifest.webmanifest?v=20260530a",
+  "./styles.css?v=20260820c",
+  "./app.js?v=20260820c",
+  "./manifest.webmanifest?v=20260820c",
   "./assets/restaurant-guide-v1.png",
   "./assets/mascot-happy.svg",
   "./assets/mascot-oops.svg",
@@ -27,6 +27,8 @@ const OFFLINE_ASSETS = [
   "./data/hiragana/hiragana-h-l1-foundations.json",
   "./data/arrival/arrival-a-l1-arrival-essentials.json",
   "./data/convenience-store/convenience-store-c-l1-conbini-basics.json",
+  "./data/trains/trains-t-l1-station-essentials.json",
+  "./data/directions/directions-d-l1-street-navigation.json",
   "./data/restaurant/restaurant-r-l1-menu-basics.json",
   "./data/restaurant/restaurant-r-l2-ordering-basics.json",
   "./data/restaurant/restaurant-r-l3-server-interaction.json",

@@ -1,0 +1,13 @@
+{
+  "locationId": "directions",
+  "sublevels": [
+    {
+      "id": "tokyo-city-directions",
+      "levelId": "D-L1",
+      "title": "Directions & Navigation",
+      "stage": "survival-navigation",
+      "playerOutcome": "Can ask where a place is and understand simple left, right, straight, here, and there directions.",
+      "lessonLevelIds": ["D-L1-S1-L1", "D-L1-S1-L2", "D-L1-S1-L3", "D-L1-S1-L4"]
+    }
+  ]
+}

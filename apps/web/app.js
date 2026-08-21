@@ -1,5 +1,5 @@
 (function () {
-  const APP_VERSION = "20260530a";
+  const APP_VERSION = "20260820c";
   if ("scrollRestoration" in history) {
     history.scrollRestoration = "manual";
   }
@@ -8,6 +8,8 @@
     "./data/hiragana/hiragana-h-l1-foundations.json",
     "./data/arrival/arrival-a-l1-arrival-essentials.json",
     "./data/convenience-store/convenience-store-c-l1-conbini-basics.json",
+    "./data/trains/trains-t-l1-station-essentials.json",
+    "./data/directions/directions-d-l1-street-navigation.json",
     "./data/restaurant/restaurant-r-l1-menu-basics.json",
     "./data/restaurant/restaurant-r-l2-ordering-basics.json",
     "./data/restaurant/restaurant-r-l3-server-interaction.json",
@@ -16,6 +18,7 @@
   const STORAGE_KEYS = {
     completedLessonLevelIds: "japan-study.completedLessonLevelIds",
     choicesHidden: "japan-study.choicesHidden",
+    savedLessonSession: "japan-study.savedLessonSession",
   };
 
   async function registerServiceWorker() {
@@ -122,7 +125,8 @@
           position: 66,
           sublevels: [
             { id: "tokyo-city-conbini", title: "Conbini Basics", state: "available", playable: true },
-            { id: "tokyo-city-trains", title: "Trains & Stations", state: "locked", playable: false },
+            { id: "tokyo-city-trains", title: "Trains & Stations", state: "available", playable: true },
+            { id: "tokyo-city-directions", title: "Directions & Navigation", state: "available", playable: true },
           ],
         },
         {
@@ -385,6 +389,89 @@
       window.localStorage.setItem(STORAGE_KEYS.choicesHidden, String(appState.choicesHidden));
     } catch (error) {
       console.warn("Failed to save hint visibility preference.", error);
+    }
+  }
+
+  function loadSavedLessonSession() {
+    try {
+      const raw = window.localStorage.getItem(STORAGE_KEYS.savedLessonSession);
+      if (!raw) return null;
+      const parsed = JSON.parse(raw);
+      if (!parsed?.lessonSession?.queueIds?.length) return null;
+      return parsed;
+    } catch (error) {
+      console.warn("Failed to load saved lesson session.", error);
+      return null;
+    }
+  }
+
+  function saveLessonSession() {
+    try {
+      if (!appState.lessonSession?.queue?.length) return;
+      const lessonSession = appState.lessonSession;
+      window.localStorage.setItem(
+        STORAGE_KEYS.savedLessonSession,
+        JSON.stringify({
+          activeCityId: appState.activeCityId,
+          activeLevelId: appState.activeLevelId,
+          activeSublevelId: appState.activeSublevelId,
+          lessonSession: {
+            sublevelId: lessonSession.sublevelId,
+            lessonLevelId: lessonSession.lessonLevelId,
+            currentComponentIndex: lessonSession.currentComponentIndex,
+            queueIds: lessonSession.queue.map((question) => question.id),
+            completedQuestions: lessonSession.completedQuestions,
+          },
+        })
+      );
+    } catch (error) {
+      console.warn("Failed to save lesson session.", error);
+    }
+  }
+
+  function restoreLessonSession(savedSession) {
+    const savedLesson = savedSession?.lessonSession;
+    if (!savedLesson?.queueIds?.length) return null;
+
+    const lessonSession = buildLessonSession(
+      savedSession.activeSublevelId,
+      savedLesson.lessonLevelId
+    );
+    if (!lessonSession) return null;
+
+    const questionById = new Map();
+    lessonSession.components.forEach((component) => {
+      (component.runtimeQuestions || []).forEach((question) => {
+        questionById.set(question.id, question);
+      });
+    });
+
+    const restoredQueue = savedLesson.queueIds
+      .map((questionId) => questionById.get(questionId))
+      .filter(Boolean);
+    if (!restoredQueue.length) return null;
+
+    const maxComponentIndex = Math.max(0, lessonSession.components.length - 1);
+    lessonSession.currentComponentIndex = Math.min(
+      Math.max(0, Number(savedLesson.currentComponentIndex) || 0),
+      maxComponentIndex
+    );
+    lessonSession.queue = restoredQueue;
+    lessonSession.completedQuestions = Math.max(
+      0,
+      Math.min(
+        lessonSession.totalQuestions - restoredQueue.length,
+        Number(savedLesson.completedQuestions) || 0
+      )
+    );
+    return lessonSession;
+  }
+
+  function clearSavedLessonSession() {
+    try {
+      window.localStorage.removeItem(STORAGE_KEYS.savedLessonSession);
+    } catch (error) {
+      console.warn("Failed to clear saved lesson session.", error);
     }
   }
 
@@ -804,6 +891,8 @@
       saveCompletedLessonLevelIds();
     }
 
+    clearSavedLessonSession();
+
     const sublevelFullyCompleted = lessonLevels.every((lessonLevel) =>
       isLessonLevelCompleted(lessonLevel.id)
     );
@@ -1110,6 +1199,7 @@
     renderProgress();
     renderChoices(question.referenceChoices);
     syncChoicesVisibility();
+    saveLessonSession();
     startTimer();
   }
 
@@ -1479,6 +1569,7 @@
   supportModalBackdrop.addEventListener("click", () => dismissSupportModal());
 
   lessonBackButton.addEventListener("click", () => {
+    clearSavedLessonSession();
     showScreen("world");
   });
 
@@ -1506,10 +1597,28 @@
       loadCompletedLessonLevelIds();
       await loadCurriculumRuntime();
       syncCurriculumProgressToMap();
-      appState.lessonSession = buildLessonSession(appState.activeSublevelId);
-      renderWorldMap();
-      showScreen("world");
-      renderQuestion(false);
+      const savedSession = loadSavedLessonSession();
+      const savedRuntimeSublevel = savedSession
+        ? getCurrentSublevelRuntime(savedSession.activeSublevelId)
+        : null;
+
+      const restoredLessonSession = savedRuntimeSublevel
+        ? restoreLessonSession(savedSession)
+        : null;
+
+      if (restoredLessonSession) {
+        appState.activeCityId = savedSession.activeCityId;
+        appState.activeLevelId = savedSession.activeLevelId;
+        appState.activeSublevelId = savedSession.activeSublevelId;
+        appState.lessonSession = restoredLessonSession;
+        showScreen("lesson");
+        renderQuestion(false);
+      } else {
+        clearSavedLessonSession();
+        appState.lessonSession = buildLessonSession(appState.activeSublevelId);
+        renderWorldMap();
+        showScreen("world");
+      }
       window.scrollTo(0, 0);
     } catch (error) {
       console.error(error);

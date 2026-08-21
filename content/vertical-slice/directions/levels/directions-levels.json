@@ -1,0 +1,12 @@
+{
+  "locationId": "directions",
+  "levels": [
+    {
+      "id": "D-L1",
+      "title": "Directions & Street Navigation",
+      "city": "Tokyo",
+      "goal": "Ask where a place is, follow a short direction, and recognize the words that keep you moving through Japanese streets.",
+      "sublevelIds": ["tokyo-city-directions"]
+    }
+  ]
+}

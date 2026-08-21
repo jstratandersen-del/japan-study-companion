@@ -1,0 +1,214 @@
+{
+  "locationId": "directions",
+  "levelId": "D-L1",
+  "title": "Directions & Street Navigation",
+  "oneSentenceGoal": "Ask where a place is, follow a short direction, and recognize the words that keep you moving through Japanese streets.",
+  "runtimeNotes": "First playable street-navigation branch for Tokyo City Systems.",
+  "sublevels": [
+    {
+      "id": "tokyo-city-directions",
+      "title": "Directions & Navigation",
+      "stage": "survival-navigation",
+      "playerOutcome": "Can ask where a place is and understand simple left, right, straight, here, and there directions.",
+      "estimatedMinutes": 32,
+      "lessonLevels": [
+        {
+          "id": "D-L1-S1-L1",
+          "title": "Here, There, and Which Way",
+          "components": [
+            {
+              "id": "D-L1-S1-L1-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Learn the basic location and direction words used in short exchanges.",
+              "items": [
+                { "jp": "ここ", "romaji": "koko", "en": "here" },
+                { "jp": "そこ", "romaji": "soko", "en": "there" },
+                { "jp": "あそこ", "romaji": "asoko", "en": "over there" },
+                { "jp": "どこ", "romaji": "doko", "en": "where" },
+                { "jp": "どちら", "romaji": "dochira", "en": "which way" }
+              ]
+            },
+            {
+              "id": "D-L1-S1-L1-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese location word that matches the English prompt.",
+              "questions": [
+                { "id": "D-L1-S1-L1-Q01", "promptMode": "How do you say", "promptPrimary": "here", "acceptedAnswers": ["ここ"], "referenceChoices": [{"jp":"ここ","romaji":"koko"},{"jp":"そこ","romaji":"soko"},{"jp":"あそこ","romaji":"asoko"},{"jp":"どこ","romaji":"doko"}] },
+                { "id": "D-L1-S1-L1-Q02", "promptMode": "How do you say", "promptPrimary": "there", "acceptedAnswers": ["そこ"], "referenceChoices": [{"jp":"そこ","romaji":"soko"},{"jp":"ここ","romaji":"koko"},{"jp":"どこ","romaji":"doko"},{"jp":"どちら","romaji":"dochira"}] },
+                { "id": "D-L1-S1-L1-Q03", "promptMode": "How do you say", "promptPrimary": "over there", "acceptedAnswers": ["あそこ"], "referenceChoices": [{"jp":"あそこ","romaji":"asoko"},{"jp":"そこ","romaji":"soko"},{"jp":"ここ","romaji":"koko"},{"jp":"どこ","romaji":"doko"}] },
+                { "id": "D-L1-S1-L1-Q04", "promptMode": "How do you say", "promptPrimary": "where", "acceptedAnswers": ["どこ"], "referenceChoices": [{"jp":"どこ","romaji":"doko"},{"jp":"どちら","romaji":"dochira"},{"jp":"ここ","romaji":"koko"},{"jp":"あそこ","romaji":"asoko"}] },
+                { "id": "D-L1-S1-L1-Q05", "promptMode": "How do you say", "promptPrimary": "which way", "acceptedAnswers": ["どちら"], "referenceChoices": [{"jp":"どちら","romaji":"dochira"},{"jp":"どこ","romaji":"doko"},{"jp":"そこ","romaji":"soko"},{"jp":"ここ","romaji":"koko"}] }
+              ]
+            },
+            {
+              "id": "D-L1-S1-L1-C3",
+              "componentType": "matching",
+              "goal": "Read location words and question words in Japanese.",
+              "questions": [
+                { "id": "D-L1-S1-L1-Q06", "promptMode": "Which one means", "promptPrimary": "ここ", "acceptedAnswers": ["here"], "referenceChoices": [{"jp":"ここ","en":"here"},{"jp":"そこ","en":"there"},{"jp":"あそこ","en":"over there"},{"jp":"どこ","en":"where"}] },
+                { "id": "D-L1-S1-L1-Q07", "promptMode": "Which one means", "promptPrimary": "あそこ", "acceptedAnswers": ["over there"], "referenceChoices": [{"jp":"あそこ","en":"over there"},{"jp":"そこ","en":"there"},{"jp":"どちら","en":"which way"},{"jp":"ここ","en":"here"}] },
+                { "id": "D-L1-S1-L1-Q08", "promptMode": "Which one means", "promptPrimary": "どちら", "acceptedAnswers": ["which way"], "referenceChoices": [{"jp":"どちら","en":"which way"},{"jp":"どこ","en":"where"},{"jp":"ここ","en":"here"},{"jp":"そこ","en":"there"}] }
+              ]
+            },
+            {
+              "id": "D-L1-S1-L1-C4",
+              "componentType": "review",
+              "goal": "Review the location words in both directions.",
+              "questions": [
+                { "id": "D-L1-S1-L1-Q09", "promptMode": "How do you say", "promptPrimary": "where", "acceptedAnswers": ["どこ"], "referenceChoices": [{"jp":"どこ","romaji":"doko"},{"jp":"どちら","romaji":"dochira"},{"jp":"ここ","romaji":"koko"},{"jp":"そこ","romaji":"soko"}] },
+                { "id": "D-L1-S1-L1-Q10", "promptMode": "Which one means", "promptPrimary": "そこ", "acceptedAnswers": ["there"], "referenceChoices": [{"jp":"そこ","en":"there"},{"jp":"ここ","en":"here"},{"jp":"あそこ","en":"over there"},{"jp":"どこ","en":"where"}] }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "D-L1-S1-L2",
+          "title": "Left, Right, and Straight",
+          "components": [
+            {
+              "id": "D-L1-S1-L2-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Learn the direction words that appear in spoken instructions and signs.",
+              "items": [
+                { "jp": "右", "romaji": "migi", "en": "right" },
+                { "jp": "左", "romaji": "hidari", "en": "left" },
+                { "jp": "まっすぐ", "romaji": "massugu", "en": "straight" },
+                { "jp": "曲がる", "romaji": "magaru", "en": "turn" },
+                { "jp": "道", "romaji": "michi", "en": "road / way" }
+              ]
+            },
+            {
+              "id": "D-L1-S1-L2-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese direction word that matches the English prompt.",
+              "questions": [
+                { "id": "D-L1-S1-L2-Q01", "promptMode": "How do you say", "promptPrimary": "right", "acceptedAnswers": ["右"], "referenceChoices": [{"jp":"右","romaji":"migi"},{"jp":"左","romaji":"hidari"},{"jp":"まっすぐ","romaji":"massugu"},{"jp":"道","romaji":"michi"}] },
+                { "id": "D-L1-S1-L2-Q02", "promptMode": "How do you say", "promptPrimary": "left", "acceptedAnswers": ["左"], "referenceChoices": [{"jp":"左","romaji":"hidari"},{"jp":"右","romaji":"migi"},{"jp":"曲がる","romaji":"magaru"},{"jp":"道","romaji":"michi"}] },
+                { "id": "D-L1-S1-L2-Q03", "promptMode": "How do you say", "promptPrimary": "straight", "acceptedAnswers": ["まっすぐ"], "referenceChoices": [{"jp":"まっすぐ","romaji":"massugu"},{"jp":"道","romaji":"michi"},{"jp":"右","romaji":"migi"},{"jp":"左","romaji":"hidari"}] },
+                { "id": "D-L1-S1-L2-Q04", "promptMode": "How do you say", "promptPrimary": "turn", "acceptedAnswers": ["曲がる"], "referenceChoices": [{"jp":"曲がる","romaji":"magaru"},{"jp":"まっすぐ","romaji":"massugu"},{"jp":"右","romaji":"migi"},{"jp":"道","romaji":"michi"}] },
+                { "id": "D-L1-S1-L2-Q05", "promptMode": "How do you say", "promptPrimary": "road / way", "acceptedAnswers": ["道"], "referenceChoices": [{"jp":"道","romaji":"michi"},{"jp":"曲がる","romaji":"magaru"},{"jp":"左","romaji":"hidari"},{"jp":"まっすぐ","romaji":"massugu"}] }
+              ]
+            },
+            {
+              "id": "D-L1-S1-L2-C3",
+              "componentType": "matching",
+              "goal": "Understand the direction words when someone gives you instructions.",
+              "questions": [
+                { "id": "D-L1-S1-L2-Q06", "promptMode": "Which one means", "promptPrimary": "右", "acceptedAnswers": ["right"], "referenceChoices": [{"jp":"右","en":"right"},{"jp":"左","en":"left"},{"jp":"まっすぐ","en":"straight"},{"jp":"曲がる","en":"turn"}] },
+                { "id": "D-L1-S1-L2-Q07", "promptMode": "Which one means", "promptPrimary": "まっすぐ", "acceptedAnswers": ["straight"], "referenceChoices": [{"jp":"まっすぐ","en":"straight"},{"jp":"曲がる","en":"turn"},{"jp":"道","en":"road / way"},{"jp":"左","en":"left"}] },
+                { "id": "D-L1-S1-L2-Q08", "promptMode": "Which one means", "promptPrimary": "道", "acceptedAnswers": ["road / way"], "referenceChoices": [{"jp":"道","en":"road / way"},{"jp":"右","en":"right"},{"jp":"左","en":"left"},{"jp":"曲がる","en":"turn"}] }
+              ]
+            },
+            {
+              "id": "D-L1-S1-L2-C4",
+              "componentType": "review",
+              "goal": "Mix the direction words before moving into real questions.",
+              "questions": [
+                { "id": "D-L1-S1-L2-Q09", "promptMode": "How do you say", "promptPrimary": "straight", "acceptedAnswers": ["まっすぐ"], "referenceChoices": [{"jp":"まっすぐ","romaji":"massugu"},{"jp":"曲がる","romaji":"magaru"},{"jp":"右","romaji":"migi"},{"jp":"左","romaji":"hidari"}] },
+                { "id": "D-L1-S1-L2-Q10", "promptMode": "Which one means", "promptPrimary": "曲がる", "acceptedAnswers": ["turn"], "referenceChoices": [{"jp":"曲がる","en":"turn"},{"jp":"まっすぐ","en":"straight"},{"jp":"道","en":"road / way"},{"jp":"右","en":"right"}] }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "D-L1-S1-L3",
+          "title": "Places and Landmarks",
+          "components": [
+            {
+              "id": "D-L1-S1-L3-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Learn familiar places that make direction questions useful.",
+              "items": [
+                { "jp": "駅", "romaji": "eki", "en": "station" },
+                { "jp": "コンビニ", "romaji": "konbini", "en": "convenience store" },
+                { "jp": "ホテル", "romaji": "hoteru", "en": "hotel" },
+                { "jp": "トイレ", "romaji": "toire", "en": "restroom" },
+                { "jp": "入口", "romaji": "iriguchi", "en": "entrance" }
+              ]
+            },
+            {
+              "id": "D-L1-S1-L3-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese word for a common destination or landmark.",
+              "questions": [
+                { "id": "D-L1-S1-L3-Q01", "promptMode": "How do you say", "promptPrimary": "station", "acceptedAnswers": ["駅"], "referenceChoices": [{"jp":"駅","romaji":"eki"},{"jp":"コンビニ","romaji":"konbini"},{"jp":"ホテル","romaji":"hoteru"},{"jp":"入口","romaji":"iriguchi"}] },
+                { "id": "D-L1-S1-L3-Q02", "promptMode": "How do you say", "promptPrimary": "convenience store", "acceptedAnswers": ["コンビニ"], "referenceChoices": [{"jp":"コンビニ","romaji":"konbini"},{"jp":"駅","romaji":"eki"},{"jp":"トイレ","romaji":"toire"},{"jp":"ホテル","romaji":"hoteru"}] },
+                { "id": "D-L1-S1-L3-Q03", "promptMode": "How do you say", "promptPrimary": "hotel", "acceptedAnswers": ["ホテル"], "referenceChoices": [{"jp":"ホテル","romaji":"hoteru"},{"jp":"入口","romaji":"iriguchi"},{"jp":"駅","romaji":"eki"},{"jp":"コンビニ","romaji":"konbini"}] },
+                { "id": "D-L1-S1-L3-Q04", "promptMode": "How do you say", "promptPrimary": "restroom", "acceptedAnswers": ["トイレ"], "referenceChoices": [{"jp":"トイレ","romaji":"toire"},{"jp":"ホテル","romaji":"hoteru"},{"jp":"入口","romaji":"iriguchi"},{"jp":"駅","romaji":"eki"}] },
+                { "id": "D-L1-S1-L3-Q05", "promptMode": "How do you say", "promptPrimary": "entrance", "acceptedAnswers": ["入口"], "referenceChoices": [{"jp":"入口","romaji":"iriguchi"},{"jp":"出口","romaji":"deguchi"},{"jp":"駅","romaji":"eki"},{"jp":"トイレ","romaji":"toire"}] }
+              ]
+            },
+            {
+              "id": "D-L1-S1-L3-C3",
+              "componentType": "matching",
+              "goal": "Read common destinations in Japanese.",
+              "questions": [
+                { "id": "D-L1-S1-L3-Q06", "promptMode": "Which one means", "promptPrimary": "駅", "acceptedAnswers": ["station"], "referenceChoices": [{"jp":"駅","en":"station"},{"jp":"ホテル","en":"hotel"},{"jp":"コンビニ","en":"convenience store"},{"jp":"入口","en":"entrance"}] },
+                { "id": "D-L1-S1-L3-Q07", "promptMode": "Which one means", "promptPrimary": "コンビニ", "acceptedAnswers": ["convenience store"], "referenceChoices": [{"jp":"コンビニ","en":"convenience store"},{"jp":"トイレ","en":"restroom"},{"jp":"駅","en":"station"},{"jp":"ホテル","en":"hotel"}] },
+                { "id": "D-L1-S1-L3-Q08", "promptMode": "Which one means", "promptPrimary": "入口", "acceptedAnswers": ["entrance"], "referenceChoices": [{"jp":"入口","en":"entrance"},{"jp":"駅","en":"station"},{"jp":"ホテル","en":"hotel"},{"jp":"トイレ","en":"restroom"}] }
+              ]
+            },
+            {
+              "id": "D-L1-S1-L3-C4",
+              "componentType": "review",
+              "goal": "Review destinations you are likely to ask about on the trip.",
+              "questions": [
+                { "id": "D-L1-S1-L3-Q09", "promptMode": "How do you say", "promptPrimary": "restroom", "acceptedAnswers": ["トイレ"], "referenceChoices": [{"jp":"トイレ","romaji":"toire"},{"jp":"駅","romaji":"eki"},{"jp":"ホテル","romaji":"hoteru"},{"jp":"コンビニ","romaji":"konbini"}] },
+                { "id": "D-L1-S1-L3-Q10", "promptMode": "Which one means", "promptPrimary": "ホテル", "acceptedAnswers": ["hotel"], "referenceChoices": [{"jp":"ホテル","en":"hotel"},{"jp":"駅","en":"station"},{"jp":"入口","en":"entrance"},{"jp":"コンビニ","en":"convenience store"}] }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "D-L1-S1-L4",
+          "title": "Ask and Follow Directions",
+          "components": [
+            {
+              "id": "D-L1-S1-L4-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Learn polite, reusable questions and short direction replies.",
+              "items": [
+                { "jp": "すみません", "romaji": "sumimasen", "en": "excuse me" },
+                { "jp": "駅はどこですか", "romaji": "eki wa doko desu ka", "en": "Where is the station?" },
+                { "jp": "どう行きますか", "romaji": "dou ikimasu ka", "en": "How do I get there?" },
+                { "jp": "近いですか", "romaji": "chikai desu ka", "en": "Is it close?" },
+                { "jp": "まっすぐです", "romaji": "massugu desu", "en": "It is straight ahead." }
+              ]
+            },
+            {
+              "id": "D-L1-S1-L4-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese phrase that matches a practical navigation question.",
+              "questions": [
+                { "id": "D-L1-S1-L4-Q01", "promptMode": "How do you say", "promptPrimary": "excuse me", "acceptedAnswers": ["すみません"], "referenceChoices": [{"jp":"すみません","romaji":"sumimasen"},{"jp":"近いですか","romaji":"chikai desu ka"},{"jp":"どう行きますか","romaji":"dou ikimasu ka"},{"jp":"まっすぐです","romaji":"massugu desu"}] },
+                { "id": "D-L1-S1-L4-Q02", "promptMode": "How do you say", "promptPrimary": "Where is the station?", "acceptedAnswers": ["駅はどこですか"], "referenceChoices": [{"jp":"駅はどこですか","romaji":"eki wa doko desu ka"},{"jp":"どう行きますか","romaji":"dou ikimasu ka"},{"jp":"近いですか","romaji":"chikai desu ka"},{"jp":"すみません","romaji":"sumimasen"}] },
+                { "id": "D-L1-S1-L4-Q03", "promptMode": "How do you say", "promptPrimary": "How do I get there?", "acceptedAnswers": ["どう行きますか"], "referenceChoices": [{"jp":"どう行きますか","romaji":"dou ikimasu ka"},{"jp":"駅はどこですか","romaji":"eki wa doko desu ka"},{"jp":"まっすぐです","romaji":"massugu desu"},{"jp":"近いですか","romaji":"chikai desu ka"}] },
+                { "id": "D-L1-S1-L4-Q04", "promptMode": "How do you say", "promptPrimary": "Is it close?", "acceptedAnswers": ["近いですか"], "referenceChoices": [{"jp":"近いですか","romaji":"chikai desu ka"},{"jp":"すみません","romaji":"sumimasen"},{"jp":"どう行きますか","romaji":"dou ikimasu ka"},{"jp":"駅はどこですか","romaji":"eki wa doko desu ka"}] },
+                { "id": "D-L1-S1-L4-Q05", "promptMode": "How do you say", "promptPrimary": "It is straight ahead.", "acceptedAnswers": ["まっすぐです"], "referenceChoices": [{"jp":"まっすぐです","romaji":"massugu desu"},{"jp":"近いですか","romaji":"chikai desu ka"},{"jp":"どう行きますか","romaji":"dou ikimasu ka"},{"jp":"すみません","romaji":"sumimasen"}] }
+              ]
+            },
+            {
+              "id": "D-L1-S1-L4-C3",
+              "componentType": "guided_recall",
+              "goal": "Understand the question and reply pattern in a simple street exchange.",
+              "questions": [
+                { "id": "D-L1-S1-L4-Q06", "promptMode": "Which one means", "promptPrimary": "すみません", "acceptedAnswers": ["excuse me"], "referenceChoices": [{"jp":"すみません","en":"excuse me"},{"jp":"近いですか","en":"Is it close?"},{"jp":"どう行きますか","en":"How do I get there?"},{"jp":"まっすぐです","en":"It is straight ahead."}] },
+                { "id": "D-L1-S1-L4-Q07", "promptMode": "Which one means", "promptPrimary": "駅はどこですか", "acceptedAnswers": ["Where is the station?"], "referenceChoices": [{"jp":"駅はどこですか","en":"Where is the station?"},{"jp":"どう行きますか","en":"How do I get there?"},{"jp":"近いですか","en":"Is it close?"},{"jp":"まっすぐです","en":"It is straight ahead."}] },
+                { "id": "D-L1-S1-L4-Q08", "promptMode": "Which one means", "promptPrimary": "どう行きますか", "acceptedAnswers": ["How do I get there?"], "referenceChoices": [{"jp":"どう行きますか","en":"How do I get there?"},{"jp":"駅はどこですか","en":"Where is the station?"},{"jp":"まっすぐです","en":"It is straight ahead."},{"jp":"近いですか","en":"Is it close?"}] }
+              ]
+            },
+            {
+              "id": "D-L1-S1-L4-C4",
+              "componentType": "review",
+              "goal": "Finish with a useful mini-set for asking and following directions.",
+              "questions": [
+                { "id": "D-L1-S1-L4-Q09", "promptMode": "How do you say", "promptPrimary": "excuse me", "acceptedAnswers": ["すみません"], "referenceChoices": [{"jp":"すみません","romaji":"sumimasen"},{"jp":"駅はどこですか","romaji":"eki wa doko desu ka"},{"jp":"どう行きますか","romaji":"dou ikimasu ka"},{"jp":"まっすぐです","romaji":"massugu desu"}] },
+                { "id": "D-L1-S1-L4-Q10", "promptMode": "Which one means", "promptPrimary": "近いですか", "acceptedAnswers": ["Is it close?"], "referenceChoices": [{"jp":"近いですか","en":"Is it close?"},{"jp":"すみません","en":"excuse me"},{"jp":"駅はどこですか","en":"Where is the station?"},{"jp":"まっすぐです","en":"It is straight ahead."}] }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

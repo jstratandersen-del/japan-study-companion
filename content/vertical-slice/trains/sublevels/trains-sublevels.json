@@ -1,0 +1,18 @@
+{
+  "locationId": "trains",
+  "sublevels": [
+    {
+      "id": "tokyo-city-trains",
+      "levelId": "T-L1",
+      "title": "Trains & Stations",
+      "stage": "words-to-use",
+      "playerOutcome": "Can recognize core station words and use simple questions to find a train or transfer.",
+      "lessonLevelIds": [
+        "T-L1-S1-L1",
+        "T-L1-S1-L2",
+        "T-L1-S1-L3",
+        "T-L1-S1-L4"
+      ]
+    }
+  ]
+}

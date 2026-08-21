@@ -1,0 +1,214 @@
+{
+  "locationId": "trains",
+  "levelId": "T-L1",
+  "title": "Trains & Stations",
+  "oneSentenceGoal": "Find the right platform, understand basic station words, and ask simple questions about trains and transfers.",
+  "runtimeNotes": "First playable train branch for the Tokyo city systems category.",
+  "sublevels": [
+    {
+      "id": "tokyo-city-trains",
+      "title": "Trains & Stations",
+      "stage": "words-to-use",
+      "playerOutcome": "Can recognize core station words and use simple questions to find a train or transfer.",
+      "estimatedMinutes": 32,
+      "lessonLevels": [
+        {
+          "id": "T-L1-S1-L1",
+          "title": "Station Words",
+          "components": [
+            {
+              "id": "T-L1-S1-L1-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Learn the five station words that make signs and announcements easier to recognize.",
+              "items": [
+                { "jp": "駅", "romaji": "eki", "en": "station" },
+                { "jp": "改札", "romaji": "kaisatsu", "en": "ticket gate" },
+                { "jp": "切符", "romaji": "kippu", "en": "ticket" },
+                { "jp": "ホーム", "romaji": "hoomu", "en": "platform" },
+                { "jp": "電車", "romaji": "densha", "en": "train" }
+              ]
+            },
+            {
+              "id": "T-L1-S1-L1-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese station word that matches the English prompt.",
+              "questions": [
+                { "id": "T-L1-S1-L1-Q01", "promptMode": "How do you say", "promptPrimary": "station", "acceptedAnswers": ["駅"], "referenceChoices": [{"jp":"駅","romaji":"eki"},{"jp":"改札","romaji":"kaisatsu"},{"jp":"切符","romaji":"kippu"},{"jp":"電車","romaji":"densha"}] },
+                { "id": "T-L1-S1-L1-Q02", "promptMode": "How do you say", "promptPrimary": "ticket gate", "acceptedAnswers": ["改札"], "referenceChoices": [{"jp":"改札","romaji":"kaisatsu"},{"jp":"ホーム","romaji":"hoomu"},{"jp":"駅","romaji":"eki"},{"jp":"切符","romaji":"kippu"}] },
+                { "id": "T-L1-S1-L1-Q03", "promptMode": "How do you say", "promptPrimary": "ticket", "acceptedAnswers": ["切符"], "referenceChoices": [{"jp":"切符","romaji":"kippu"},{"jp":"電車","romaji":"densha"},{"jp":"改札","romaji":"kaisatsu"},{"jp":"駅","romaji":"eki"}] },
+                { "id": "T-L1-S1-L1-Q04", "promptMode": "How do you say", "promptPrimary": "platform", "acceptedAnswers": ["ホーム"], "referenceChoices": [{"jp":"ホーム","romaji":"hoomu"},{"jp":"切符","romaji":"kippu"},{"jp":"駅","romaji":"eki"},{"jp":"電車","romaji":"densha"}] },
+                { "id": "T-L1-S1-L1-Q05", "promptMode": "How do you say", "promptPrimary": "train", "acceptedAnswers": ["電車"], "referenceChoices": [{"jp":"電車","romaji":"densha"},{"jp":"改札","romaji":"kaisatsu"},{"jp":"ホーム","romaji":"hoomu"},{"jp":"切符","romaji":"kippu"}] }
+              ]
+            },
+            {
+              "id": "T-L1-S1-L1-C3",
+              "componentType": "matching",
+              "goal": "Read the most useful station words in Japanese.",
+              "questions": [
+                { "id": "T-L1-S1-L1-Q06", "promptMode": "Which one means", "promptPrimary": "駅", "acceptedAnswers": ["station"], "referenceChoices": [{"jp":"駅","en":"station"},{"jp":"改札","en":"ticket gate"},{"jp":"ホーム","en":"platform"},{"jp":"電車","en":"train"}] },
+                { "id": "T-L1-S1-L1-Q07", "promptMode": "Which one means", "promptPrimary": "改札", "acceptedAnswers": ["ticket gate"], "referenceChoices": [{"jp":"改札","en":"ticket gate"},{"jp":"切符","en":"ticket"},{"jp":"駅","en":"station"},{"jp":"電車","en":"train"}] },
+                { "id": "T-L1-S1-L1-Q08", "promptMode": "Which one means", "promptPrimary": "ホーム", "acceptedAnswers": ["platform"], "referenceChoices": [{"jp":"ホーム","en":"platform"},{"jp":"駅","en":"station"},{"jp":"切符","en":"ticket"},{"jp":"改札","en":"ticket gate"}] }
+              ]
+            },
+            {
+              "id": "T-L1-S1-L1-C4",
+              "componentType": "review",
+              "goal": "Review the station words in both directions.",
+              "questions": [
+                { "id": "T-L1-S1-L1-Q09", "promptMode": "How do you say", "promptPrimary": "platform", "acceptedAnswers": ["ホーム"], "referenceChoices": [{"jp":"ホーム","romaji":"hoomu"},{"jp":"駅","romaji":"eki"},{"jp":"切符","romaji":"kippu"},{"jp":"電車","romaji":"densha"}] },
+                { "id": "T-L1-S1-L1-Q10", "promptMode": "Which one means", "promptPrimary": "電車", "acceptedAnswers": ["train"], "referenceChoices": [{"jp":"電車","en":"train"},{"jp":"改札","en":"ticket gate"},{"jp":"駅","en":"station"},{"jp":"ホーム","en":"platform"}] }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "T-L1-S1-L2",
+          "title": "Finding the Platform",
+          "components": [
+            {
+              "id": "T-L1-S1-L2-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Learn direction and platform-number words used while finding a train.",
+              "items": [
+                { "jp": "何番線", "romaji": "nanbansen", "en": "which platform number" },
+                { "jp": "入口", "romaji": "iriguchi", "en": "entrance" },
+                { "jp": "出口", "romaji": "deguchi", "en": "exit" },
+                { "jp": "右", "romaji": "migi", "en": "right" },
+                { "jp": "左", "romaji": "hidari", "en": "left" }
+              ]
+            },
+            {
+              "id": "T-L1-S1-L2-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese word for a direction or station sign.",
+              "questions": [
+                { "id": "T-L1-S1-L2-Q01", "promptMode": "How do you say", "promptPrimary": "which platform number", "acceptedAnswers": ["何番線"], "referenceChoices": [{"jp":"何番線","romaji":"nanbansen"},{"jp":"入口","romaji":"iriguchi"},{"jp":"出口","romaji":"deguchi"},{"jp":"右","romaji":"migi"}] },
+                { "id": "T-L1-S1-L2-Q02", "promptMode": "How do you say", "promptPrimary": "entrance", "acceptedAnswers": ["入口"], "referenceChoices": [{"jp":"入口","romaji":"iriguchi"},{"jp":"出口","romaji":"deguchi"},{"jp":"左","romaji":"hidari"},{"jp":"何番線","romaji":"nanbansen"}] },
+                { "id": "T-L1-S1-L2-Q03", "promptMode": "How do you say", "promptPrimary": "exit", "acceptedAnswers": ["出口"], "referenceChoices": [{"jp":"出口","romaji":"deguchi"},{"jp":"入口","romaji":"iriguchi"},{"jp":"右","romaji":"migi"},{"jp":"左","romaji":"hidari"}] },
+                { "id": "T-L1-S1-L2-Q04", "promptMode": "How do you say", "promptPrimary": "right", "acceptedAnswers": ["右"], "referenceChoices": [{"jp":"右","romaji":"migi"},{"jp":"左","romaji":"hidari"},{"jp":"入口","romaji":"iriguchi"},{"jp":"出口","romaji":"deguchi"}] },
+                { "id": "T-L1-S1-L2-Q05", "promptMode": "How do you say", "promptPrimary": "left", "acceptedAnswers": ["左"], "referenceChoices": [{"jp":"左","romaji":"hidari"},{"jp":"右","romaji":"migi"},{"jp":"何番線","romaji":"nanbansen"},{"jp":"入口","romaji":"iriguchi"}] }
+              ]
+            },
+            {
+              "id": "T-L1-S1-L2-C3",
+              "componentType": "guided_recall",
+              "goal": "Understand direction words on station signs.",
+              "questions": [
+                { "id": "T-L1-S1-L2-Q06", "promptMode": "Which one means", "promptPrimary": "入口", "acceptedAnswers": ["entrance"], "referenceChoices": [{"jp":"入口","en":"entrance"},{"jp":"出口","en":"exit"},{"jp":"右","en":"right"},{"jp":"左","en":"left"}] },
+                { "id": "T-L1-S1-L2-Q07", "promptMode": "Which one means", "promptPrimary": "出口", "acceptedAnswers": ["exit"], "referenceChoices": [{"jp":"出口","en":"exit"},{"jp":"入口","en":"entrance"},{"jp":"何番線","en":"which platform number"},{"jp":"右","en":"right"}] },
+                { "id": "T-L1-S1-L2-Q08", "promptMode": "Which one means", "promptPrimary": "何番線", "acceptedAnswers": ["which platform number"], "referenceChoices": [{"jp":"何番線","en":"which platform number"},{"jp":"入口","en":"entrance"},{"jp":"左","en":"left"},{"jp":"出口","en":"exit"}] }
+              ]
+            },
+            {
+              "id": "T-L1-S1-L2-C4",
+              "componentType": "review",
+              "goal": "Mix signs and directions before introducing train questions.",
+              "questions": [
+                { "id": "T-L1-S1-L2-Q09", "promptMode": "How do you say", "promptPrimary": "right", "acceptedAnswers": ["右"], "referenceChoices": [{"jp":"右","romaji":"migi"},{"jp":"左","romaji":"hidari"},{"jp":"出口","romaji":"deguchi"},{"jp":"入口","romaji":"iriguchi"}] },
+                { "id": "T-L1-S1-L2-Q10", "promptMode": "Which one means", "promptPrimary": "左", "acceptedAnswers": ["left"], "referenceChoices": [{"jp":"左","en":"left"},{"jp":"右","en":"right"},{"jp":"入口","en":"entrance"},{"jp":"出口","en":"exit"}] }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "T-L1-S1-L3",
+          "title": "Tickets and IC Cards",
+          "components": [
+            {
+              "id": "T-L1-S1-L3-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Learn the words needed to buy a ticket or use an IC card.",
+              "items": [
+                { "jp": "ICカード", "romaji": "ai shii kaado", "en": "IC card" },
+                { "jp": "チャージ", "romaji": "chaaji", "en": "charge / top up" },
+                { "jp": "料金", "romaji": "ryoukin", "en": "fare" },
+                { "jp": "いくら", "romaji": "ikura", "en": "how much" },
+                { "jp": "一日券", "romaji": "ichinichiken", "en": "one-day pass" }
+              ]
+            },
+            {
+              "id": "T-L1-S1-L3-C2",
+              "componentType": "recognition",
+              "goal": "Recognize common ticket-machine and transit words.",
+              "questions": [
+                { "id": "T-L1-S1-L3-Q01", "promptMode": "How do you say", "promptPrimary": "IC card", "acceptedAnswers": ["ICカード"], "referenceChoices": [{"jp":"ICカード","romaji":"ai shii kaado"},{"jp":"チャージ","romaji":"chaaji"},{"jp":"料金","romaji":"ryoukin"},{"jp":"一日券","romaji":"ichinichiken"}] },
+                { "id": "T-L1-S1-L3-Q02", "promptMode": "How do you say", "promptPrimary": "charge / top up", "acceptedAnswers": ["チャージ"], "referenceChoices": [{"jp":"チャージ","romaji":"chaaji"},{"jp":"ICカード","romaji":"ai shii kaado"},{"jp":"いくら","romaji":"ikura"},{"jp":"料金","romaji":"ryoukin"}] },
+                { "id": "T-L1-S1-L3-Q03", "promptMode": "How do you say", "promptPrimary": "fare", "acceptedAnswers": ["料金"], "referenceChoices": [{"jp":"料金","romaji":"ryoukin"},{"jp":"一日券","romaji":"ichinichiken"},{"jp":"チャージ","romaji":"chaaji"},{"jp":"ICカード","romaji":"ai shii kaado"}] },
+                { "id": "T-L1-S1-L3-Q04", "promptMode": "How do you say", "promptPrimary": "how much", "acceptedAnswers": ["いくら"], "referenceChoices": [{"jp":"いくら","romaji":"ikura"},{"jp":"料金","romaji":"ryoukin"},{"jp":"一日券","romaji":"ichinichiken"},{"jp":"チャージ","romaji":"chaaji"}] },
+                { "id": "T-L1-S1-L3-Q05", "promptMode": "How do you say", "promptPrimary": "one-day pass", "acceptedAnswers": ["一日券"], "referenceChoices": [{"jp":"一日券","romaji":"ichinichiken"},{"jp":"ICカード","romaji":"ai shii kaado"},{"jp":"いくら","romaji":"ikura"},{"jp":"料金","romaji":"ryoukin"}] }
+              ]
+            },
+            {
+              "id": "T-L1-S1-L3-C3",
+              "componentType": "matching",
+              "goal": "Read the key words on a ticket machine.",
+              "questions": [
+                { "id": "T-L1-S1-L3-Q06", "promptMode": "Which one means", "promptPrimary": "ICカード", "acceptedAnswers": ["IC card"], "referenceChoices": [{"jp":"ICカード","en":"IC card"},{"jp":"チャージ","en":"charge / top up"},{"jp":"料金","en":"fare"},{"jp":"一日券","en":"one-day pass"}] },
+                { "id": "T-L1-S1-L3-Q07", "promptMode": "Which one means", "promptPrimary": "料金", "acceptedAnswers": ["fare"], "referenceChoices": [{"jp":"料金","en":"fare"},{"jp":"いくら","en":"how much"},{"jp":"一日券","en":"one-day pass"},{"jp":"チャージ","en":"charge / top up"}] },
+                { "id": "T-L1-S1-L3-Q08", "promptMode": "Which one means", "promptPrimary": "一日券", "acceptedAnswers": ["one-day pass"], "referenceChoices": [{"jp":"一日券","en":"one-day pass"},{"jp":"ICカード","en":"IC card"},{"jp":"料金","en":"fare"},{"jp":"いくら","en":"how much"}] }
+              ]
+            },
+            {
+              "id": "T-L1-S1-L3-C4",
+              "componentType": "review",
+              "goal": "Review the words needed before asking a fare question.",
+              "questions": [
+                { "id": "T-L1-S1-L3-Q09", "promptMode": "How do you say", "promptPrimary": "how much", "acceptedAnswers": ["いくら"], "referenceChoices": [{"jp":"いくら","romaji":"ikura"},{"jp":"料金","romaji":"ryoukin"},{"jp":"チャージ","romaji":"chaaji"},{"jp":"一日券","romaji":"ichinichiken"}] },
+                { "id": "T-L1-S1-L3-Q10", "promptMode": "Which one means", "promptPrimary": "チャージ", "acceptedAnswers": ["charge / top up"], "referenceChoices": [{"jp":"チャージ","en":"charge / top up"},{"jp":"ICカード","en":"IC card"},{"jp":"料金","en":"fare"},{"jp":"一日券","en":"one-day pass"}] }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "T-L1-S1-L4",
+          "title": "Train Questions and Transfers",
+          "components": [
+            {
+              "id": "T-L1-S1-L4-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Learn the phrases that turn station vocabulary into useful questions.",
+              "items": [
+                { "jp": "東京駅", "romaji": "toukyou eki", "en": "Tokyo Station" },
+                { "jp": "新宿駅", "romaji": "shinjuku eki", "en": "Shinjuku Station" },
+                { "jp": "乗り換え", "romaji": "norikae", "en": "transfer" },
+                { "jp": "どの電車", "romaji": "dono densha", "en": "which train" },
+                { "jp": "ここですか", "romaji": "koko desu ka", "en": "is it here?" }
+              ]
+            },
+            {
+              "id": "T-L1-S1-L4-C2",
+              "componentType": "recognition",
+              "goal": "Choose useful train words and short question pieces.",
+              "questions": [
+                { "id": "T-L1-S1-L4-Q01", "promptMode": "How do you say", "promptPrimary": "Tokyo Station", "acceptedAnswers": ["東京駅"], "referenceChoices": [{"jp":"東京駅","romaji":"toukyou eki"},{"jp":"新宿駅","romaji":"shinjuku eki"},{"jp":"乗り換え","romaji":"norikae"},{"jp":"どの電車","romaji":"dono densha"}] },
+                { "id": "T-L1-S1-L4-Q02", "promptMode": "How do you say", "promptPrimary": "Shinjuku Station", "acceptedAnswers": ["新宿駅"], "referenceChoices": [{"jp":"新宿駅","romaji":"shinjuku eki"},{"jp":"東京駅","romaji":"toukyou eki"},{"jp":"ここですか","romaji":"koko desu ka"},{"jp":"乗り換え","romaji":"norikae"}] },
+                { "id": "T-L1-S1-L4-Q03", "promptMode": "How do you say", "promptPrimary": "transfer", "acceptedAnswers": ["乗り換え"], "referenceChoices": [{"jp":"乗り換え","romaji":"norikae"},{"jp":"どの電車","romaji":"dono densha"},{"jp":"東京駅","romaji":"toukyou eki"},{"jp":"ここですか","romaji":"koko desu ka"}] },
+                { "id": "T-L1-S1-L4-Q04", "promptMode": "How do you say", "promptPrimary": "which train", "acceptedAnswers": ["どの電車"], "referenceChoices": [{"jp":"どの電車","romaji":"dono densha"},{"jp":"乗り換え","romaji":"norikae"},{"jp":"新宿駅","romaji":"shinjuku eki"},{"jp":"ここですか","romaji":"koko desu ka"}] },
+                { "id": "T-L1-S1-L4-Q05", "promptMode": "How do you say", "promptPrimary": "is it here?", "acceptedAnswers": ["ここですか"], "referenceChoices": [{"jp":"ここですか","romaji":"koko desu ka"},{"jp":"どの電車","romaji":"dono densha"},{"jp":"東京駅","romaji":"toukyou eki"},{"jp":"乗り換え","romaji":"norikae"}] }
+              ]
+            },
+            {
+              "id": "T-L1-S1-L4-C3",
+              "componentType": "guided_recall",
+              "goal": "Understand the meaning of simple train questions.",
+              "questions": [
+                { "id": "T-L1-S1-L4-Q06", "promptMode": "Which one means", "promptPrimary": "乗り換え", "acceptedAnswers": ["transfer"], "referenceChoices": [{"jp":"乗り換え","en":"transfer"},{"jp":"東京駅","en":"Tokyo Station"},{"jp":"どの電車","en":"which train"},{"jp":"ここですか","en":"is it here?"}] },
+                { "id": "T-L1-S1-L4-Q07", "promptMode": "Which one means", "promptPrimary": "どの電車", "acceptedAnswers": ["which train"], "referenceChoices": [{"jp":"どの電車","en":"which train"},{"jp":"乗り換え","en":"transfer"},{"jp":"新宿駅","en":"Shinjuku Station"},{"jp":"ここですか","en":"is it here?"}] },
+                { "id": "T-L1-S1-L4-Q08", "promptMode": "Which one means", "promptPrimary": "ここですか", "acceptedAnswers": ["is it here?"], "referenceChoices": [{"jp":"ここですか","en":"is it here?"},{"jp":"東京駅","en":"Tokyo Station"},{"jp":"乗り換え","en":"transfer"},{"jp":"どの電車","en":"which train"}] }
+              ]
+            },
+            {
+              "id": "T-L1-S1-L4-C4",
+              "componentType": "review",
+              "goal": "Finish with a mixed check of the words needed to navigate a station.",
+              "questions": [
+                { "id": "T-L1-S1-L4-Q09", "promptMode": "How do you say", "promptPrimary": "transfer", "acceptedAnswers": ["乗り換え"], "referenceChoices": [{"jp":"乗り換え","romaji":"norikae"},{"jp":"どの電車","romaji":"dono densha"},{"jp":"東京駅","romaji":"toukyou eki"},{"jp":"新宿駅","romaji":"shinjuku eki"}] },
+                { "id": "T-L1-S1-L4-Q10", "promptMode": "Which one means", "promptPrimary": "東京駅", "acceptedAnswers": ["Tokyo Station"], "referenceChoices": [{"jp":"東京駅","en":"Tokyo Station"},{"jp":"新宿駅","en":"Shinjuku Station"},{"jp":"乗り換え","en":"transfer"},{"jp":"ここですか","en":"is it here?"}] }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

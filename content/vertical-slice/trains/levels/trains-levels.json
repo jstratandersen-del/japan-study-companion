@@ -1,0 +1,12 @@
+{
+  "locationId": "trains",
+  "levels": [
+    {
+      "id": "T-L1",
+      "title": "Trains & Stations",
+      "city": "Tokyo",
+      "goal": "Find the right platform, understand basic station words, and ask simple questions about trains and transfers.",
+      "sublevelIds": ["tokyo-city-trains"]
+    }
+  ]
+}
