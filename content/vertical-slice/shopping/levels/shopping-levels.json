@@ -1,0 +1,12 @@
+{
+  "locationId": "shopping",
+  "levels": [
+    {
+      "id": "S1",
+      "title": "Shopping Essentials",
+      "city": "Tokyo",
+      "goal": "Find what you need, ask about price and size, pay politely, and handle tax-free shopping and gifts.",
+      "sublevelIds": ["tokyo-shopping-essentials"]
+    }
+  ]
+}

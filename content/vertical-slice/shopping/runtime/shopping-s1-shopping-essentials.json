@@ -1,0 +1,214 @@
+{
+  "locationId": "shopping",
+  "levelId": "S1",
+  "title": "Shopping Essentials",
+  "oneSentenceGoal": "Find what you need, ask about price and size, pay politely, and handle tax-free shopping and gifts.",
+  "runtimeNotes": "First playable shopping branch for the Tokyo category.",
+  "sublevels": [
+    {
+      "id": "tokyo-shopping-essentials",
+      "title": "Shopping Essentials",
+      "stage": "words-to-use",
+      "playerOutcome": "Can navigate a store, ask simple shopping questions, and complete a basic purchase.",
+      "estimatedMinutes": 32,
+      "lessonLevels": [
+        {
+          "id": "S1-S1-L1",
+          "title": "Store Words and Prices",
+          "components": [
+            {
+              "id": "S1-S1-L1-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Learn the words you need to find an item and ask how much it costs.",
+              "items": [
+                { "jp": "店", "romaji": "mise", "en": "shop" },
+                { "jp": "売り場", "romaji": "uriba", "en": "sales floor" },
+                { "jp": "どこ", "romaji": "doko", "en": "where" },
+                { "jp": "いくら", "romaji": "ikura", "en": "how much" },
+                { "jp": "これ", "romaji": "kore", "en": "this" }
+              ]
+            },
+            {
+              "id": "S1-S1-L1-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese shopping word that matches the English prompt.",
+              "questions": [
+                { "id": "S1-S1-L1-Q01", "promptMode": "How do you say", "promptPrimary": "shop", "acceptedAnswers": ["店"], "referenceChoices": [{"jp":"店","romaji":"mise"},{"jp":"売り場","romaji":"uriba"},{"jp":"どこ","romaji":"doko"},{"jp":"いくら","romaji":"ikura"}] },
+                { "id": "S1-S1-L1-Q02", "promptMode": "How do you say", "promptPrimary": "sales floor", "acceptedAnswers": ["売り場"], "referenceChoices": [{"jp":"売り場","romaji":"uriba"},{"jp":"店","romaji":"mise"},{"jp":"これ","romaji":"kore"},{"jp":"どこ","romaji":"doko"}] },
+                { "id": "S1-S1-L1-Q03", "promptMode": "How do you say", "promptPrimary": "where", "acceptedAnswers": ["どこ"], "referenceChoices": [{"jp":"どこ","romaji":"doko"},{"jp":"いくら","romaji":"ikura"},{"jp":"売り場","romaji":"uriba"},{"jp":"これ","romaji":"kore"}] },
+                { "id": "S1-S1-L1-Q04", "promptMode": "How do you say", "promptPrimary": "how much", "acceptedAnswers": ["いくら"], "referenceChoices": [{"jp":"いくら","romaji":"ikura"},{"jp":"どこ","romaji":"doko"},{"jp":"店","romaji":"mise"},{"jp":"これ","romaji":"kore"}] },
+                { "id": "S1-S1-L1-Q05", "promptMode": "How do you say", "promptPrimary": "this", "acceptedAnswers": ["これ"], "referenceChoices": [{"jp":"これ","romaji":"kore"},{"jp":"店","romaji":"mise"},{"jp":"売り場","romaji":"uriba"},{"jp":"いくら","romaji":"ikura"}] }
+              ]
+            },
+            {
+              "id": "S1-S1-L1-C3",
+              "componentType": "matching",
+              "goal": "Read basic shopping words in Japanese.",
+              "questions": [
+                { "id": "S1-S1-L1-Q06", "promptMode": "Which one means", "promptPrimary": "店", "acceptedAnswers": ["shop"], "referenceChoices": [{"jp":"店","en":"shop"},{"jp":"売り場","en":"sales floor"},{"jp":"どこ","en":"where"},{"jp":"これ","en":"this"}] },
+                { "id": "S1-S1-L1-Q07", "promptMode": "Which one means", "promptPrimary": "売り場", "acceptedAnswers": ["sales floor"], "referenceChoices": [{"jp":"売り場","en":"sales floor"},{"jp":"店","en":"shop"},{"jp":"いくら","en":"how much"},{"jp":"これ","en":"this"}] },
+                { "id": "S1-S1-L1-Q08", "promptMode": "Which one means", "promptPrimary": "いくら", "acceptedAnswers": ["how much"], "referenceChoices": [{"jp":"いくら","en":"how much"},{"jp":"どこ","en":"where"},{"jp":"これ","en":"this"},{"jp":"店","en":"shop"}] }
+              ]
+            },
+            {
+              "id": "S1-S1-L1-C4",
+              "componentType": "review",
+              "goal": "Review the words you will use in your first store interaction.",
+              "questions": [
+                { "id": "S1-S1-L1-Q09", "promptMode": "How do you say", "promptPrimary": "where", "acceptedAnswers": ["どこ"], "referenceChoices": [{"jp":"どこ","romaji":"doko"},{"jp":"売り場","romaji":"uriba"},{"jp":"いくら","romaji":"ikura"},{"jp":"これ","romaji":"kore"}] },
+                { "id": "S1-S1-L1-Q10", "promptMode": "Which one means", "promptPrimary": "これ", "acceptedAnswers": ["this"], "referenceChoices": [{"jp":"これ","en":"this"},{"jp":"店","en":"shop"},{"jp":"売り場","en":"sales floor"},{"jp":"どこ","en":"where"}] }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "S1-S1-L2",
+          "title": "Clothing and Sizes",
+          "components": [
+            {
+              "id": "S1-S1-L2-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Learn practical clothing words and describe whether something fits.",
+              "items": [
+                { "jp": "服", "romaji": "fuku", "en": "clothes" },
+                { "jp": "サイズ", "romaji": "saizu", "en": "size" },
+                { "jp": "大きい", "romaji": "ookii", "en": "big" },
+                { "jp": "小さい", "romaji": "chiisai", "en": "small" },
+                { "jp": "試着", "romaji": "shichaku", "en": "trying on clothes" }
+              ]
+            },
+            {
+              "id": "S1-S1-L2-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese clothing word that matches the English prompt.",
+              "questions": [
+                { "id": "S1-S1-L2-Q01", "promptMode": "How do you say", "promptPrimary": "clothes", "acceptedAnswers": ["服"], "referenceChoices": [{"jp":"服","romaji":"fuku"},{"jp":"サイズ","romaji":"saizu"},{"jp":"大きい","romaji":"ookii"},{"jp":"小さい","romaji":"chiisai"}] },
+                { "id": "S1-S1-L2-Q02", "promptMode": "How do you say", "promptPrimary": "size", "acceptedAnswers": ["サイズ"], "referenceChoices": [{"jp":"サイズ","romaji":"saizu"},{"jp":"服","romaji":"fuku"},{"jp":"試着","romaji":"shichaku"},{"jp":"大きい","romaji":"ookii"}] },
+                { "id": "S1-S1-L2-Q03", "promptMode": "How do you say", "promptPrimary": "big", "acceptedAnswers": ["大きい"], "referenceChoices": [{"jp":"大きい","romaji":"ookii"},{"jp":"小さい","romaji":"chiisai"},{"jp":"サイズ","romaji":"saizu"},{"jp":"服","romaji":"fuku"}] },
+                { "id": "S1-S1-L2-Q04", "promptMode": "How do you say", "promptPrimary": "small", "acceptedAnswers": ["小さい"], "referenceChoices": [{"jp":"小さい","romaji":"chiisai"},{"jp":"大きい","romaji":"ookii"},{"jp":"試着","romaji":"shichaku"},{"jp":"サイズ","romaji":"saizu"}] },
+                { "id": "S1-S1-L2-Q05", "promptMode": "How do you say", "promptPrimary": "trying on clothes", "acceptedAnswers": ["試着"], "referenceChoices": [{"jp":"試着","romaji":"shichaku"},{"jp":"服","romaji":"fuku"},{"jp":"サイズ","romaji":"saizu"},{"jp":"小さい","romaji":"chiisai"}] }
+              ]
+            },
+            {
+              "id": "S1-S1-L2-C3",
+              "componentType": "matching",
+              "goal": "Understand common size and fitting words on a shopping trip.",
+              "questions": [
+                { "id": "S1-S1-L2-Q06", "promptMode": "Which one means", "promptPrimary": "サイズ", "acceptedAnswers": ["size"], "referenceChoices": [{"jp":"サイズ","en":"size"},{"jp":"服","en":"clothes"},{"jp":"試着","en":"trying on clothes"},{"jp":"大きい","en":"big"}] },
+                { "id": "S1-S1-L2-Q07", "promptMode": "Which one means", "promptPrimary": "大きい", "acceptedAnswers": ["big"], "referenceChoices": [{"jp":"大きい","en":"big"},{"jp":"小さい","en":"small"},{"jp":"サイズ","en":"size"},{"jp":"服","en":"clothes"}] },
+                { "id": "S1-S1-L2-Q08", "promptMode": "Which one means", "promptPrimary": "試着", "acceptedAnswers": ["trying on clothes"], "referenceChoices": [{"jp":"試着","en":"trying on clothes"},{"jp":"服","en":"clothes"},{"jp":"大きい","en":"big"},{"jp":"小さい","en":"small"}] }
+              ]
+            },
+            {
+              "id": "S1-S1-L2-C4",
+              "componentType": "review",
+              "goal": "Review the language needed to check whether clothing will fit.",
+              "questions": [
+                { "id": "S1-S1-L2-Q09", "promptMode": "How do you say", "promptPrimary": "small", "acceptedAnswers": ["小さい"], "referenceChoices": [{"jp":"小さい","romaji":"chiisai"},{"jp":"大きい","romaji":"ookii"},{"jp":"サイズ","romaji":"saizu"},{"jp":"試着","romaji":"shichaku"}] },
+                { "id": "S1-S1-L2-Q10", "promptMode": "Which one means", "promptPrimary": "服", "acceptedAnswers": ["clothes"], "referenceChoices": [{"jp":"服","en":"clothes"},{"jp":"サイズ","en":"size"},{"jp":"大きい","en":"big"},{"jp":"小さい","en":"small"}] }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "S1-S1-L3",
+          "title": "Tax-Free and Payment",
+          "components": [
+            {
+              "id": "S1-S1-L3-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Recognize the words that come up at checkout and tax-free counters.",
+              "items": [
+                { "jp": "免税", "romaji": "menzei", "en": "tax-free" },
+                { "jp": "パスポート", "romaji": "pasupooto", "en": "passport" },
+                { "jp": "現金", "romaji": "genkin", "en": "cash" },
+                { "jp": "カード", "romaji": "kaado", "en": "card" },
+                { "jp": "袋", "romaji": "fukuro", "en": "bag" }
+              ]
+            },
+            {
+              "id": "S1-S1-L3-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese payment or tax-free word that matches the English prompt.",
+              "questions": [
+                { "id": "S1-S1-L3-Q01", "promptMode": "How do you say", "promptPrimary": "tax-free", "acceptedAnswers": ["免税"], "referenceChoices": [{"jp":"免税","romaji":"menzei"},{"jp":"パスポート","romaji":"pasupooto"},{"jp":"現金","romaji":"genkin"},{"jp":"カード","romaji":"kaado"}] },
+                { "id": "S1-S1-L3-Q02", "promptMode": "How do you say", "promptPrimary": "passport", "acceptedAnswers": ["パスポート"], "referenceChoices": [{"jp":"パスポート","romaji":"pasupooto"},{"jp":"免税","romaji":"menzei"},{"jp":"袋","romaji":"fukuro"},{"jp":"現金","romaji":"genkin"}] },
+                { "id": "S1-S1-L3-Q03", "promptMode": "How do you say", "promptPrimary": "cash", "acceptedAnswers": ["現金"], "referenceChoices": [{"jp":"現金","romaji":"genkin"},{"jp":"カード","romaji":"kaado"},{"jp":"免税","romaji":"menzei"},{"jp":"袋","romaji":"fukuro"}] },
+                { "id": "S1-S1-L3-Q04", "promptMode": "How do you say", "promptPrimary": "card", "acceptedAnswers": ["カード"], "referenceChoices": [{"jp":"カード","romaji":"kaado"},{"jp":"現金","romaji":"genkin"},{"jp":"パスポート","romaji":"pasupooto"},{"jp":"免税","romaji":"menzei"}] },
+                { "id": "S1-S1-L3-Q05", "promptMode": "How do you say", "promptPrimary": "bag", "acceptedAnswers": ["袋"], "referenceChoices": [{"jp":"袋","romaji":"fukuro"},{"jp":"カード","romaji":"kaado"},{"jp":"現金","romaji":"genkin"},{"jp":"パスポート","romaji":"pasupooto"}] }
+              ]
+            },
+            {
+              "id": "S1-S1-L3-C3",
+              "componentType": "matching",
+              "goal": "Read basic tax-free and checkout words.",
+              "questions": [
+                { "id": "S1-S1-L3-Q06", "promptMode": "Which one means", "promptPrimary": "免税", "acceptedAnswers": ["tax-free"], "referenceChoices": [{"jp":"免税","en":"tax-free"},{"jp":"パスポート","en":"passport"},{"jp":"現金","en":"cash"},{"jp":"カード","en":"card"}] },
+                { "id": "S1-S1-L3-Q07", "promptMode": "Which one means", "promptPrimary": "現金", "acceptedAnswers": ["cash"], "referenceChoices": [{"jp":"現金","en":"cash"},{"jp":"カード","en":"card"},{"jp":"袋","en":"bag"},{"jp":"免税","en":"tax-free"}] },
+                { "id": "S1-S1-L3-Q08", "promptMode": "Which one means", "promptPrimary": "袋", "acceptedAnswers": ["bag"], "referenceChoices": [{"jp":"袋","en":"bag"},{"jp":"カード","en":"card"},{"jp":"現金","en":"cash"},{"jp":"パスポート","en":"passport"}] }
+              ]
+            },
+            {
+              "id": "S1-S1-L3-C4",
+              "componentType": "review",
+              "goal": "Review the words you need to complete a purchase politely.",
+              "questions": [
+                { "id": "S1-S1-L3-Q09", "promptMode": "How do you say", "promptPrimary": "cash", "acceptedAnswers": ["現金"], "referenceChoices": [{"jp":"現金","romaji":"genkin"},{"jp":"カード","romaji":"kaado"},{"jp":"免税","romaji":"menzei"},{"jp":"袋","romaji":"fukuro"}] },
+                { "id": "S1-S1-L3-Q10", "promptMode": "Which one means", "promptPrimary": "パスポート", "acceptedAnswers": ["passport"], "referenceChoices": [{"jp":"パスポート","en":"passport"},{"jp":"免税","en":"tax-free"},{"jp":"カード","en":"card"},{"jp":"現金","en":"cash"}] }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "S1-S1-L4",
+          "title": "Gifts and Returns",
+          "components": [
+            {
+              "id": "S1-S1-L4-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Handle gifts, wrapping, returns, and exchanges with simple phrases.",
+              "items": [
+                { "jp": "お土産", "romaji": "omiyage", "en": "souvenir" },
+                { "jp": "プレゼント", "romaji": "purezento", "en": "gift" },
+                { "jp": "包装", "romaji": "housou", "en": "wrapping" },
+                { "jp": "返品", "romaji": "henpin", "en": "return" },
+                { "jp": "交換", "romaji": "koukan", "en": "exchange" }
+              ]
+            },
+            {
+              "id": "S1-S1-L4-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese gift or return word that matches the English prompt.",
+              "questions": [
+                { "id": "S1-S1-L4-Q01", "promptMode": "How do you say", "promptPrimary": "souvenir", "acceptedAnswers": ["お土産"], "referenceChoices": [{"jp":"お土産","romaji":"omiyage"},{"jp":"プレゼント","romaji":"purezento"},{"jp":"包装","romaji":"housou"},{"jp":"返品","romaji":"henpin"}] },
+                { "id": "S1-S1-L4-Q02", "promptMode": "How do you say", "promptPrimary": "gift", "acceptedAnswers": ["プレゼント"], "referenceChoices": [{"jp":"プレゼント","romaji":"purezento"},{"jp":"お土産","romaji":"omiyage"},{"jp":"交換","romaji":"koukan"},{"jp":"包装","romaji":"housou"}] },
+                { "id": "S1-S1-L4-Q03", "promptMode": "How do you say", "promptPrimary": "wrapping", "acceptedAnswers": ["包装"], "referenceChoices": [{"jp":"包装","romaji":"housou"},{"jp":"返品","romaji":"henpin"},{"jp":"プレゼント","romaji":"purezento"},{"jp":"お土産","romaji":"omiyage"}] },
+                { "id": "S1-S1-L4-Q04", "promptMode": "How do you say", "promptPrimary": "return", "acceptedAnswers": ["返品"], "referenceChoices": [{"jp":"返品","romaji":"henpin"},{"jp":"交換","romaji":"koukan"},{"jp":"包装","romaji":"housou"},{"jp":"プレゼント","romaji":"purezento"}] },
+                { "id": "S1-S1-L4-Q05", "promptMode": "How do you say", "promptPrimary": "exchange", "acceptedAnswers": ["交換"], "referenceChoices": [{"jp":"交換","romaji":"koukan"},{"jp":"返品","romaji":"henpin"},{"jp":"包装","romaji":"housou"},{"jp":"お土産","romaji":"omiyage"}] }
+              ]
+            },
+            {
+              "id": "S1-S1-L4-C3",
+              "componentType": "matching",
+              "goal": "Understand the words a clerk may use for gifts and returns.",
+              "questions": [
+                { "id": "S1-S1-L4-Q06", "promptMode": "Which one means", "promptPrimary": "お土産", "acceptedAnswers": ["souvenir"], "referenceChoices": [{"jp":"お土産","en":"souvenir"},{"jp":"プレゼント","en":"gift"},{"jp":"包装","en":"wrapping"},{"jp":"返品","en":"return"}] },
+                { "id": "S1-S1-L4-Q07", "promptMode": "Which one means", "promptPrimary": "包装", "acceptedAnswers": ["wrapping"], "referenceChoices": [{"jp":"包装","en":"wrapping"},{"jp":"プレゼント","en":"gift"},{"jp":"返品","en":"return"},{"jp":"交換","en":"exchange"}] },
+                { "id": "S1-S1-L4-Q08", "promptMode": "Which one means", "promptPrimary": "交換", "acceptedAnswers": ["exchange"], "referenceChoices": [{"jp":"交換","en":"exchange"},{"jp":"返品","en":"return"},{"jp":"包装","en":"wrapping"},{"jp":"お土産","en":"souvenir"}] }
+              ]
+            },
+            {
+              "id": "S1-S1-L4-C4",
+              "componentType": "review",
+              "goal": "Finish with a mixed check for gifts and fixing a purchase problem.",
+              "questions": [
+                { "id": "S1-S1-L4-Q09", "promptMode": "How do you say", "promptPrimary": "gift", "acceptedAnswers": ["プレゼント"], "referenceChoices": [{"jp":"プレゼント","romaji":"purezento"},{"jp":"お土産","romaji":"omiyage"},{"jp":"包装","romaji":"housou"},{"jp":"交換","romaji":"koukan"}] },
+                { "id": "S1-S1-L4-Q10", "promptMode": "Which one means", "promptPrimary": "返品", "acceptedAnswers": ["return"], "referenceChoices": [{"jp":"返品","en":"return"},{"jp":"交換","en":"exchange"},{"jp":"包装","en":"wrapping"},{"jp":"プレゼント","en":"gift"}] }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

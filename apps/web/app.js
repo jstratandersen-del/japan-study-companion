@@ -1,5 +1,5 @@
 (function () {
-  const APP_VERSION = "20260820d";
+  const APP_VERSION = "20260820e";
   if ("scrollRestoration" in history) {
     history.scrollRestoration = "manual";
   }
@@ -10,6 +10,7 @@
     "./data/convenience-store/convenience-store-c-l1-conbini-basics.json",
     "./data/trains/trains-t-l1-station-essentials.json",
     "./data/directions/directions-d-l1-street-navigation.json",
+    "./data/shopping/shopping-s1-shopping-essentials.json",
     "./data/restaurant/restaurant-r-l1-menu-basics.json",
     "./data/restaurant/restaurant-r-l2-ordering-basics.json",
     "./data/restaurant/restaurant-r-l3-server-interaction.json",
@@ -134,9 +135,10 @@
           title: "Shopping",
           titleJp: "買い物",
           shortTitle: "Shopping",
-          state: "locked",
+          state: "available",
           position: 84,
           sublevels: [
+            { id: "tokyo-shopping-essentials", title: "Shopping Essentials", state: "available", playable: true },
             { id: "tokyo-shopping-donki", title: "Donki", state: "locked", playable: false },
             { id: "tokyo-shopping-akiba", title: "Akiba", state: "locked", playable: false },
           ],

@@ -1,0 +1,18 @@
+{
+  "locationId": "shopping",
+  "sublevels": [
+    {
+      "id": "tokyo-shopping-essentials",
+      "levelId": "S1",
+      "title": "Shopping Essentials",
+      "stage": "words-to-use",
+      "playerOutcome": "Can navigate a store, ask simple shopping questions, and complete a basic purchase.",
+      "lessonLevelIds": [
+        "S1-S1-L1",
+        "S1-S1-L2",
+        "S1-S1-L3",
+        "S1-S1-L4"
+      ]
+    }
+  ]
+}
