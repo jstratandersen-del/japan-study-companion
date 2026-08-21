@@ -207,6 +207,202 @@
               ]
             }
           ]
+        },
+        {
+          "id": "T-L1-S1-L5",
+          "title": "Train Types and Service",
+          "components": [
+            {
+              "id": "T-L1-S1-L5-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Recognize the train types you will see on station signs and route apps.",
+              "items": [
+                { "jp": "普通", "romaji": "futsuu", "en": "local train" },
+                { "jp": "快速", "romaji": "kaisoku", "en": "rapid train" },
+                { "jp": "急行", "romaji": "kyuukou", "en": "express train" },
+                { "jp": "特急", "romaji": "tokkyuu", "en": "limited express" },
+                { "jp": "各駅停車", "romaji": "kakueki teisha", "en": "local train, stops at every station" }
+              ]
+            },
+            {
+              "id": "T-L1-S1-L5-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese train type that matches the English prompt.",
+              "questions": [
+                { "id": "T-L1-S1-L5-Q01", "promptMode": "How do you say", "promptPrimary": "local train", "acceptedAnswers": ["普通"], "referenceChoices": [{"jp":"普通","romaji":"futsuu"},{"jp":"快速","romaji":"kaisoku"},{"jp":"急行","romaji":"kyuukou"},{"jp":"特急","romaji":"tokkyuu"}] },
+                { "id": "T-L1-S1-L5-Q02", "promptMode": "How do you say", "promptPrimary": "rapid train", "acceptedAnswers": ["快速"], "referenceChoices": [{"jp":"快速","romaji":"kaisoku"},{"jp":"普通","romaji":"futsuu"},{"jp":"特急","romaji":"tokkyuu"},{"jp":"急行","romaji":"kyuukou"}] },
+                { "id": "T-L1-S1-L5-Q03", "promptMode": "How do you say", "promptPrimary": "express train", "acceptedAnswers": ["急行"], "referenceChoices": [{"jp":"急行","romaji":"kyuukou"},{"jp":"快速","romaji":"kaisoku"},{"jp":"普通","romaji":"futsuu"},{"jp":"各駅停車","romaji":"kakueki teisha"}] },
+                { "id": "T-L1-S1-L5-Q04", "promptMode": "How do you say", "promptPrimary": "limited express", "acceptedAnswers": ["特急"], "referenceChoices": [{"jp":"特急","romaji":"tokkyuu"},{"jp":"急行","romaji":"kyuukou"},{"jp":"快速","romaji":"kaisoku"},{"jp":"普通","romaji":"futsuu"}] },
+                { "id": "T-L1-S1-L5-Q05", "promptMode": "How do you say", "promptPrimary": "local train, stops at every station", "acceptedAnswers": ["各駅停車"], "referenceChoices": [{"jp":"各駅停車","romaji":"kakueki teisha"},{"jp":"普通","romaji":"futsuu"},{"jp":"急行","romaji":"kyuukou"},{"jp":"特急","romaji":"tokkyuu"}] }
+              ]
+            },
+            {
+              "id": "T-L1-S1-L5-C3",
+              "componentType": "matching",
+              "goal": "Read train service labels before choosing a platform.",
+              "questions": [
+                { "id": "T-L1-S1-L5-Q06", "promptMode": "Which one means", "promptPrimary": "快速", "acceptedAnswers": ["rapid train"], "referenceChoices": [{"jp":"快速","en":"rapid train"},{"jp":"急行","en":"express train"},{"jp":"普通","en":"local train"},{"jp":"特急","en":"limited express"}] },
+                { "id": "T-L1-S1-L5-Q07", "promptMode": "Which one means", "promptPrimary": "特急", "acceptedAnswers": ["limited express"], "referenceChoices": [{"jp":"特急","en":"limited express"},{"jp":"各駅停車","en":"local train, stops at every station"},{"jp":"快速","en":"rapid train"},{"jp":"普通","en":"local train"}] },
+                { "id": "T-L1-S1-L5-Q08", "promptMode": "Which one means", "promptPrimary": "各駅停車", "acceptedAnswers": ["local train, stops at every station"], "referenceChoices": [{"jp":"各駅停車","en":"local train, stops at every station"},{"jp":"急行","en":"express train"},{"jp":"特急","en":"limited express"},{"jp":"快速","en":"rapid train"}] }
+              ]
+            },
+            {
+              "id": "T-L1-S1-L5-C4",
+              "componentType": "review",
+              "goal": "Mix train types so the labels become useful at a glance.",
+              "questions": [
+                { "id": "T-L1-S1-L5-Q09", "promptMode": "How do you say", "promptPrimary": "express train", "acceptedAnswers": ["急行"], "referenceChoices": [{"jp":"急行","romaji":"kyuukou"},{"jp":"快速","romaji":"kaisoku"},{"jp":"普通","romaji":"futsuu"},{"jp":"特急","romaji":"tokkyuu"}] },
+                { "id": "T-L1-S1-L5-Q10", "promptMode": "Which one means", "promptPrimary": "普通", "acceptedAnswers": ["local train"], "referenceChoices": [{"jp":"普通","en":"local train"},{"jp":"快速","en":"rapid train"},{"jp":"急行","en":"express train"},{"jp":"特急","en":"limited express"}] }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "T-L1-S1-L6",
+          "title": "Destinations and Next Trains",
+          "components": [
+            {
+              "id": "T-L1-S1-L6-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Understand destination and timing words used on departure boards.",
+              "items": [
+                { "jp": "行き", "romaji": "yuki", "en": "bound for" },
+                { "jp": "方面", "romaji": "houmen", "en": "in the direction of" },
+                { "jp": "次の電車", "romaji": "tsugi no densha", "en": "next train" },
+                { "jp": "終点", "romaji": "shuuten", "en": "final stop" },
+                { "jp": "目的地", "romaji": "mokutekichi", "en": "destination" }
+              ]
+            },
+            {
+              "id": "T-L1-S1-L6-C2",
+              "componentType": "recognition",
+              "goal": "Choose destination and timing words in Japanese.",
+              "questions": [
+                { "id": "T-L1-S1-L6-Q01", "promptMode": "How do you say", "promptPrimary": "bound for", "acceptedAnswers": ["行き"], "referenceChoices": [{"jp":"行き","romaji":"yuki"},{"jp":"方面","romaji":"houmen"},{"jp":"終点","romaji":"shuuten"},{"jp":"目的地","romaji":"mokutekichi"}] },
+                { "id": "T-L1-S1-L6-Q02", "promptMode": "How do you say", "promptPrimary": "in the direction of", "acceptedAnswers": ["方面"], "referenceChoices": [{"jp":"方面","romaji":"houmen"},{"jp":"行き","romaji":"yuki"},{"jp":"次の電車","romaji":"tsugi no densha"},{"jp":"終点","romaji":"shuuten"}] },
+                { "id": "T-L1-S1-L6-Q03", "promptMode": "How do you say", "promptPrimary": "next train", "acceptedAnswers": ["次の電車"], "referenceChoices": [{"jp":"次の電車","romaji":"tsugi no densha"},{"jp":"目的地","romaji":"mokutekichi"},{"jp":"行き","romaji":"yuki"},{"jp":"方面","romaji":"houmen"}] },
+                { "id": "T-L1-S1-L6-Q04", "promptMode": "How do you say", "promptPrimary": "final stop", "acceptedAnswers": ["終点"], "referenceChoices": [{"jp":"終点","romaji":"shuuten"},{"jp":"次の電車","romaji":"tsugi no densha"},{"jp":"方面","romaji":"houmen"},{"jp":"行き","romaji":"yuki"}] },
+                { "id": "T-L1-S1-L6-Q05", "promptMode": "How do you say", "promptPrimary": "destination", "acceptedAnswers": ["目的地"], "referenceChoices": [{"jp":"目的地","romaji":"mokutekichi"},{"jp":"終点","romaji":"shuuten"},{"jp":"行き","romaji":"yuki"},{"jp":"次の電車","romaji":"tsugi no densha"}] }
+              ]
+            },
+            {
+              "id": "T-L1-S1-L6-C3",
+              "componentType": "matching",
+              "goal": "Read departure-board words and connect them to their meaning.",
+              "questions": [
+                { "id": "T-L1-S1-L6-Q06", "promptMode": "Which one means", "promptPrimary": "行き", "acceptedAnswers": ["bound for"], "referenceChoices": [{"jp":"行き","en":"bound for"},{"jp":"方面","en":"in the direction of"},{"jp":"次の電車","en":"next train"},{"jp":"目的地","en":"destination"}] },
+                { "id": "T-L1-S1-L6-Q07", "promptMode": "Which one means", "promptPrimary": "次の電車", "acceptedAnswers": ["next train"], "referenceChoices": [{"jp":"次の電車","en":"next train"},{"jp":"終点","en":"final stop"},{"jp":"行き","en":"bound for"},{"jp":"方面","en":"in the direction of"}] },
+                { "id": "T-L1-S1-L6-Q08", "promptMode": "Which one means", "promptPrimary": "目的地", "acceptedAnswers": ["destination"], "referenceChoices": [{"jp":"目的地","en":"destination"},{"jp":"行き","en":"bound for"},{"jp":"方面","en":"in the direction of"},{"jp":"終点","en":"final stop"}] }
+              ]
+            },
+            {
+              "id": "T-L1-S1-L6-C4",
+              "componentType": "review",
+              "goal": "Review the words that help you confirm you are boarding the right train.",
+              "questions": [
+                { "id": "T-L1-S1-L6-Q09", "promptMode": "How do you say", "promptPrimary": "next train", "acceptedAnswers": ["次の電車"], "referenceChoices": [{"jp":"次の電車","romaji":"tsugi no densha"},{"jp":"行き","romaji":"yuki"},{"jp":"方面","romaji":"houmen"},{"jp":"終点","romaji":"shuuten"}] },
+                { "id": "T-L1-S1-L6-Q10", "promptMode": "Which one means", "promptPrimary": "終点", "acceptedAnswers": ["final stop"], "referenceChoices": [{"jp":"終点","en":"final stop"},{"jp":"目的地","en":"destination"},{"jp":"次の電車","en":"next train"},{"jp":"行き","en":"bound for"}] }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "T-L1-S1-L7",
+          "title": "Delays and Service Changes",
+          "components": [
+            {
+              "id": "T-L1-S1-L7-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Recognize the essential words when a train is delayed or stopped.",
+              "items": [
+                { "jp": "遅延", "romaji": "chien", "en": "delay" },
+                { "jp": "運休", "romaji": "unkyuu", "en": "service suspension" },
+                { "jp": "事故", "romaji": "jiko", "en": "accident" },
+                { "jp": "遅れています", "romaji": "okurete imasu", "en": "is delayed" },
+                { "jp": "動いています", "romaji": "ugoite imasu", "en": "is running" }
+              ]
+            },
+            {
+              "id": "T-L1-S1-L7-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese word that describes a service problem or status.",
+              "questions": [
+                { "id": "T-L1-S1-L7-Q01", "promptMode": "How do you say", "promptPrimary": "delay", "acceptedAnswers": ["遅延"], "referenceChoices": [{"jp":"遅延","romaji":"chien"},{"jp":"運休","romaji":"unkyuu"},{"jp":"事故","romaji":"jiko"},{"jp":"動いています","romaji":"ugoite imasu"}] },
+                { "id": "T-L1-S1-L7-Q02", "promptMode": "How do you say", "promptPrimary": "service suspension", "acceptedAnswers": ["運休"], "referenceChoices": [{"jp":"運休","romaji":"unkyuu"},{"jp":"遅延","romaji":"chien"},{"jp":"事故","romaji":"jiko"},{"jp":"遅れています","romaji":"okurete imasu"}] },
+                { "id": "T-L1-S1-L7-Q03", "promptMode": "How do you say", "promptPrimary": "accident", "acceptedAnswers": ["事故"], "referenceChoices": [{"jp":"事故","romaji":"jiko"},{"jp":"遅延","romaji":"chien"},{"jp":"運休","romaji":"unkyuu"},{"jp":"動いています","romaji":"ugoite imasu"}] },
+                { "id": "T-L1-S1-L7-Q04", "promptMode": "How do you say", "promptPrimary": "is delayed", "acceptedAnswers": ["遅れています"], "referenceChoices": [{"jp":"遅れています","romaji":"okurete imasu"},{"jp":"動いています","romaji":"ugoite imasu"},{"jp":"遅延","romaji":"chien"},{"jp":"運休","romaji":"unkyuu"}] },
+                { "id": "T-L1-S1-L7-Q05", "promptMode": "How do you say", "promptPrimary": "is running", "acceptedAnswers": ["動いています"], "referenceChoices": [{"jp":"動いています","romaji":"ugoite imasu"},{"jp":"遅れています","romaji":"okurete imasu"},{"jp":"運休","romaji":"unkyuu"},{"jp":"事故","romaji":"jiko"}] }
+              ]
+            },
+            {
+              "id": "T-L1-S1-L7-C3",
+              "componentType": "matching",
+              "goal": "Read a simple delay announcement and identify what it means.",
+              "questions": [
+                { "id": "T-L1-S1-L7-Q06", "promptMode": "Which one means", "promptPrimary": "遅延", "acceptedAnswers": ["delay"], "referenceChoices": [{"jp":"遅延","en":"delay"},{"jp":"運休","en":"service suspension"},{"jp":"事故","en":"accident"},{"jp":"動いています","en":"is running"}] },
+                { "id": "T-L1-S1-L7-Q07", "promptMode": "Which one means", "promptPrimary": "運休", "acceptedAnswers": ["service suspension"], "referenceChoices": [{"jp":"運休","en":"service suspension"},{"jp":"遅れています","en":"is delayed"},{"jp":"遅延","en":"delay"},{"jp":"事故","en":"accident"}] },
+                { "id": "T-L1-S1-L7-Q08", "promptMode": "Which one means", "promptPrimary": "動いています", "acceptedAnswers": ["is running"], "referenceChoices": [{"jp":"動いています","en":"is running"},{"jp":"遅れています","en":"is delayed"},{"jp":"運休","en":"service suspension"},{"jp":"遅延","en":"delay"}] }
+              ]
+            },
+            {
+              "id": "T-L1-S1-L7-C4",
+              "componentType": "review",
+              "goal": "Finish by distinguishing a delay from a complete service suspension.",
+              "questions": [
+                { "id": "T-L1-S1-L7-Q09", "promptMode": "How do you say", "promptPrimary": "is delayed", "acceptedAnswers": ["遅れています"], "referenceChoices": [{"jp":"遅れています","romaji":"okurete imasu"},{"jp":"運休","romaji":"unkyuu"},{"jp":"遅延","romaji":"chien"},{"jp":"動いています","romaji":"ugoite imasu"}] },
+                { "id": "T-L1-S1-L7-Q10", "promptMode": "Which one means", "promptPrimary": "事故", "acceptedAnswers": ["accident"], "referenceChoices": [{"jp":"事故","en":"accident"},{"jp":"遅延","en":"delay"},{"jp":"運休","en":"service suspension"},{"jp":"動いています","en":"is running"}] }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "T-L1-S1-L8",
+          "title": "Asking Station Staff",
+          "components": [
+            {
+              "id": "T-L1-S1-L8-C1",
+              "componentType": "vocabulary_intro",
+              "goal": "Practice polite phrases for getting help from station staff.",
+              "items": [
+                { "jp": "すみません", "romaji": "sumimasen", "en": "excuse me" },
+                { "jp": "どこで乗り換えますか", "romaji": "doko de norikaemasu ka", "en": "where do I transfer?" },
+                { "jp": "どこで降りますか", "romaji": "doko de orimasu ka", "en": "where do I get off?" },
+                { "jp": "この電車ですか", "romaji": "kono densha desu ka", "en": "is it this train?" },
+                { "jp": "ありがとうございます", "romaji": "arigatou gozaimasu", "en": "thank you very much" }
+              ]
+            },
+            {
+              "id": "T-L1-S1-L8-C2",
+              "componentType": "recognition",
+              "goal": "Choose the Japanese phrase that matches a travel situation.",
+              "questions": [
+                { "id": "T-L1-S1-L8-Q01", "promptMode": "How do you say", "promptPrimary": "excuse me", "acceptedAnswers": ["すみません"], "referenceChoices": [{"jp":"すみません","romaji":"sumimasen"},{"jp":"この電車ですか","romaji":"kono densha desu ka"},{"jp":"どこで降りますか","romaji":"doko de orimasu ka"},{"jp":"ありがとうございます","romaji":"arigatou gozaimasu"}] },
+                { "id": "T-L1-S1-L8-Q02", "promptMode": "How do you say", "promptPrimary": "where do I transfer?", "acceptedAnswers": ["どこで乗り換えますか"], "referenceChoices": [{"jp":"どこで乗り換えますか","romaji":"doko de norikaemasu ka"},{"jp":"どこで降りますか","romaji":"doko de orimasu ka"},{"jp":"この電車ですか","romaji":"kono densha desu ka"},{"jp":"すみません","romaji":"sumimasen"}] },
+                { "id": "T-L1-S1-L8-Q03", "promptMode": "How do you say", "promptPrimary": "where do I get off?", "acceptedAnswers": ["どこで降りますか"], "referenceChoices": [{"jp":"どこで降りますか","romaji":"doko de orimasu ka"},{"jp":"どこで乗り換えますか","romaji":"doko de norikaemasu ka"},{"jp":"この電車ですか","romaji":"kono densha desu ka"},{"jp":"すみません","romaji":"sumimasen"}] },
+                { "id": "T-L1-S1-L8-Q04", "promptMode": "How do you say", "promptPrimary": "is it this train?", "acceptedAnswers": ["この電車ですか"], "referenceChoices": [{"jp":"この電車ですか","romaji":"kono densha desu ka"},{"jp":"どこで降りますか","romaji":"doko de orimasu ka"},{"jp":"ありがとうございます","romaji":"arigatou gozaimasu"},{"jp":"すみません","romaji":"sumimasen"}] },
+                { "id": "T-L1-S1-L8-Q05", "promptMode": "How do you say", "promptPrimary": "thank you very much", "acceptedAnswers": ["ありがとうございます"], "referenceChoices": [{"jp":"ありがとうございます","romaji":"arigatou gozaimasu"},{"jp":"すみません","romaji":"sumimasen"},{"jp":"この電車ですか","romaji":"kono densha desu ka"},{"jp":"どこで乗り換えますか","romaji":"doko de norikaemasu ka"}] }
+              ]
+            },
+            {
+              "id": "T-L1-S1-L8-C3",
+              "componentType": "matching",
+              "goal": "Understand the questions you need when asking for help.",
+              "questions": [
+                { "id": "T-L1-S1-L8-Q06", "promptMode": "Which one means", "promptPrimary": "どこで乗り換えますか", "acceptedAnswers": ["where do I transfer?"], "referenceChoices": [{"jp":"どこで乗り換えますか","en":"where do I transfer?"},{"jp":"どこで降りますか","en":"where do I get off?"},{"jp":"この電車ですか","en":"is it this train?"},{"jp":"すみません","en":"excuse me"}] },
+                { "id": "T-L1-S1-L8-Q07", "promptMode": "Which one means", "promptPrimary": "どこで降りますか", "acceptedAnswers": ["where do I get off?"], "referenceChoices": [{"jp":"どこで降りますか","en":"where do I get off?"},{"jp":"どこで乗り換えますか","en":"where do I transfer?"},{"jp":"この電車ですか","en":"is it this train?"},{"jp":"ありがとうございます","en":"thank you very much"}] },
+                { "id": "T-L1-S1-L8-Q08", "promptMode": "Which one means", "promptPrimary": "この電車ですか", "acceptedAnswers": ["is it this train?"], "referenceChoices": [{"jp":"この電車ですか","en":"is it this train?"},{"jp":"どこで降りますか","en":"where do I get off?"},{"jp":"すみません","en":"excuse me"},{"jp":"ありがとうございます","en":"thank you very much"}] }
+              ]
+            },
+            {
+              "id": "T-L1-S1-L8-C4",
+              "componentType": "review",
+              "goal": "End with a polite help-seeking exchange you can use immediately.",
+              "questions": [
+                { "id": "T-L1-S1-L8-Q09", "promptMode": "How do you say", "promptPrimary": "where do I transfer?", "acceptedAnswers": ["どこで乗り換えますか"], "referenceChoices": [{"jp":"どこで乗り換えますか","romaji":"doko de norikaemasu ka"},{"jp":"どこで降りますか","romaji":"doko de orimasu ka"},{"jp":"この電車ですか","romaji":"kono densha desu ka"},{"jp":"すみません","romaji":"sumimasen"}] },
+                { "id": "T-L1-S1-L8-Q10", "promptMode": "Which one means", "promptPrimary": "ありがとうございます", "acceptedAnswers": ["thank you very much"], "referenceChoices": [{"jp":"ありがとうございます","en":"thank you very much"},{"jp":"すみません","en":"excuse me"},{"jp":"この電車ですか","en":"is it this train?"},{"jp":"どこで降りますか","en":"where do I get off?"}] }
+              ]
+            }
+          ]
         }
       ]
     }

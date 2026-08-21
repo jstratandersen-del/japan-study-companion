@@ -1,11 +1,11 @@
-const CACHE_NAME = "japan-study-companion-v20260820c";
+const CACHE_NAME = "japan-study-companion-v20260820d";
 
 const OFFLINE_ASSETS = [
   "./",
   "./index.html",
-  "./styles.css?v=20260820c",
-  "./app.js?v=20260820c",
-  "./manifest.webmanifest?v=20260820c",
+  "./styles.css?v=20260820d",
+  "./app.js?v=20260820d",
+  "./manifest.webmanifest?v=20260820d",
   "./assets/restaurant-guide-v1.png",
   "./assets/mascot-happy.svg",
   "./assets/mascot-oops.svg",

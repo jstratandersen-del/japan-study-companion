@@ -1,5 +1,5 @@
 (function () {
-  const APP_VERSION = "20260820c";
+  const APP_VERSION = "20260820d";
   if ("scrollRestoration" in history) {
     history.scrollRestoration = "manual";
   }
